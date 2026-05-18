@@ -43,12 +43,12 @@ export default function HowToInstructPage() {
         <li>Unable to address country guidance case factors specifically</li>
       </ul>
       <RelatedLinks links={[
-        { label: "Fees & Legal Aid", href: "/fees" },
         { label: "Legal Aid instruction guide", href: "/guides/instructing-africa-experts-legal-aid" },
-        { label: "FAQ", href: "/faq" },
-        { label: "Instruct an expert", href: "/contact" },
+        { label: "Qualifications", href: "/qualifications" },
+        { label: "Solicitor Guides", href: "/guides" },
+        { label: "Contact us", href: "/contact" },
       ]} />
-      <Link href="/contact" className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white">Instruct an Expert</Link>
+      <Link href="/contact" className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white">Contact Us</Link>
     </PageShell>
     </>
   );

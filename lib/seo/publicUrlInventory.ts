@@ -4,6 +4,7 @@ import { countries } from "../../data/countries";
 import { expertiseAreas } from "../../data/expertise-areas";
 import { caseTypes } from "../../data/case-types";
 import { guides } from "../../data/guides";
+import { services } from "../../data/services";
 
 export type PublicUrlEntry = {
   path: string;
@@ -22,7 +23,6 @@ export const APP_STATIC_PATHS: PublicUrlEntry[] = [
   { path: "/what-is-an-africa-expert-witness", priority: 0.88, changefreq: "monthly" },
   { path: "/qualifications", priority: 0.88, changefreq: "monthly" },
   { path: "/how-to-instruct", priority: 0.88, changefreq: "monthly" },
-  { path: "/fees", priority: 0.87, changefreq: "monthly" },
   { path: "/faq", priority: 0.87, changefreq: "monthly" },
   { path: "/guides", priority: 0.87, changefreq: "monthly" },
   { path: "/experts", priority: 0.8, changefreq: "monthly" },
@@ -61,6 +61,11 @@ function dynamicEntries(): PublicUrlEntry[] {
     ...guides.map((g) => ({
       path: `/guides/${g.slug}`,
       priority: 0.8,
+      changefreq: "monthly" as const,
+    })),
+    ...services.map((s) => ({
+      path: `/services/${s.id}`,
+      priority: 0.9,
       changefreq: "monthly" as const,
     })),
   ];

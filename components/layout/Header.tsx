@@ -2,7 +2,16 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { mainNav, mobileNavGroups } from "@/data/navigation";
+import {
+  caseTypesNavLinks,
+  countriesNavLinks,
+  expertiseAreasNavLinks,
+  mobileNavGroups,
+  regionsNavLinks,
+  resourcesNavLinks,
+  servicesNavLinks,
+} from "@/data/navigation";
+import { NavDropdown } from "@/components/layout/NavDropdown";
 
 export function Header() {
   const toggleRef = useRef<HTMLInputElement>(null);
@@ -37,20 +46,23 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
-          {mainNav.slice(0, -1).map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="inline-flex min-h-[44px] items-center rounded-[4px] px-2 py-2 text-sm text-[#374151] hover:bg-[#F7F9F7] hover:text-[#0D3B2E]"
-            >
-              {item.label}
-            </Link>
-          ))}
+          <Link
+            href="/"
+            className="inline-flex min-h-[44px] items-center rounded-[4px] px-2 py-2 text-sm text-[#374151] hover:bg-[#F7F9F7] hover:text-[#0D3B2E]"
+          >
+            Home
+          </Link>
+          <NavDropdown label="Services" href="/services" items={servicesNavLinks} />
+          <NavDropdown label="Regions" href="/regions" items={regionsNavLinks} />
+          <NavDropdown label="Countries" href="/countries" items={countriesNavLinks} scrollable />
+          <NavDropdown label="Expertise Areas" href="/expertise-areas" items={expertiseAreasNavLinks} scrollable />
+          <NavDropdown label="Case Types" href="/case-types" items={caseTypesNavLinks} scrollable />
+          <NavDropdown label="Resources" href="/guides" items={[...resourcesNavLinks]} />
           <Link
             href="/contact"
             className="ml-2 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-4 py-2 text-sm font-semibold text-white hover:bg-[#b07f22]"
           >
-            Instruct an Expert
+            Contact Us
           </Link>
         </nav>
 
@@ -97,14 +109,7 @@ export function Header() {
             className="flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#C8922A] font-semibold text-white"
             onClick={closeMobileMenu}
           >
-            Contact
-          </Link>
-          <Link
-            href="/contact"
-            className="mt-3 flex min-h-[44px] w-full items-center justify-center rounded-[4px] border-2 border-[#C8922A] font-semibold text-[#C8922A]"
-            onClick={closeMobileMenu}
-          >
-            Instruct an Expert
+            Contact Us
           </Link>
         </div>
       </nav>

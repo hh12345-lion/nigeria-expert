@@ -1,48 +1,63 @@
-export const mainNav = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Regions", href: "/regions" },
-  { label: "Countries", href: "/countries" },
-  { label: "Expertise Areas", href: "/expertise-areas" },
-  { label: "Case Types", href: "/case-types" },
-  { label: "Guides", href: "/guides" },
+import { caseTypes } from "./case-types";
+import { countries } from "./countries";
+import { expertiseAreas } from "./expertise-areas";
+import { regions } from "./regions";
+import { services } from "./services";
+
+export const servicesNavLinks = services.map((s) => ({
+  label: s.navLabel,
+  href: `/services/${s.id}`,
+}));
+
+export const regionsNavLinks = regions.map((r) => ({
+  label: r.title,
+  href: `/regions/${r.slug}`,
+}));
+
+export const countriesNavLinks = countries.map((c) => ({
+  label: c.name,
+  href: `/countries/${c.slug}`,
+}));
+
+export const expertiseAreasNavLinks = expertiseAreas.map((e) => ({
+  label: e.title,
+  href: `/expertise-areas/${e.slug}`,
+}));
+
+export const caseTypesNavLinks = caseTypes.map((c) => ({
+  label: c.title,
+  href: `/case-types/${c.slug}`,
+}));
+
+export const resourcesNavLinks = [
+  { label: "Solicitor Guides", href: "/guides" },
   { label: "How to Instruct", href: "/how-to-instruct" },
   { label: "Qualifications", href: "/qualifications" },
-  { label: "Fees", href: "/fees" },
-  { label: "FAQ", href: "/faq" },
-  { label: "Contact", href: "/contact" },
 ] as const;
 
 export const mobileNavGroups = [
   {
-    title: "Find an Expert",
-    links: [
-      { label: "Regions", href: "/regions" },
-      { label: "Countries", href: "/countries" },
-      { label: "Expertise Areas", href: "/expertise-areas" },
-    ],
+    title: "Services",
+    links: [{ label: "All Services", href: "/services" }, ...servicesNavLinks],
+  },
+  {
+    title: "Regions",
+    links: [{ label: "All Regions", href: "/regions" }, ...regionsNavLinks],
+  },
+  {
+    title: "Countries",
+    links: [{ label: "All Countries", href: "/countries" }, ...countriesNavLinks],
+  },
+  {
+    title: "Expertise Areas",
+    links: [{ label: "All Expertise Areas", href: "/expertise-areas" }, ...expertiseAreasNavLinks],
   },
   {
     title: "Case Types",
-    links: [{ label: "All Case Types", href: "/case-types" }],
+    links: [{ label: "All Case Types", href: "/case-types" }, ...caseTypesNavLinks],
   },
   {
     title: "Resources",
-    links: [
-      { label: "Solicitor Guides", href: "/guides" },
-      { label: "Glossary", href: "/glossary" },
-      { label: "FAQ", href: "/faq" },
-    ],
-  },
-  {
-    title: "About",
-    links: [{ label: "Qualifications", href: "/qualifications" }],
-  },
-  {
-    title: "Process",
-    links: [
-      { label: "How to Instruct", href: "/how-to-instruct" },
-      { label: "Fees", href: "/fees" },
-    ],
+    links: [...resourcesNavLinks],
   },
 ] as const;

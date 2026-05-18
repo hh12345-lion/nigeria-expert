@@ -1,16 +1,6 @@
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies";
-
-const services = [
-  ["Country Reports", "/services#country-condition-reports"],
-  ["LGBTQI+ Asylum", "/services#lgbtqi-asylum"],
-  ["FGM & GBV", "/services#fgm-gbv"],
-  ["Trafficking", "/services#trafficking"],
-  ["Investment Arbitration", "/services#investment-arbitration"],
-  ["African Law", "/services#african-law"],
-  ["Nationality", "/services#nationality-statelessness"],
-  ["Rebuttal Reports", "/services#rebuttal-sje"],
-];
+import { services } from "@/data/services";
 
 export function Footer() {
   return (
@@ -20,8 +10,12 @@ export function Footer() {
           <div>
             <h3 className="mb-4 font-semibold text-[#C8922A]">Services</h3>
             <ul className="space-y-2 text-sm text-white/80">
-              {services.map(([label, href]) => (
-                <li key={href}><Link href={href} className="hover:text-white min-h-[44px] inline-flex items-center">{label}</Link></li>
+              {services.map((s) => (
+                <li key={s.id}>
+                  <Link href={`/services/${s.id}`} className="inline-flex min-h-[44px] items-center hover:text-white">
+                    {s.navLabel}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -42,10 +36,9 @@ export function Footer() {
             <h3 className="mb-4 font-semibold text-[#C8922A]">Resources</h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li><Link href="/guides" className="hover:text-white">Solicitor Guides</Link></li>
-              <li><Link href="/glossary" className="hover:text-white">Glossary</Link></li>
-              <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
-              <li><Link href="/fees" className="hover:text-white">Fees Guide</Link></li>
               <li><Link href="/how-to-instruct" className="hover:text-white">How to Instruct</Link></li>
+              <li><Link href="/qualifications" className="hover:text-white">Qualifications</Link></li>
+              <li><Link href="/glossary" className="hover:text-white">Glossary</Link></li>
               <li><Link href="/what-is-an-africa-expert-witness" className="hover:text-white">What is an Africa Expert Witness?</Link></li>
             </ul>
           </div>
@@ -53,9 +46,8 @@ export function Footer() {
             <h3 className="mb-4 font-semibold text-[#C8922A]">About</h3>
             <ul className="space-y-2 text-sm text-white/80">
               <li><Link href="/experts" className="hover:text-white">Our Experts</Link></li>
-              <li><Link href="/qualifications" className="hover:text-white">Qualifications</Link></li>
               <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-              <li><Link href="/contact" className="text-[#C8922A] font-semibold hover:underline">Instruct an Expert</Link></li>
+              <li><Link href="/contact" className="font-semibold text-[#C8922A] hover:underline">Contact Us</Link></li>
             </ul>
           </div>
         </div>

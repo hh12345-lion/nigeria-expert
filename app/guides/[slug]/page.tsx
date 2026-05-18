@@ -52,7 +52,7 @@ const guideLinks: Record<string, RelatedLink[]> = {
     { label: "Instruct an expert", href: "/contact" },
   ],
   "home-office-cpin-africa-rebuttal": [
-    { label: "Rebuttal reports service", href: "/services#rebuttal-sje" },
+    { label: "Rebuttal reports service", href: "/services/rebuttal-sje" },
     { label: "Upper Tribunal country guidance", href: "/case-types/upper-tribunal-country-guidance" },
     { label: "CPIN glossary term", href: "/glossary#country-policy-information-note-cpin" },
     { label: "All solicitor guides", href: "/guides" },
@@ -60,10 +60,9 @@ const guideLinks: Record<string, RelatedLink[]> = {
     { label: "Instruct an expert", href: "/contact" },
   ],
   "instructing-africa-experts-legal-aid": [
-    { label: "Fees & Legal Aid rates", href: "/fees" },
     { label: "How to instruct", href: "/how-to-instruct" },
     { label: "Legal Aid glossary", href: "/glossary#legal-aid" },
-    { label: "FAQ", href: "/faq" },
+    { label: "Qualifications", href: "/qualifications" },
     { label: "All solicitor guides", href: "/guides" },
     { label: "Instruct an expert", href: "/contact" },
   ],
@@ -121,7 +120,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
           href="/contact"
           className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white"
         >
-          Instruct an Expert
+          Contact Us
         </Link>
       </PageShell>
     </>

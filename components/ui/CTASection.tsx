@@ -17,7 +17,7 @@ export function CTASection({
             href="/contact"
             className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#0D3B2E] px-6 py-3 font-semibold text-white transition hover:bg-[#0a2f24] sm:w-auto sm:min-w-[200px] sm:px-8"
           >
-            Instruct an Expert
+            Contact Us
           </Link>
           <Link
             href="/how-to-instruct"

@@ -33,7 +33,7 @@ export default function HomePage() {
               href="/contact"
               className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white hover:bg-[#b07f22] sm:w-auto sm:px-8"
             >
-              Instruct an Expert
+              Contact Us
             </Link>
             <Link
               href="/what-is-an-africa-expert-witness"
@@ -93,7 +93,7 @@ export default function HomePage() {
       <section className="bg-[#F7F9F7] py-12 sm:py-16">
         <div className="mx-auto min-w-0 max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-xl font-bold text-[#0D3B2E] sm:text-2xl">Expert Witness Services</h2>
-          <CardGrid items={services.map((s) => ({ title: s.title, description: s.description, href: s.href }))} />
+          <CardGrid items={services.map((s) => ({ title: s.title, description: s.description, href: `/services/${s.id}` }))} />
         </div>
       </section>
 
@@ -141,14 +141,11 @@ export default function HomePage() {
           <Link href="/guides" className="min-h-[44px] font-semibold text-[#0D3B2E] hover:text-[#C8922A]">
             Solicitor Guides
           </Link>
-          <Link href="/faq" className="min-h-[44px] font-semibold text-[#0D3B2E] hover:text-[#C8922A]">
-            FAQ
-          </Link>
           <Link href="/how-to-instruct" className="min-h-[44px] font-semibold text-[#0D3B2E] hover:text-[#C8922A]">
             How to Instruct
           </Link>
-          <Link href="/fees" className="min-h-[44px] font-semibold text-[#0D3B2E] hover:text-[#C8922A]">
-            Fees
+          <Link href="/qualifications" className="min-h-[44px] font-semibold text-[#0D3B2E] hover:text-[#C8922A]">
+            Qualifications
           </Link>
           <Link href="/contact" className="min-h-[44px] font-semibold text-[#C8922A] hover:underline">
             Contact

@@ -100,7 +100,8 @@ export function websiteSchema() {
 export function serviceNode(id: string, name: string, description: string) {
   return {
     "@type": "Service",
-    "@id": `${SITE_URL}/services#${id}`,
+    "@id": `${SITE_URL}/services/${id}`,
+    url: `${SITE_URL}/services/${id}`,
     name,
     description,
     provider: { "@id": `${SITE_URL}/#organization` },
@@ -135,7 +136,7 @@ export function articleSchema(opts: {
     author: { "@id": `${SITE_URL}/#organization` },
     publisher: { "@id": `${SITE_URL}/#organization` },
     ...(opts.aboutServiceId
-      ? { about: { "@id": `${SITE_URL}/services#${opts.aboutServiceId}` } }
+      ? { about: { "@id": `${SITE_URL}/services/${opts.aboutServiceId}` } }
       : {}),
   };
 }
