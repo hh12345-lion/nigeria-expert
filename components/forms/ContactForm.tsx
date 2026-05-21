@@ -21,14 +21,24 @@ export function ContactForm() {
     setStatus("loading");
     const form = e.currentTarget;
     const data = new FormData(form);
-    const fullName = String(data.get("name") ?? "");
-    const email = String(data.get("email") ?? "");
-    const phone = String(data.get("phone") ?? "");
+    const payload = {
+      fullName: String(data.get("name") ?? ""),
+      organisation: String(data.get("organisation") ?? ""),
+      email: String(data.get("email") ?? ""),
+      phone: String(data.get("phone") ?? ""),
+      country: String(data.get("country") ?? ""),
+      caseType: String(data.get("case_type") ?? ""),
+      keyIssues: selectedIssues.join("; "),
+      deadline: String(data.get("deadline") ?? ""),
+      funding: String(data.get("funding") ?? ""),
+      urgency: String(data.get("urgency") ?? ""),
+      summary: String(data.get("summary") ?? ""),
+    };
     try {
       const res = await fetch("/api/submit-lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fullName, email, phone }),
+        body: JSON.stringify(payload),
       });
       if (res.ok) router.push("/thank-you");
       else setStatus("error");
