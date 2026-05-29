@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SITE_URL } from "./constants";
 
-const OG_IMAGE_ALT = "AfricaExpertWitness — Africa Expert Witness Services UK";
+const OG_IMAGE_ALT = "AfricaExpertWitness - Africa Expert Witness Services UK";
 
 export const OPEN_GRAPH_IMAGE = {
   url: `${SITE_URL}/opengraph-image`,

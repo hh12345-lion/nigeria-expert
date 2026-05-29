@@ -1,6 +1,6 @@
 import type { CookieCategory } from "./types";
 
-/** localStorage key — versioned to allow migration */
+/** localStorage key - versioned to allow migration */
 export const CONSENT_STORAGE_KEY = "aew_cookie_consent_v1";
 
 /** Increment to invalidate stored consent and show banner again */

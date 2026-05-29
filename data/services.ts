@@ -38,7 +38,7 @@ export const services: Service[] = [
       {
         question: "What should a country condition report include for UK tribunals?",
         answer:
-          "Reports address the specific claim matrix — political opinion, religion, clan, internal relocation, and state protection — with OSCOLA-cited sources including Home Office COI, UNHCR, and field research. They must comply with CPR Part 35 and address any binding country guidance.",
+          "Reports address the specific claim matrix - political opinion, religion, clan, internal relocation, and state protection - with OSCOLA-cited sources including Home Office COI, UNHCR, and field research. They must comply with CPR Part 35 and address any binding country guidance.",
       },
       {
         question: "How long does a standard Africa country condition report take?",
@@ -69,7 +69,7 @@ export const services: Service[] = [
       {
         question: "How do LGBTQI+ expert reports approach sexuality?",
         answer:
-          "Experts provide country conditions context only — they do not determine the claimant's sexuality. Reports are consistent with HJ (Iran) and address criminalisation, enforcement, and risk on return.",
+          "Experts provide country conditions context only - they do not determine the claimant's sexuality. Reports are consistent with HJ (Iran) and address criminalisation, enforcement, and risk on return.",
       },
       {
         question: "Which countries have the highest LGBTQI+ asylum volume?",
@@ -89,7 +89,7 @@ export const services: Service[] = [
       "FGM prevalence analysis, daughters at risk assessment, and gender-based violence country conditions for UK tribunals.",
     metaTitle: "FGM & Gender-Based Violence Expert Reports Africa | UK Tribunals",
     metaDescription:
-      "FGM prevalence and gender-based violence expert reports for UK asylum tribunals — daughters at risk, state protection, and internal relocation.",
+      "FGM prevalence and gender-based violence expert reports for UK asylum tribunals - daughters at risk, state protection, and internal relocation.",
     relatedHref: "/expertise-areas/fgm-gender-based-violence",
     methodology: [
       { phase: "Prevalence analysis", whatWeDo: "Country, ethnic, and regional FGM data", deliverable: "Prevalence profile" },
@@ -120,7 +120,7 @@ export const services: Service[] = [
       "Trafficking route analysis, juju exploitation context, and re-trafficking risk for NRM and asylum proceedings.",
     metaTitle: "Africa Trafficking Expert Witness UK | Modern Slavery & NRM Reports",
     metaDescription:
-      "Trafficking and modern slavery expert reports for UK NRM and asylum proceedings — route analysis, juju context, and re-trafficking risk on return.",
+      "Trafficking and modern slavery expert reports for UK NRM and asylum proceedings - route analysis, juju context, and re-trafficking risk on return.",
     relatedHref: "/expertise-areas/trafficking-modern-slavery-africa",
     methodology: [
       { phase: "Route analysis", whatWeDo: "Document trafficking patterns from origin country", deliverable: "Trafficking context section" },
@@ -151,7 +151,7 @@ export const services: Service[] = [
       "Country conditions and regulatory framework evidence for ICSID, UNCITRAL, and ICC investment treaty disputes.",
     metaTitle: "Africa Investment Treaty Arbitration Expert | ICSID & UNCITRAL Evidence",
     metaDescription:
-      "Investment treaty arbitration expert evidence for African disputes — ICSID, UNCITRAL, regulatory change, and expropriation context.",
+      "Investment treaty arbitration expert evidence for African disputes - ICSID, UNCITRAL, regulatory change, and expropriation context.",
     relatedHref: "/expertise-areas/investment-treaty-arbitration-africa",
     methodology: [
       { phase: "Dispute scoping", whatWeDo: "Identify treaty standards, governing law, and sector", deliverable: "Expert team proposal" },
@@ -167,7 +167,7 @@ export const services: Service[] = [
       {
         question: "What evidence do country experts provide in ICSID cases?",
         answer:
-          "Country conditions, regulatory framework changes, political risk, and factual context for treaty breach and damages analysis — memorial-ready written evidence and testimony if required.",
+          "Country conditions, regulatory framework changes, political risk, and factual context for treaty breach and damages analysis - memorial-ready written evidence and testimony if required.",
       },
       {
         question: "How are experts instructed in arbitration?",
@@ -183,7 +183,7 @@ export const services: Service[] = [
       "Governing law, court procedures, OHADA, and domestic legal framework evidence for commercial litigation and arbitration.",
     metaTitle: "African Law Expert Witness UK | OHADA & Commercial Litigation",
     metaDescription:
-      "African law expert evidence for UK commercial litigation and arbitration — governing law, OHADA, court procedures, and domestic legal frameworks.",
+      "African law expert evidence for UK commercial litigation and arbitration - governing law, OHADA, court procedures, and domestic legal frameworks.",
     relatedHref: "/expertise-areas/african-law-legal-systems",
     methodology: [
       { phase: "Legal framework", whatWeDo: "Identify governing law and applicable instruments", deliverable: "Legal framework memorandum" },
@@ -215,7 +215,7 @@ export const services: Service[] = [
       "Citizenship law analysis and statelessness risk assessment for UK immigration tribunals.",
     metaTitle: "Africa Nationality & Statelessness Expert Witness UK",
     metaDescription:
-      "Nationality and statelessness expert assessments for UK immigration tribunals — citizenship law, documentation risk, and return feasibility.",
+      "Nationality and statelessness expert assessments for UK immigration tribunals - citizenship law, documentation risk, and return feasibility.",
     relatedHref: "/expertise-areas/nationality-statelessness",
     methodology: [
       { phase: "Citizenship analysis", whatWeDo: "Review nationality laws and documentation requirements", deliverable: "Citizenship assessment" },

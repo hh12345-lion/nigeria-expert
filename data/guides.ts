@@ -5,7 +5,7 @@ export type Guide = {
   metaTitle: string;
   metaDescription: string;
   h1: string;
-  /** Service @id fragment on /services — omit for methodology/process guides */
+  /** Service @id fragment on /services - omit for methodology/process guides */
   aboutServiceId?: string;
   sections: GuideSection[];
 };
@@ -16,12 +16,12 @@ export const guides: Guide[] = [
     metaTitle: "Somalia Country Guidance MOJ [2014] | Solicitor Guide UK",
     metaDescription:
       "Guide to MOJ & Ors Somalia country guidance for UK solicitors. Clan analysis, Mogadishu return, Al-Shabaab, and expert witness role.",
-    h1: "Somalia Country Guidance: MOJ & Ors [2014] — A Guide for UK Solicitors",
+    h1: "Somalia Country Guidance: MOJ & Ors [2014] - A Guide for UK Solicitors",
     sections: [
       {
         heading: "What is MOJ country guidance?",
         content: [
-          "MOJ & Ors (Return to Mogadishu) Somalia CG [2014] UKUT 00442 is the leading country guidance on Somali asylum claims in UK law. It established that return to Mogadishu is not automatically unsafe — safety depends on individual circumstances including clan membership, access to diaspora remittances, and capacity to integrate into civil society.",
+          "MOJ & Ors (Return to Mogadishu) Somalia CG [2014] UKUT 00442 is the leading country guidance on Somali asylum claims in UK law. It established that return to Mogadishu is not automatically unsafe - safety depends on individual circumstances including clan membership, access to diaspora remittances, and capacity to integrate into civil society.",
           "The decision remains binding on First-tier Tribunals unless departed from. Expert witnesses must address MOJ factors while incorporating material developments since 2014, including Al-Shabaab territorial changes, humanitarian conditions, and IDP camp dynamics.",
         ],
       },
@@ -35,7 +35,7 @@ export const guides: Guide[] = [
       {
         heading: "Clan analysis in Somali cases",
         content: [
-          "Clan membership is central to most Somali asylum claims. Minority clans — including occupational groups and minority lineage clans — face specific risks from majority clan violence and Al-Shabaab targeting. Expert witnesses verify clan claims against documented clan structures and geographic distributions.",
+          "Clan membership is central to most Somali asylum claims. Minority clans - including occupational groups and minority lineage clans - face specific risks from majority clan violence and Al-Shabaab targeting. Expert witnesses verify clan claims against documented clan structures and geographic distributions.",
           "Incorrect clan evidence is a common ground for adverse credibility findings. Experts provide independent analysis of whether the claimant's stated clan membership is consistent with documented structures and whether that clan faces real risk in the specific location of proposed return.",
         ],
       },
@@ -50,7 +50,7 @@ export const guides: Guide[] = [
         heading: "The expert witness role",
         content: [
           "Somalia experts must combine knowledge of MOJ legal framework with current country conditions research. Reports should explicitly address each MOJ factor, cite authoritative sources, and provide reasoned conclusions on return safety for the specific claimant profile.",
-          "For Upper Tribunal departure applications, experts must identify material changes since MOJ and explain why the guidance no longer reflects current conditions — or why the claimant's circumstances fall outside the CG framework.",
+          "For Upper Tribunal departure applications, experts must identify material changes since MOJ and explain why the guidance no longer reflects current conditions - or why the claimant's circumstances fall outside the CG framework.",
         ],
       },
     ],
@@ -73,14 +73,14 @@ export const guides: Guide[] = [
       {
         heading: "The HJ (Iran) standard and expert evidence",
         content: [
-          "In HJ (Iran) v Secretary of State for the Home Department [2010] UKSC 31, the Supreme Court held that asylum seekers should not be required to conceal their sexuality to avoid persecution. Expert witnesses do not determine sexuality — they provide country conditions evidence on whether openly LGBTQI+ individuals face persecution in the relevant country.",
-          "Reports must address enforcement practice, not merely the text of criminal laws. De facto persecution in states without formal criminalisation — or with limited enforcement — still requires expert analysis.",
+          "In HJ (Iran) v Secretary of State for the Home Department [2010] UKSC 31, the Supreme Court held that asylum seekers should not be required to conceal their sexuality to avoid persecution. Expert witnesses do not determine sexuality - they provide country conditions evidence on whether openly LGBTQI+ individuals face persecution in the relevant country.",
+          "Reports must address enforcement practice, not merely the text of criminal laws. De facto persecution in states without formal criminalisation - or with limited enforcement - still requires expert analysis.",
         ],
       },
       {
         heading: "Internal relocation and LGBTQI+ claims",
         content: [
-          "Internal relocation is rarely viable for LGBTQI+ asylum claims from Africa. Where criminalisation applies nationwide — as under Uganda's AHA 2023 or Nigeria's SSMPA — the Home Office cannot reasonably argue that relocation within the country eliminates risk.",
+          "Internal relocation is rarely viable for LGBTQI+ asylum claims from Africa. Where criminalisation applies nationwide - as under Uganda's AHA 2023 or Nigeria's SSMPA - the Home Office cannot reasonably argue that relocation within the country eliminates risk.",
           "Expert witnesses should address this explicitly, documenting nationwide legal frameworks, community attitudes, and the absence of safe internal relocation options.",
         ],
       },
@@ -104,7 +104,7 @@ export const guides: Guide[] = [
       {
         heading: "Prevalence by country",
         content: [
-          "FGM prevalence varies dramatically by country and ethnic group. Guinea (approximately 95%), Somalia (98%), Mali (89%), Sierra Leone (83%), and Gambia (75%) have the highest documented rates. Nigeria shows significant state-by-state variation — Edo, Imo, and Ekiti states have high prevalence.",
+          "FGM prevalence varies dramatically by country and ethnic group. Guinea (approximately 95%), Somalia (98%), Mali (89%), Sierra Leone (83%), and Gambia (75%) have the highest documented rates. Nigeria shows significant state-by-state variation - Edo, Imo, and Ekiti states have high prevalence.",
           "Expert witnesses must provide ethnic and regional analysis, not generic national statistics. A claimant from a low-prevalence ethnic group in a high-prevalence country requires different analysis from one in a high-prevalence community.",
         ],
       },
@@ -112,7 +112,7 @@ export const guides: Guide[] = [
         heading: "Risk assessment methodology",
         content: [
           "FGM claims can succeed on multiple grounds: risk of Type III infibulation or re-infibulation; daughters at risk; medical complications from prior FGM requiring unavailable treatment; and honour-based violence linked to refusal of FGM.",
-          "Experts assess whether FGM has already occurred, whether ongoing risk exists, and whether state protection is adequate — considering laws, enforcement, and community attitudes.",
+          "Experts assess whether FGM has already occurred, whether ongoing risk exists, and whether state protection is adequate - considering laws, enforcement, and community attitudes.",
         ],
       },
       {
@@ -136,13 +136,13 @@ export const guides: Guide[] = [
         heading: "The 2024–2025 arbitration surge",
         content: [
           "West Africa has become the epicentre of African investment treaty arbitration. Military regimes in Guinea, Mali, Burkina Faso, and Niger have revoked or renegotiated mining licences, generating ICSID claims valued in the billions.",
-          "The Axis International v Guinea claim — valued at $28.9 billion — exceeds Guinea's annual GDP. Expert witnesses provide country conditions, regulatory framework, and Guinean law evidence essential to fair and equitable treatment and expropriation analysis.",
+          "The Axis International v Guinea claim - valued at $28.9 billion - exceeds Guinea's annual GDP. Expert witnesses provide country conditions, regulatory framework, and Guinean law evidence essential to fair and equitable treatment and expropriation analysis.",
         ],
       },
       {
         heading: "BIT framework and governing law",
         content: [
-          "Most West African mining disputes arise under bilateral investment treaties between African states and investor home states (France, UK, US, China, and others). Experts must understand the applicable BIT standards — fair and equitable treatment, full protection and security, and expropriation — and how African domestic law interacts with treaty obligations.",
+          "Most West African mining disputes arise under bilateral investment treaties between African states and investor home states (France, UK, US, China, and others). Experts must understand the applicable BIT standards - fair and equitable treatment, full protection and security, and expropriation - and how African domestic law interacts with treaty obligations.",
           "OHADA may govern certain commercial aspects while BITs govern investor-state obligations. African law experts clarify this interaction.",
         ],
       },
@@ -174,14 +174,14 @@ export const guides: Guide[] = [
         heading: "Common CPIN weaknesses",
         content: [
           "CPINs frequently rely on dated sources, understate LGBTQI+ enforcement following new legislation, fail to address post-conflict developments (Sudan 2023, Tigray ceasefire), and present internal relocation as more viable than country conditions support.",
-          "Expert rebuttal reports identify specific CPIN propositions that are inaccurate, unsupported, or materially incomplete — with source-backed alternatives.",
+          "Expert rebuttal reports identify specific CPIN propositions that are inaccurate, unsupported, or materially incomplete - with source-backed alternatives.",
         ],
       },
       {
         heading: "Rebuttal methodology",
         content: [
           "Effective rebuttal requires: identifying the specific CPIN propositions in dispute; citing more current or authoritative sources; explaining why the CPIN's conclusion does not follow from its own sources; and providing alternative analysis grounded in field research.",
-          "Rebuttal reports are typically shorter and more focused than full country condition reports — addressing only the contested issues.",
+          "Rebuttal reports are typically shorter and more focused than full country condition reports - addressing only the contested issues.",
         ],
       },
     ],
@@ -204,7 +204,7 @@ export const guides: Guide[] = [
         heading: "Prior authority process",
         content: [
           "Apply for prior authority before instructing the expert. Provide: the expert's CV and qualifications; proposed scope of report; fee estimate; and explanation of why expert evidence is necessary. The LAA assesses whether the cost is proportionate to the issues in the case.",
-          "Multi-issue reports (LGBTQI+, FGM, trafficking combined) and multi-country reports require higher prior authority amounts — typically £1,200–£2,500.",
+          "Multi-issue reports (LGBTQI+, FGM, trafficking combined) and multi-country reports require higher prior authority amounts - typically £1,200–£2,500.",
         ],
       },
       {

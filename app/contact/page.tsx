@@ -11,7 +11,7 @@ export const metadata = createMetadata({
 
 export default function ContactPage() {
   return (
-    <PageShell title="Instruct an Africa Expert Witness" subtitle="Confidential case submission — response within one business day." breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}>
+    <PageShell title="Instruct an Africa Expert Witness" subtitle="Confidential case submission - response within one business day." breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}>
       <div className="grid min-w-0 gap-10 lg:grid-cols-3 lg:gap-12">
         <div className="min-w-0 lg:col-span-2"><ContactForm /></div>
         <aside className="h-fit rounded-[8px] border border-[#D1E3D8] bg-[#F7F9F7] p-5 sm:p-6">

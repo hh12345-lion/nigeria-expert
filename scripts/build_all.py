@@ -347,7 +347,7 @@ export default function CaseTypesHubPage() {
 import { CardGrid } from "@/components/ui/CardGrid";
 import { createMetadata } from "@/lib/metadata";
 import { guides } from "@/data/guides";
-export const metadata = createMetadata({ title: "Solicitor Guides: Africa Expert Witnesses | Asylum, Arbitration & Country Reports", description: "In-depth guides for UK solicitors on Africa expert witnesses — country guidance cases, LGBTQI+ asylum, ICSID arbitration, and Legal Aid instruction.", path: "/guides" });
+export const metadata = createMetadata({ title: "Solicitor Guides: Africa Expert Witnesses | Asylum, Arbitration & Country Reports", description: "In-depth guides for UK solicitors on Africa expert witnesses - country guidance cases, LGBTQI+ asylum, ICSID arbitration, and Legal Aid instruction.", path: "/guides" });
 export default function GuidesHubPage() {
   return (
     <PageShell title="Solicitor Guides: Africa Expert Witnesses" subtitle="In-depth guides for UK immigration and arbitration practitioners." breadcrumbs={[{ label: "Home", href: "/" }, { label: "Guides" }]}>

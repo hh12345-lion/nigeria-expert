@@ -19,10 +19,10 @@ export const expertiseAreas: ExpertiseArea[] = [
     metaTitle: "Political Persecution Africa Expert Witness UK | State Protection Analysis",
     metaDescription:
       "Africa expert witness evidence on political persecution and state protection failures for UK asylum tribunals across 54 African nations.",
-    h1: "Political Persecution & State Protection — Africa Expert Witness",
+    h1: "Political Persecution & State Protection - Africa Expert Witness",
     content: [
       "Political persecution is the most common asylum ground across African countries appearing in UK tribunals. Expert witnesses analyse whether the state is the agent of persecution, whether it is willing and able to provide protection, and whether non-state actors operate with state acquiescence.",
-      "Reports address opposition party membership, activist profiles, election-related violence, and the credibility of internal relocation alternatives. Country-specific analysis is essential — political risk in Zimbabwe differs fundamentally from Nigeria or Ethiopia.",
+      "Reports address opposition party membership, activist profiles, election-related violence, and the credibility of internal relocation alternatives. Country-specific analysis is essential - political risk in Zimbabwe differs fundamentally from Nigeria or Ethiopia.",
     ],
     keyPoints: [
       "State vs non-state actor persecution analysis",
@@ -35,7 +35,7 @@ export const expertiseAreas: ExpertiseArea[] = [
       {
         question: "How do experts assess state protection in African asylum cases?",
         answer:
-          "Experts examine whether the state is willing and able to protect the claimant from the specific threat — considering police capacity, judicial independence, corruption, and documented failures to investigate or prosecute similar cases. Non-state actor persecution requires analysis of state acquiescence or inability to control the threat.",
+          "Experts examine whether the state is willing and able to protect the claimant from the specific threat - considering police capacity, judicial independence, corruption, and documented failures to investigate or prosecute similar cases. Non-state actor persecution requires analysis of state acquiescence or inability to control the threat.",
       },
       {
         question: "Which African countries generate the most political persecution claims?",
@@ -51,15 +51,15 @@ export const expertiseAreas: ExpertiseArea[] = [
     metaTitle: "LGBTQI+ Asylum Africa Expert Witness UK | Uganda, Nigeria & Ghana",
     metaDescription:
       "LGBTQI+ Africa expert witness for UK asylum tribunals. Uganda Anti-Homosexuality Act, Nigerian SSMPA, Ghana legislation, and country conditions reports.",
-    h1: "LGBTQI+ Asylum — Africa Expert Witness",
+    h1: "LGBTQI+ Asylum - Africa Expert Witness",
     content: [
-      "Same-sex conduct is criminalised in over 30 African states, generating a fast-growing volume of UK LGBTQI+ asylum claims. Uganda's Anti-Homosexuality Act 2023 — with penalties up to life imprisonment and the death penalty for aggravated homosexuality — has driven a dramatic increase in claims.",
+      "Same-sex conduct is criminalised in over 30 African states, generating a fast-growing volume of UK LGBTQI+ asylum claims. Uganda's Anti-Homosexuality Act 2023 - with penalties up to life imprisonment and the death penalty for aggravated homosexuality - has driven a dramatic increase in claims.",
       "Nigeria's Same Sex Marriage Prohibition Act 2014, Ghana's pending Human Sexual Rights and Family Values Bill, and criminalisation in Kenya, Tanzania, Cameroon, and Guinea all require country-specific expert analysis. Reports address state enforcement patterns, community and family violence, NGO protection availability, internal relocation (rarely viable for LGBTQI+ claims), and consistency with the HJ (Iran) standard for sexuality evidence.",
     ],
     keyPoints: [
       "Criminalisation in 30+ African states",
       "Uganda Anti-Homosexuality Act 2023",
-      "Nigerian SSMPA 2014 — nationwide application",
+      "Nigerian SSMPA 2014 - nationwide application",
       "Ghana pending criminalisation legislation",
       "Internal relocation rarely viable",
       "HJ (Iran) standard and sexuality evidence",
@@ -84,10 +84,10 @@ export const expertiseAreas: ExpertiseArea[] = [
     metaTitle: "FGM Africa Expert Witness UK | Gender-Based Violence Reports",
     metaDescription:
       "FGM and gender-based violence Africa expert witness for UK asylum tribunals. Guinea, Somalia, Mali, Nigeria, and prevalence analysis.",
-    h1: "FGM & Gender-Based Violence — Africa Expert Witness",
+    h1: "FGM & Gender-Based Violence - Africa Expert Witness",
     content: [
       "FGM-based asylum claims require expert analysis of prevalence rates by country, ethnic group, and region. Guinea (approximately 95%), Mali (89%), Somalia (98%), Sierra Leone (83%), and Gambia (75%) have among the highest documented prevalence globally.",
-      "Expert reports address Type III infibulation, risk to daughters, state protection inadequacy, honour-based violence, forced marriage, and girl child persecution. Claims can succeed even where FGM has already occurred — if ongoing risk, daughters at risk, or medical complications exist.",
+      "Expert reports address Type III infibulation, risk to daughters, state protection inadequacy, honour-based violence, forced marriage, and girl child persecution. Claims can succeed even where FGM has already occurred - if ongoing risk, daughters at risk, or medical complications exist.",
     ],
     keyPoints: [
       "Country and ethnic prevalence analysis",
@@ -105,7 +105,7 @@ export const expertiseAreas: ExpertiseArea[] = [
       {
         question: "Can a woman claim asylum from Africa on FGM grounds even if she has already undergone FGM?",
         answer:
-          "Yes — FGM-based claims can still succeed if: the claimant faces ongoing risk of Type III procedures or re-infibulation; she has daughters at risk; or she has suffered FGM-related medical complications requiring treatment unavailable on return. Expert witnesses address ongoing and prospective risk, not merely historical harm.",
+          "Yes - FGM-based claims can still succeed if: the claimant faces ongoing risk of Type III procedures or re-infibulation; she has daughters at risk; or she has suffered FGM-related medical complications requiring treatment unavailable on return. Expert witnesses address ongoing and prospective risk, not merely historical harm.",
       },
     ],
     relatedSlugs: ["fgm-asylum-cases"],
@@ -116,9 +116,9 @@ export const expertiseAreas: ExpertiseArea[] = [
     metaTitle: "Trafficking Africa Expert Witness UK | Modern Slavery Evidence",
     metaDescription:
       "Trafficking and modern slavery Africa expert witness for UK asylum and NRM cases. Route analysis, juju rituals, and country conditions.",
-    h1: "Trafficking & Modern Slavery — Africa Expert Witness",
+    h1: "Trafficking & Modern Slavery - Africa Expert Witness",
     content: [
-      "African trafficking routes to Europe — particularly from Nigeria, Ghana, and West Africa — generate significant UK asylum and National Referral Mechanism cases. Expert witnesses analyse trafficking patterns, juju and ritual oath exploitation, and country conditions supporting credibility assessments.",
+      "African trafficking routes to Europe - particularly from Nigeria, Ghana, and West Africa - generate significant UK asylum and National Referral Mechanism cases. Expert witnesses analyse trafficking patterns, juju and ritual oath exploitation, and country conditions supporting credibility assessments.",
       "Reports address whether return would expose claimants to re-trafficking, state protection from trafficking networks, and the role of corruption and complicity in origin countries.",
     ],
   },
@@ -130,7 +130,7 @@ export const expertiseAreas: ExpertiseArea[] = [
       "Africa investment treaty arbitration expert witness. ICSID, Guinea mining, West Africa licence revocations, and country conditions evidence.",
     h1: "Africa Investment Treaty Arbitration Expert Witness",
     content: [
-      "Sub-Saharan Africa accounted for 16% of all new ICSID cases in 2024. West African mining disputes — Guinea, Mali, Burkina Faso, Niger — have generated claims valued in the billions following military regime licence revocations. The Axis International v Guinea claim alone is valued at $28.9 billion.",
+      "Sub-Saharan Africa accounted for 16% of all new ICSID cases in 2024. West African mining disputes - Guinea, Mali, Burkina Faso, Niger - have generated claims valued in the billions following military regime licence revocations. The Axis International v Guinea claim alone is valued at $28.9 billion.",
       "Expert witnesses provide country conditions analysis for fair and equitable treatment and expropriation claims, regulatory framework evidence, African law expertise, and sector-specific knowledge in mining, oil and gas, and infrastructure.",
     ],
     faqs: [
@@ -142,7 +142,7 @@ export const expertiseAreas: ExpertiseArea[] = [
       {
         question: "How significant is African investment arbitration in 2025?",
         answer:
-          "Extremely. Sub-Saharan Africa accounted for 16% of all new ICSID cases in 2024. West Africa alone has seen multiple $1B+ claims following military regime mining licence revocations in Guinea, Mali, Burkina Faso, and Niger. The Axis International v Guinea claim is $28.9 billion — larger than Guinea's annual GDP.",
+          "Extremely. Sub-Saharan Africa accounted for 16% of all new ICSID cases in 2024. West Africa alone has seen multiple $1B+ claims following military regime mining licence revocations in Guinea, Mali, Burkina Faso, and Niger. The Axis International v Guinea claim is $28.9 billion - larger than Guinea's annual GDP.",
       },
     ],
     relatedSlugs: ["investment-treaty-icsid-arbitration"],
@@ -153,7 +153,7 @@ export const expertiseAreas: ExpertiseArea[] = [
     metaTitle: "African Law Expert Witness UK | OHADA, ECOWAS & Legal Systems",
     metaDescription:
       "African law expert witness for UK commercial litigation and arbitration. Domestic law, OHADA, ECOWAS, SADC, and BIT obligations.",
-    h1: "African Law & Legal Systems — Expert Witness",
+    h1: "African Law & Legal Systems - Expert Witness",
     content: [
       "African law experts provide evidence on governing law clauses, domestic court procedures, regulatory frameworks, and the interaction between national law and supranational systems including OHADA, ECOWAS, and SADC.",
       "Qualified in relevant African jurisdictions, these experts support commercial litigation, ICSID arbitration, and CPR Part 35 proceedings with authoritative analysis of how African legal systems operate in practice.",
@@ -165,7 +165,7 @@ export const expertiseAreas: ExpertiseArea[] = [
     metaTitle: "Nationality & Statelessness Africa Expert Witness UK",
     metaDescription:
       "Nationality and statelessness Africa expert witness for UK immigration tribunals. Citizenship law, documentation, and statelessness across Africa.",
-    h1: "Nationality & Statelessness — Africa Expert Witness",
+    h1: "Nationality & Statelessness - Africa Expert Witness",
     content: [
       "Nationality disputes arise where claimants face persecution partly because of lack of effective nationality, or where citizenship is disputed, withdrawn, or unattainable. Expert witnesses analyse citizenship laws, documentation requirements, and statelessness risk across African jurisdictions.",
       "Reports support particular social group claims, documentation challenges, and the interaction between nationality law and asylum protection in UK tribunals.",
@@ -177,7 +177,7 @@ export const expertiseAreas: ExpertiseArea[] = [
     metaTitle: "Country Conditions Africa Expert Witness UK | Human Rights Reports",
     metaDescription:
       "Country conditions and human rights Africa expert witness for UK tribunals. Authoritative reports citing Home Office COI, UN, and field research.",
-    h1: "Country Conditions & Human Rights — Africa Expert Witness",
+    h1: "Country Conditions & Human Rights - Africa Expert Witness",
     content: [
       "Country conditions experts provide the foundational evidence for most African asylum cases in UK tribunals. Reports synthesise Home Office COI, UNHCR, Amnesty International, and field research into authoritative, OSCOLA-cited analysis tailored to the specific claim.",
       "Experts must address country guidance cases where applicable, identify departures from guidance, and provide current analysis that supplements or challenges Home Office CPIN positions.",

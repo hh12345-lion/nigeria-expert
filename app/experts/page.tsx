@@ -6,7 +6,7 @@ import { experts } from "@/data/experts";
 
 export const metadata = createMetadata({
   title: "Our Africa Expert Witnesses | Country Specialists UK",
-  description: "AfricaExpertWitness.com connects UK solicitors with qualified Africa country experts across all 54 nations — asylum, immigration, and international arbitration.",
+  description: "AfricaExpertWitness.com connects UK solicitors with qualified Africa country experts across all 54 nations - asylum, immigration, and international arbitration.",
   path: "/experts",
 });
 

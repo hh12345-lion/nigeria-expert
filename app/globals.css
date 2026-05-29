@@ -51,7 +51,7 @@ section {
   }
 }
 
-/* Mobile table scroll — edge-to-edge within section padding */
+/* Mobile table scroll - edge-to-edge within section padding */
 .table-scroll {
   margin-left: -1rem;
   margin-right: -1rem;

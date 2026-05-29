@@ -22,7 +22,7 @@ export default function HomePage() {
         <div className="mx-auto min-w-0 max-w-6xl px-4 sm:px-6 lg:px-8">
           <p className="text-xs font-medium uppercase tracking-wide text-[#C8922A] sm:text-sm">UK Immigration & International Arbitration</p>
           <h1 className="mt-4 max-w-4xl break-words text-2xl font-bold text-white min-[375px]:text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-            Africa Expert Witness UK — Country Reports, Asylum & Investment Arbitration
+            Africa Expert Witness UK - Country Reports, Asylum & Investment Arbitration
           </h1>
           <p className="mt-6 max-w-2xl text-base text-white/80 sm:text-lg">
             AfricaExpertWitness connects UK solicitors with qualified Africa expert witnesses for country condition
@@ -84,7 +84,7 @@ export default function HomePage() {
           <h2 className="text-xl font-bold text-[#0D3B2E] sm:text-2xl">African Asylum Claims in UK Tribunals</h2>
           <p className="mt-2 max-w-3xl text-[#374151]">
             Country-specific expert evidence is essential where Home Office refusals rely on generic country policy.
-            The table below summarises high-volume nationalities — each linked to a dedicated expert witness page.
+            The table below summarises high-volume nationalities - each linked to a dedicated expert witness page.
           </p>
           <GeoTable table={homepageAsylumStats} />
         </div>
@@ -107,7 +107,7 @@ export default function HomePage() {
       <section className="bg-[#F7F9F7] py-12 sm:py-16">
         <div className="mx-auto min-w-0 max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-xl font-bold text-[#0D3B2E] sm:text-2xl">Top Country Specialists</h2>
-          <p className="mt-2 text-[#374151]">Nigeria, Somalia, Eritrea, Uganda, Zimbabwe, and DRC — highest UK search volume.</p>
+          <p className="mt-2 text-[#374151]">Nigeria, Somalia, Eritrea, Uganda, Zimbabwe, and DRC - highest UK search volume.</p>
           <div className="mt-8">
             <CardGrid
               items={featuredCountries.map((c) => ({

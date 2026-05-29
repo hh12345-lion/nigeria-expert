@@ -24,12 +24,12 @@ export const countries: Country[] = [
     h1: "Nigeria Expert Witness UK",
     regionSlug: "west-africa",
     overview: [
-      "Nigeria is the most populous country in Africa and one of the highest-volume sources of UK asylum claims from the continent. The diversity of persecution grounds — from Boko Haram violence in the north-east to nationwide LGBTQI+ criminalisation — requires state-specific expert analysis rather than generic country reports.",
+      "Nigeria is the most populous country in Africa and one of the highest-volume sources of UK asylum claims from the continent. The diversity of persecution grounds - from Boko Haram violence in the north-east to nationwide LGBTQI+ criminalisation - requires state-specific expert analysis rather than generic country reports.",
       "UK tribunals frequently raise internal relocation to Lagos or Abuja in Nigerian cases. Expert witnesses assess whether relocation is genuinely available, considering the nature of the threat, social networks, and whether risks apply nationwide under legislation such as the Same Sex Marriage Prohibition Act 2014.",
     ],
     keyIssues: [
       { title: "Boko Haram and ISWAP", description: "Violence in Borno, Adamawa, and Yobe states; non-state actor persecution and state protection failures." },
-      { title: "LGBTQI+ persecution", description: "Same Sex Marriage Prohibition Act 2014 — up to 14 years imprisonment; nationwide application." },
+      { title: "LGBTQI+ persecution", description: "Same Sex Marriage Prohibition Act 2014 - up to 14 years imprisonment; nationwide application." },
       { title: "FGM risk", description: "Significant prevalence in Edo, Imo, and Ekiti states; risk to daughters and re-infibulation." },
       { title: "Biafra and IPOB", description: "Political persecution of separatist activists and perceived supporters in the south-east." },
       { title: "Delta militancy", description: "Oil region violence and targeting of activists and community leaders." },
@@ -38,12 +38,12 @@ export const countries: Country[] = [
       {
         question: "What are the main grounds for Nigerian asylum claims in the UK?",
         answer:
-          "Nigerian claims arise from: Boko Haram/ISWAP violence in Borno, Adamawa and Yobe states; LGBTQI+ persecution under the Same Sex Marriage Prohibition Act 2014; FGM risk for women and girls; Biafran/IPOB political activism; and Delta region militancy. Expert witnesses provide state-specific analysis — conditions in Lagos differ markedly from Borno State.",
+          "Nigerian claims arise from: Boko Haram/ISWAP violence in Borno, Adamawa and Yobe states; LGBTQI+ persecution under the Same Sex Marriage Prohibition Act 2014; FGM risk for women and girls; Biafran/IPOB political activism; and Delta region militancy. Expert witnesses provide state-specific analysis - conditions in Lagos differ markedly from Borno State.",
       },
       {
         question: "Is internal relocation to Lagos a viable option in Nigerian cases?",
         answer:
-          "The Home Office frequently raises internal relocation to Lagos or Abuja. Expert witnesses assess whether relocation is genuinely available — considering the nature of the threat (state vs non-state), social networks required to access housing and employment, and whether the risk is nationwide (as with LGBTQI+ persecution under national legislation).",
+          "The Home Office frequently raises internal relocation to Lagos or Abuja. Expert witnesses assess whether relocation is genuinely available - considering the nature of the threat (state vs non-state), social networks required to access housing and employment, and whether the risk is nationwide (as with LGBTQI+ persecution under national legislation).",
       },
     ],
   },
@@ -65,18 +65,18 @@ export const countries: Country[] = [
       { title: "Clan structure", description: "Majority and minority clan risks; verification of clan claims against documented structures." },
       { title: "Mogadishu conditions", description: "MOJ framework for assessing return safety including remittances and integration." },
       { title: "Humanitarian crisis", description: "Famine, displacement, and IDP camp conditions." },
-      { title: "Regional variation", description: "South-central Somalia vs Somaliland and Puntland — materially different risk profiles." },
+      { title: "Regional variation", description: "South-central Somalia vs Somaliland and Puntland - materially different risk profiles." },
     ],
     faqs: [
       {
         question: "What does the MOJ country guidance say about return to Mogadishu?",
         answer:
-          "MOJ established that return to Mogadishu depends on individual circumstances including clan membership, access to financial support (diaspora remittances), and the ability to integrate into civil society. It is not automatically unsafe to return — but expert witnesses must analyse each case against MOJ's detailed framework.",
+          "MOJ established that return to Mogadishu depends on individual circumstances including clan membership, access to financial support (diaspora remittances), and the ability to integrate into civil society. It is not automatically unsafe to return - but expert witnesses must analyse each case against MOJ's detailed framework.",
       },
       {
         question: "How do Somalia expert witnesses address clan evidence?",
         answer:
-          "Clan membership is central to many Somali asylum claims — minority clans face specific risks from majority clan violence and Al-Shabaab targeting. Expert witnesses verify clan claims against documented clan structures and geographic distributions, providing evidence on whether specific clans face real risk in specific locations.",
+          "Clan membership is central to many Somali asylum claims - minority clans face specific risks from majority clan violence and Al-Shabaab targeting. Expert witnesses verify clan claims against documented clan structures and geographic distributions, providing evidence on whether specific clans face real risk in specific locations.",
       },
     ],
   },
@@ -91,7 +91,7 @@ export const countries: Country[] = [
     countryGuidance: "MA (draft evaders) Eritrea CG [2019] UKUT 272",
     overview: [
       "Eritrea generates UK asylum claims primarily based on indefinite national military service, political persecution, and risk on return following unlawful departure. MA country guidance [2019] established the framework for assessing draft evader and illegal departure claims.",
-      "Religious persecution claims arise from Eritrea's recognition of only four faith groups. Members of unrecognised religions — including Jehovah's Witnesses and Pentecostal Christians — face detention and persecution documented by expert witnesses.",
+      "Religious persecution claims arise from Eritrea's recognition of only four faith groups. Members of unrecognised religions - including Jehovah's Witnesses and Pentecostal Christians - face detention and persecution documented by expert witnesses.",
     ],
     keyIssues: [
       { title: "Indefinite national service", description: "Military draft with no fixed end date; desertion and evasion punished severely." },
@@ -104,12 +104,12 @@ export const countries: Country[] = [
       {
         question: "What is the national service issue in Eritrean asylum claims?",
         answer:
-          "Eritrea operates an indefinite national service system — the military draft has no fixed end date and may last decades. Persons who evade, desert, or depart Eritrea without official permission face severe punishment on return. MA CG [2019] established the framework for assessing these claims. Expert witnesses provide current analysis of enforcement practices and treatment of returnees.",
+          "Eritrea operates an indefinite national service system - the military draft has no fixed end date and may last decades. Persons who evade, desert, or depart Eritrea without official permission face severe punishment on return. MA CG [2019] established the framework for assessing these claims. Expert witnesses provide current analysis of enforcement practices and treatment of returnees.",
       },
       {
         question: "Can Eritreans claim asylum based on religion?",
         answer:
-          "Yes. The Eritrean government only recognises four religious groups (Sunni Islam, Eritrean Orthodox, Roman Catholic, Evangelical Lutheran). Members of unrecognised religions — including Jehovah's Witnesses, Pentecostal Christians, and others — face detention and persecution. Expert witnesses document conditions for specific religious communities.",
+          "Yes. The Eritrean government only recognises four religious groups (Sunni Islam, Eritrean Orthodox, Roman Catholic, Evangelical Lutheran). Members of unrecognised religions - including Jehovah's Witnesses, Pentecostal Christians, and others - face detention and persecution. Expert witnesses document conditions for specific religious communities.",
       },
     ],
   },
@@ -122,7 +122,7 @@ export const countries: Country[] = [
     h1: "Ethiopia Expert Witness UK",
     regionSlug: "horn-of-africa",
     overview: [
-      "Ethiopia's ethnic federal system and recent conflicts — particularly the Tigray war (2020–2022) — have generated significant UK asylum claims. Expert witnesses must assess current conditions following the November 2022 ceasefire and ongoing tensions in Oromia and Amhara regions.",
+      "Ethiopia's ethnic federal system and recent conflicts - particularly the Tigray war (2020–2022) - have generated significant UK asylum claims. Expert witnesses must assess current conditions following the November 2022 ceasefire and ongoing tensions in Oromia and Amhara regions.",
       "Claims span Tigrayan persecution, Oromo Liberation Front activism, political opposition, and ethnic violence across multiple regions. Granular, ethnicity-specific analysis is essential for credible tribunal evidence.",
     ],
     keyIssues: [
@@ -136,12 +136,12 @@ export const countries: Country[] = [
       {
         question: "What are the main Ethiopian asylum grounds in UK tribunals?",
         answer:
-          "Ethiopian claims arise from: Tigray conflict — persecution of Tigrayans and Amhara in conflict zones; Oromo Liberation Front (OLF) activism or perceived support; political opposition persecution; and ethnic violence in Oromia, Amhara, and other regions.",
+          "Ethiopian claims arise from: Tigray conflict - persecution of Tigrayans and Amhara in conflict zones; Oromo Liberation Front (OLF) activism or perceived support; political opposition persecution; and ethnic violence in Oromia, Amhara, and other regions.",
       },
       {
         question: "How has the Tigray conflict affected Ethiopian asylum claims?",
         answer:
-          "The Tigray conflict (2020–2022) generated significant new claims. Expert witnesses assess current conditions in Tigray following the November 2022 ceasefire — including return feasibility, ongoing accountability concerns, and whether ethnic Tigrayans face ongoing risk in other regions.",
+          "The Tigray conflict (2020–2022) generated significant new claims. Expert witnesses assess current conditions in Tigray following the November 2022 ceasefire - including return feasibility, ongoing accountability concerns, and whether ethnic Tigrayans face ongoing risk in other regions.",
       },
     ],
   },
@@ -154,7 +154,7 @@ export const countries: Country[] = [
     h1: "Sudan Expert Witness UK",
     regionSlug: "horn-of-africa",
     overview: [
-      "Sudan's civil war since April 2023 between the Sudanese Armed Forces and Rapid Support Forces has caused over 8 million internally displaced persons and revived genocide-level atrocities in Darfur. Expert witnesses must provide current, state-specific analysis — earlier country guidance may no longer reflect conditions.",
+      "Sudan's civil war since April 2023 between the Sudanese Armed Forces and Rapid Support Forces has caused over 8 million internally displaced persons and revived genocide-level atrocities in Darfur. Expert witnesses must provide current, state-specific analysis - earlier country guidance may no longer reflect conditions.",
       "Claims arise from civil war violence, Darfur ethnic targeting, Khartoum urban conflict, and border region instability. The dramatically changed situation since 2023 demands experts with up-to-date field knowledge.",
     ],
     keyIssues: [
@@ -168,7 +168,7 @@ export const countries: Country[] = [
       {
         question: "What is the current situation in Sudan for asylum purposes?",
         answer:
-          "Sudan entered civil war in April 2023 between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF). The conflict has caused massive displacement — over 8 million internally displaced — and serious atrocities, particularly in Darfur. Expert witnesses provide current analysis of conditions in specific states and the viability of return.",
+          "Sudan entered civil war in April 2023 between the Sudanese Armed Forces (SAF) and the Rapid Support Forces (RSF). The conflict has caused massive displacement - over 8 million internally displaced - and serious atrocities, particularly in Darfur. Expert witnesses provide current analysis of conditions in specific states and the viability of return.",
       },
       {
         question: "Can Sudanese asylum seekers rely on Darfur claims post-2023?",
@@ -201,7 +201,7 @@ export const countries: Country[] = [
       {
         question: "Is Zimbabwe country guidance still current?",
         answer:
-          "RN [2008] was decided under Mugabe's government. Zimbabwe's political landscape has changed since 2017 — Mnangagwa's ZANU-PF continues to persecute MDC/CCC supporters, but conditions differ in some respects. Expert witnesses address whether RN guidance reflects current conditions and provide updated analysis of political risk.",
+          "RN [2008] was decided under Mugabe's government. Zimbabwe's political landscape has changed since 2017 - Mnangagwa's ZANU-PF continues to persecute MDC/CCC supporters, but conditions differ in some respects. Expert witnesses address whether RN guidance reflects current conditions and provide updated analysis of political risk.",
       },
       {
         question: "What are LGBTQI+ risks in Zimbabwe?",
@@ -219,9 +219,9 @@ export const countries: Country[] = [
     h1: "DRC Expert Witness UK",
     regionSlug: "southern-africa",
     investmentContext:
-      "DRC is a major source of ICSID arbitration in mining — cobalt, copper, and coltan. Expert witnesses provide country conditions, regulatory framework, and African law evidence.",
+      "DRC is a major source of ICSID arbitration in mining - cobalt, copper, and coltan. Expert witnesses provide country conditions, regulatory framework, and African law evidence.",
     overview: [
-      "The Democratic Republic of the Congo generates asylum claims from armed conflict in eastern provinces, Kasai violence, and political persecution in Kinshasa. Expert witnesses must address province-specific conditions — North Kivu, South Kivu, and Ituri face materially different risks from the capital.",
+      "The Democratic Republic of the Congo generates asylum claims from armed conflict in eastern provinces, Kasai violence, and political persecution in Kinshasa. Expert witnesses must address province-specific conditions - North Kivu, South Kivu, and Ituri face materially different risks from the capital.",
       "Simultaneously, DRC is among Africa's most active ICSID jurisdictions in the mining sector. Country conditions experts support fair and equitable treatment and expropriation analysis in billion-dollar mining disputes.",
     ],
     keyIssues: [
@@ -240,7 +240,7 @@ export const countries: Country[] = [
       {
         question: "What investment disputes involve DRC?",
         answer:
-          "DRC is a major source of ICSID arbitration claims in the mining sector — cobalt, copper, and coltan. Expert witnesses provide country conditions, regulatory framework, and African law evidence for mining disputes.",
+          "DRC is a major source of ICSID arbitration claims in the mining sector - cobalt, copper, and coltan. Expert witnesses provide country conditions, regulatory framework, and African law evidence for mining disputes.",
       },
     ],
   },
@@ -257,7 +257,7 @@ export const countries: Country[] = [
       "Expert witnesses assess both current enforcement and legislative trajectory, alongside political and tribal disputes and obeah/juju-related trafficking claims that arise in UK tribunals.",
     ],
     keyIssues: [
-      { title: "LGBTQI+ persecution", description: "Human Sexual Rights and Family Values Bill 2024 — pending criminalisation with severe penalties." },
+      { title: "LGBTQI+ persecution", description: "Human Sexual Rights and Family Values Bill 2024 - pending criminalisation with severe penalties." },
       { title: "Political disputes", description: "Election-related violence and opposition targeting." },
       { title: "Tribal conflicts", description: "Inter-communal violence in specific regions." },
       { title: "Trafficking", description: "Obeah and juju-related exploitation claims." },
@@ -285,7 +285,7 @@ export const countries: Country[] = [
     h1: "Kenya Expert Witness UK",
     regionSlug: "east-africa",
     overview: [
-      "Kenya generates UK asylum claims from election-related political violence, LGBTQI+ persecution under criminalising legislation, and Al-Shabaab threats in coastal and north-eastern regions. Kenya is not on the UK's designated safe countries list — cases are assessed individually.",
+      "Kenya generates UK asylum claims from election-related political violence, LGBTQI+ persecution under criminalising legislation, and Al-Shabaab threats in coastal and north-eastern regions. Kenya is not on the UK's designated safe countries list - cases are assessed individually.",
       "Expert witnesses provide case-specific evidence on state protection availability, internal relocation, and the particular threat faced by each claimant.",
     ],
     keyIssues: [
@@ -322,16 +322,16 @@ export const countries: Country[] = [
     ],
     keyIssues: [
       { title: "Anti-Homosexuality Act 2023", description: "Life imprisonment for same-sex conduct; death penalty for aggravated homosexuality." },
-      { title: "Political opposition", description: "Bobi Wine/NUP supporters — abduction, torture, enforced disappearance." },
+      { title: "Political opposition", description: "Bobi Wine/NUP supporters - abduction, torture, enforced disappearance." },
       { title: "Museveni government", description: "Long-standing authoritarian rule and suppression of dissent." },
-      { title: "LRA-affected regions", description: "Northern Uganda — legacy conflict and ongoing insecurity." },
+      { title: "LRA-affected regions", description: "Northern Uganda - legacy conflict and ongoing insecurity." },
       { title: "Internal relocation", description: "Rarely viable for LGBTQI+ claims given nationwide criminalisation." },
     ],
     faqs: [
       {
         question: "What is the Anti-Homosexuality Act 2023 and its impact on asylum claims?",
         answer:
-          "Uganda's Anti-Homosexuality Act 2023 criminalises same-sex conduct with penalties up to life imprisonment and imposes the death penalty for aggravated homosexuality. It has significantly expanded LGBTQI+ asylum claims from Uganda. Expert witnesses provide evidence on enforcement, community attitudes, state protection, and internal relocation — all critical given the Act's nationwide application.",
+          "Uganda's Anti-Homosexuality Act 2023 criminalises same-sex conduct with penalties up to life imprisonment and imposes the death penalty for aggravated homosexuality. It has significantly expanded LGBTQI+ asylum claims from Uganda. Expert witnesses provide evidence on enforcement, community attitudes, state protection, and internal relocation - all critical given the Act's nationwide application.",
       },
       {
         question: "Can Ugandan political opposition supporters claim asylum?",
@@ -351,13 +351,13 @@ export const countries: Country[] = [
     investmentContext:
       "Guinea is among the most active ICSID jurisdictions in 2025. The Axis International claim is valued at $28.9 billion following military junta mining licence revocations.",
     overview: [
-      "Guinea occupies a unique position in UK legal work — simultaneously a major asylum source for FGM and LGBTQI+ claims and the epicentre of African investment treaty arbitration following the 2021 military coup and aggressive mining licence revocations.",
+      "Guinea occupies a unique position in UK legal work - simultaneously a major asylum source for FGM and LGBTQI+ claims and the epicentre of African investment treaty arbitration following the 2021 military coup and aggressive mining licence revocations.",
       "Expert witnesses must combine country conditions expertise for asylum with regulatory and Guinean law knowledge for ICSID proceedings worth tens of billions of dollars.",
     ],
     keyIssues: [
       { title: "Mining arbitration", description: "Bauxite sector ICSID claims including Axis International v Guinea ($28.9bn)." },
       { title: "Post-2021 coup", description: "Military junta political persecution and human rights deterioration." },
-      { title: "FGM", description: "Among world's highest prevalence rates — over 95% of women and girls." },
+      { title: "FGM", description: "Among world's highest prevalence rates - over 95% of women and girls." },
       { title: "LGBTQI+ persecution", description: "Criminalisation and community violence." },
       { title: "Licence revocations", description: "2025 mining licence cancellations generating multiple ICSID claims." },
     ],
@@ -370,7 +370,7 @@ export const countries: Country[] = [
       {
         question: "What FGM evidence is needed in Guinean asylum cases?",
         answer:
-          "Guinea has among the world's highest FGM prevalence rates (over 95% of women and girls). Expert witnesses assess: whether FGM has already occurred; risk to daughters; state protection adequacy; and whether internal relocation can provide protection — given the near-universal prevalence across ethnic groups and regions.",
+          "Guinea has among the world's highest FGM prevalence rates (over 95% of women and girls). Expert witnesses assess: whether FGM has already occurred; risk to daughters; state protection adequacy; and whether internal relocation can provide protection - given the near-universal prevalence across ethnic groups and regions.",
       },
     ],
   },
@@ -385,7 +385,7 @@ export const countries: Country[] = [
     investmentContext:
       "Libya generates significant ICSID and commercial arbitration in oil and gas. Political fragmentation complicates state contract enforcement analysis.",
     overview: [
-      "Libya has no functioning central government, divided between rival administrations in Tripoli and the east. Asylum claims arise from civil war violence, militia persecution, arbitrary detention, and for sub-Saharan Africans — racist violence and slavery-like conditions in detention centres.",
+      "Libya has no functioning central government, divided between rival administrations in Tripoli and the east. Asylum claims arise from civil war violence, militia persecution, arbitrary detention, and for sub-Saharan Africans - racist violence and slavery-like conditions in detention centres.",
       "Expert witnesses must identify which authority controls the claimant's area of origin and what protection, if any, is available. Oil sector arbitration requires analysis of regulatory authority across fragmented governance.",
     ],
     keyIssues: [
@@ -399,7 +399,7 @@ export const countries: Country[] = [
       {
         question: "What is the asylum situation from Libya?",
         answer:
-          "Libya has no functioning central government and is divided between rival administrations. Asylum claims arise from civil war violence, militia persecution, arbitrary detention, and for sub-Saharan Africans — racist violence and slavery-like conditions. Expert witnesses assess which authority controls the claimant's area of origin and what protection is available.",
+          "Libya has no functioning central government and is divided between rival administrations. Asylum claims arise from civil war violence, militia persecution, arbitrary detention, and for sub-Saharan Africans - racist violence and slavery-like conditions. Expert witnesses assess which authority controls the claimant's area of origin and what protection is available.",
       },
       {
         question: "Are there investment disputes involving Libya?",

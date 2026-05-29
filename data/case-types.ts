@@ -14,14 +14,14 @@ export type CaseType = {
 export const caseTypes: CaseType[] = [
   {
     slug: "asylum-appeal-first-tier-tribunal",
-    title: "Asylum Appeal — First-tier Tribunal",
+    title: "Asylum Appeal - First-tier Tribunal",
     metaTitle: "Africa Expert Witness for Asylum Appeals | First-tier Tribunal UK",
     metaDescription:
       "Africa expert witness for First-tier Tribunal asylum appeals. Country condition reports for UK immigration cases across 54 African nations.",
     h1: "Africa Expert Witness for First-tier Tribunal Asylum Appeals",
     content: [
       "First-tier Tribunal (Immigration and Asylum Chamber) appeals are the primary forum for challenging Home Office refusals of African asylum claims. Expert country condition reports provide the independent, authoritative evidence tribunals require to assess credibility, risk on return, and internal relocation.",
-      "Reports must be CPR Part 35 compliant, cite sources to OSCOLA standards, and address the specific grounds raised — whether political persecution, LGBTQI+, FGM, trafficking, or clan-based claims. Early instruction is critical to avoid adjournments.",
+      "Reports must be CPR Part 35 compliant, cite sources to OSCOLA standards, and address the specific grounds raised - whether political persecution, LGBTQI+, FGM, trafficking, or clan-based claims. Early instruction is critical to avoid adjournments.",
       "AfricaExpertWitness matches solicitors with country-specific experts who have tribunal acceptance records and field research experience in the relevant African jurisdiction.",
     ],
     faqs: [
@@ -40,7 +40,7 @@ export const caseTypes: CaseType[] = [
   },
   {
     slug: "upper-tribunal-country-guidance",
-    title: "Upper Tribunal — Country Guidance",
+    title: "Upper Tribunal - Country Guidance",
     metaTitle: "Africa Expert Witness Upper Tribunal | Country Guidance Cases UK",
     metaDescription:
       "Africa expert witness for Upper Tribunal country guidance cases. MOJ Somalia, MA Eritrea, RN Zimbabwe, and departure applications.",
@@ -48,7 +48,7 @@ export const caseTypes: CaseType[] = [
     content: [
       "Upper Tribunal (Immigration and Asylum Chamber) country guidance cases establish binding precedent for how African asylum claims are assessed across the UK. Leading cases include MOJ Somalia, MA Eritrea, and RN Zimbabwe.",
       "Expert evidence in country guidance and departure cases must meet the highest evidential standards. Experts address whether existing guidance remains current, identify material changes since the leading decision, and provide the granular country analysis the UT requires.",
-      "Solicitors instructing experts for UT work should identify whether the case is a country guidance application, a departure from guidance, or a CG review — each requiring different expert scope and methodology.",
+      "Solicitors instructing experts for UT work should identify whether the case is a country guidance application, a departure from guidance, or a CG review - each requiring different expert scope and methodology.",
     ],
     faqs: [
       {
@@ -66,21 +66,21 @@ export const caseTypes: CaseType[] = [
   },
   {
     slug: "lgbtqi-asylum-africa-cases",
-    title: "LGBTQI+ Asylum — Africa",
+    title: "LGBTQI+ Asylum - Africa",
     metaTitle: "LGBTQI+ Africa Asylum Expert Witness UK | Uganda, Nigeria & Ghana",
     metaDescription:
       "LGBTQI+ Africa asylum expert witness for UK tribunals. Uganda Anti-Homosexuality Act, Nigerian SSMPA, and sexuality evidence standards.",
-    h1: "LGBTQI+ Asylum from Africa — Expert Witness Evidence",
+    h1: "LGBTQI+ Asylum from Africa - Expert Witness Evidence",
     content: [
       "LGBTQI+ asylum claims from Africa are among the fastest-growing categories in UK immigration tribunals. Uganda's Anti-Homosexuality Act 2023, Nigeria's SSMPA 2014, and pending Ghanaian legislation have driven significant increases in claim volume.",
-      "Expert reports address criminalisation frameworks, enforcement practice, community and family violence, NGO protection availability, and internal relocation — which is rarely viable where criminalisation applies nationwide. Reports must be consistent with the HJ (Iran) and HT (Cameroon) standards.",
+      "Expert reports address criminalisation frameworks, enforcement practice, community and family violence, NGO protection availability, and internal relocation - which is rarely viable where criminalisation applies nationwide. Reports must be consistent with the HJ (Iran) and HT (Cameroon) standards.",
       "Country-specific expertise is essential. An expert on Uganda cannot credibly report on Nigeria or Ghana without dedicated knowledge of each jurisdiction's legal and social conditions.",
     ],
     faqs: [
       {
         question: "What evidence standard applies to LGBTQI+ asylum claims?",
         answer:
-          "The HJ (Iran) standard requires tribunals to accept the claimant's sexuality unless there is good reason to reject it. Expert witnesses do not determine sexuality but provide country conditions evidence on risk, enforcement, and protection — supporting the tribunal's overall assessment.",
+          "The HJ (Iran) standard requires tribunals to accept the claimant's sexuality unless there is good reason to reject it. Expert witnesses do not determine sexuality but provide country conditions evidence on risk, enforcement, and protection - supporting the tribunal's overall assessment.",
       },
       {
         question: "Which African countries generate the most LGBTQI+ UK asylum claims?",
@@ -96,10 +96,10 @@ export const caseTypes: CaseType[] = [
     metaTitle: "FGM Africa Asylum Expert Witness UK | Expert Evidence Guide",
     metaDescription:
       "FGM Africa asylum expert witness for UK tribunals. Prevalence analysis, daughters at risk, and state protection in Guinea, Somalia, Mali, and Nigeria.",
-    h1: "FGM Asylum Cases from Africa — Expert Witness Evidence",
+    h1: "FGM Asylum Cases from Africa - Expert Witness Evidence",
     content: [
       "FGM-based asylum claims require expert analysis of prevalence by country, ethnic group, and region. Guinea, Somalia, Mali, Sierra Leone, and Gambia have the highest documented prevalence globally.",
-      "Claims succeed where ongoing risk exists — including daughters at risk, Type III re-infibulation, and medical complications — even where the claimant has already undergone FGM. Expert witnesses assess state protection adequacy and internal relocation feasibility.",
+      "Claims succeed where ongoing risk exists - including daughters at risk, Type III re-infibulation, and medical complications - even where the claimant has already undergone FGM. Expert witnesses assess state protection adequacy and internal relocation feasibility.",
       "Reports must address the specific ethnic and geographic context of the claimant, not generic national statistics alone.",
     ],
     faqs: [
@@ -124,7 +124,7 @@ export const caseTypes: CaseType[] = [
       "Trafficking and modern slavery Africa expert witness for UK NRM and asylum cases. Nigeria, Ghana, and West African route analysis.",
     h1: "Trafficking & Modern Slavery Cases from Africa",
     content: [
-      "African trafficking cases in the UK span asylum claims, National Referral Mechanism referrals, and modern slavery statements. Nigerian and Ghanaian trafficking routes — including juju oath exploitation — are among the most documented in UK tribunals.",
+      "African trafficking cases in the UK span asylum claims, National Referral Mechanism referrals, and modern slavery statements. Nigerian and Ghanaian trafficking routes - including juju oath exploitation - are among the most documented in UK tribunals.",
       "Expert witnesses analyse trafficking patterns, state protection failures, re-trafficking risk on return, and the credibility of accounts involving ritual exploitation. Reports support both positive asylum decisions and NRM reasonable grounds decisions.",
       "Country conditions evidence on corruption, law enforcement capacity, and NGO support availability is essential for credible trafficking assessments.",
     ],
@@ -132,7 +132,7 @@ export const caseTypes: CaseType[] = [
       {
         question: "How does expert evidence support NRM trafficking cases?",
         answer:
-          "Expert reports provide country conditions context for reasonable grounds and conclusive grounds decisions — documenting trafficking prevalence, state protection failures, and re-trafficking risk that caseworkers and tribunals require.",
+          "Expert reports provide country conditions context for reasonable grounds and conclusive grounds decisions - documenting trafficking prevalence, state protection failures, and re-trafficking risk that caseworkers and tribunals require.",
       },
       {
         question: "What is juju trafficking and how do experts address it?",
@@ -148,9 +148,9 @@ export const caseTypes: CaseType[] = [
     metaTitle: "ICSID Africa Expert Witness UK | Investment Treaty Arbitration",
     metaDescription:
       "ICSID and investment treaty arbitration Africa expert witness. Guinea mining, West Africa licence revocations, and country conditions evidence.",
-    h1: "Investment Treaty & ICSID Arbitration — Africa Expert Witness",
+    h1: "Investment Treaty & ICSID Arbitration - Africa Expert Witness",
     content: [
-      "African states face unprecedented volumes of ICSID and UNCITRAL investment treaty claims. West African mining disputes — Guinea's $28.9 billion Axis International claim, Mali, Burkina Faso, Niger licence revocations — dominate the 2024–2025 landscape.",
+      "African states face unprecedented volumes of ICSID and UNCITRAL investment treaty claims. West African mining disputes - Guinea's $28.9 billion Axis International claim, Mali, Burkina Faso, Niger licence revocations - dominate the 2024–2025 landscape.",
       "Expert witnesses provide country conditions analysis for expropriation and fair and equitable treatment claims, African law evidence on regulatory frameworks, and sector-specific knowledge in mining, oil and gas, and infrastructure.",
       "Counsel should instruct experts early in memorial preparation to ensure evidence addresses the specific treaty standards, governing law, and factual matrix of each dispute.",
     ],
@@ -170,11 +170,11 @@ export const caseTypes: CaseType[] = [
   },
   {
     slug: "commercial-litigation-african-law",
-    title: "Commercial Litigation — African Law",
+    title: "Commercial Litigation - African Law",
     metaTitle: "African Law Expert Witness UK | Commercial Litigation",
     metaDescription:
       "African law expert witness for UK commercial litigation. Domestic law, OHADA, court procedures, and governing law analysis.",
-    h1: "Commercial Litigation — African Law Expert Witness",
+    h1: "Commercial Litigation - African Law Expert Witness",
     content: [
       "UK commercial courts regularly hear disputes involving African governing law clauses, African party defendants, and enforcement of African judgments. African law experts provide authoritative evidence on how domestic legal systems operate in practice.",
       "Expertise spans OHADA uniform acts, ECOWAS and SADC frameworks, domestic court procedures, and the interaction between national law and international treaty obligations. CPR Part 35 compliance is standard.",
@@ -196,14 +196,14 @@ export const caseTypes: CaseType[] = [
   },
   {
     slug: "extradition-africa",
-    title: "Extradition — Africa",
+    title: "Extradition - Africa",
     metaTitle: "Africa Extradition Expert Witness UK | Country Conditions Evidence",
     metaDescription:
       "Africa extradition expert witness for UK courts. Country conditions, torture risk, fair trial, and prison conditions evidence.",
-    h1: "Extradition Cases Involving African States — Expert Witness",
+    h1: "Extradition Cases Involving African States - Expert Witness",
     content: [
       "Extradition proceedings involving African requesting states require expert evidence on prison conditions, torture risk, fair trial guarantees, and political persecution. Experts support both requested person challenges and government responses.",
-      "Reports address the specific requesting state, relevant human rights records, and conditions in detention facilities. Political cases — particularly from countries with documented torture — require current, granular analysis.",
+      "Reports address the specific requesting state, relevant human rights records, and conditions in detention facilities. Political cases - particularly from countries with documented torture - require current, granular analysis.",
       "Expert evidence supports section 87 and human rights act challenges in UK extradition courts.",
     ],
     faqs: [

@@ -7,7 +7,7 @@ import { glossaryTerms } from "@/data/glossary";
 export const metadata = createMetadata({
   title: "Africa Expert Witness Glossary | Key Terms for UK Legal Proceedings",
   description:
-    "Definitions of key Africa expert witness and asylum law terms — from country guidance to FGM, LGBTQI+ persecution, ICSID, and CPR Part 35.",
+    "Definitions of key Africa expert witness and asylum law terms - from country guidance to FGM, LGBTQI+ persecution, ICSID, and CPR Part 35.",
   path: "/glossary",
 });
 

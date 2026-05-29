@@ -3,7 +3,7 @@ import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { CardGrid } from "@/components/ui/CardGrid";
 import { createMetadata } from "@/lib/metadata";
 import { guides } from "@/data/guides";
-export const metadata = createMetadata({ title: "Solicitor Guides: Africa Expert Witnesses | Asylum, Arbitration & Country Reports", description: "In-depth guides for UK solicitors on Africa expert witnesses — country guidance cases, LGBTQI+ asylum, ICSID arbitration, and Legal Aid instruction.", path: "/guides" });
+export const metadata = createMetadata({ title: "Solicitor Guides: Africa Expert Witnesses | Asylum, Arbitration & Country Reports", description: "In-depth guides for UK solicitors on Africa expert witnesses - country guidance cases, LGBTQI+ asylum, ICSID arbitration, and Legal Aid instruction.", path: "/guides" });
 export default function GuidesHubPage() {
   const crumbs = [{ label: "Home", href: "/" }, { label: "Guides" }];
   return (

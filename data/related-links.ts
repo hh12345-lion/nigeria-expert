@@ -1,6 +1,6 @@
 export type RelatedLink = { label: string; href: string };
 
-/** Appendix D — minimum internal links per country */
+/** Appendix D - minimum internal links per country */
 export const countryRelatedLinks: Record<string, RelatedLink[]> = {
   nigeria: [
     { label: "West Africa region", href: "/regions/west-africa" },
@@ -66,7 +66,7 @@ export const countryRelatedLinks: Record<string, RelatedLink[]> = {
     { label: "Political persecution", href: "/expertise-areas/political-persecution-state-protection" },
     { label: "West Africa mining arbitration guide", href: "/guides/west-africa-mining-arbitration" },
     { label: "ICSID arbitration cases", href: "/case-types/investment-treaty-icsid-arbitration" },
-    { label: "Commercial litigation — African law", href: "/case-types/commercial-litigation-african-law" },
+    { label: "Commercial litigation - African law", href: "/case-types/commercial-litigation-african-law" },
     { label: "Instruct an expert", href: "/contact" },
   ],
   ghana: [
@@ -113,7 +113,7 @@ export const countryRelatedLinks: Record<string, RelatedLink[]> = {
     { label: "Country conditions", href: "/expertise-areas/country-conditions-human-rights" },
     { label: "West Africa mining arbitration guide", href: "/guides/west-africa-mining-arbitration" },
     { label: "ICSID arbitration cases", href: "/case-types/investment-treaty-icsid-arbitration" },
-    { label: "Extradition — Africa", href: "/case-types/extradition-africa" },
+    { label: "Extradition - Africa", href: "/case-types/extradition-africa" },
     { label: "Instruct an expert", href: "/contact" },
   ],
 };
@@ -153,7 +153,7 @@ export const regionRelatedLinks: Record<string, RelatedLink[]> = {
     { label: "Investment arbitration", href: "/expertise-areas/investment-treaty-arbitration-africa" },
     { label: "Challenging Home Office CPINs on Africa", href: "/guides/home-office-cpin-africa-rebuttal" },
     { label: "RN Zimbabwe CG (glossary)", href: "/glossary#rn-zimbabwe-cg-2008" },
-    { label: "Commercial litigation — African law", href: "/case-types/commercial-litigation-african-law" },
+    { label: "Commercial litigation - African law", href: "/case-types/commercial-litigation-african-law" },
     { label: "Instruct an expert", href: "/contact" },
   ],
   "north-africa": [

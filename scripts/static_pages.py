@@ -48,7 +48,7 @@ import { faqs } from "@/data/faq";
 
 export const metadata = createMetadata({
   title: "Africa Expert Witness FAQ UK | Common Questions Answered",
-  description: "Answers to common questions about Africa expert witnesses — turnaround times, Legal Aid, LGBTQI+ asylum, country guidance, arbitration, and CPR Part 35.",
+  description: "Answers to common questions about Africa expert witnesses - turnaround times, Legal Aid, LGBTQI+ asylum, country guidance, arbitration, and CPR Part 35.",
   path: "/faq",
 });
 
@@ -114,7 +114,7 @@ export const metadata = createMetadata({
 
 export default function ContactPage() {
   return (
-    <PageShell title="Instruct an Africa Expert Witness" subtitle="Confidential case submission — response within one business day." breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}>
+    <PageShell title="Instruct an Africa Expert Witness" subtitle="Confidential case submission - response within one business day." breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}>
       <motion className="grid gap-12 lg:grid-cols-3">
         <motion className="lg:col-span-2"><ContactForm /></motion>
         <aside className="rounded-[8px] border border-[#D1E3D8] bg-[#F7F9F7] p-6 h-fit">
@@ -235,7 +235,7 @@ import { experts } from "@/data/experts";
 
 export const metadata = createMetadata({
   title: "Our Africa Expert Witnesses | Country Specialists UK",
-  description: "AfricaExpertWitness.com connects UK solicitors with qualified Africa country experts across all 54 nations — asylum, immigration, and international arbitration.",
+  description: "AfricaExpertWitness.com connects UK solicitors with qualified Africa country experts across all 54 nations - asylum, immigration, and international arbitration.",
   path: "/experts",
 });
 
@@ -305,7 +305,7 @@ import { glossaryTerms } from "@/data/glossary";
 
 export const metadata = createMetadata({
   title: "Africa Expert Witness Glossary | Key Terms for UK Legal Proceedings",
-  description: "Definitions of key Africa expert witness and asylum law terms — from country guidance to FGM, LGBTQI+ persecution, ICSID, and CPR Part 35.",
+  description: "Definitions of key Africa expert witness and asylum law terms - from country guidance to FGM, LGBTQI+ persecution, ICSID, and CPR Part 35.",
   path: "/glossary",
 });
 

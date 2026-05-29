@@ -6,7 +6,7 @@ import { faqs } from "@/data/faq";
 
 export const metadata = createMetadata({
   title: "Africa Expert Witness FAQ UK | Common Questions Answered",
-  description: "Answers to common questions about Africa expert witnesses — turnaround times, Legal Aid, LGBTQI+ asylum, country guidance, arbitration, and CPR Part 35.",
+  description: "Answers to common questions about Africa expert witnesses - turnaround times, Legal Aid, LGBTQI+ asylum, country guidance, arbitration, and CPR Part 35.",
   path: "/faq",
 });
 

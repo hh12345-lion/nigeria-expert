@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-/** Horizontal scroll wrapper for wide tables on mobile — prevents page-level overflow */
+/** Horizontal scroll wrapper for wide tables on mobile - prevents page-level overflow */
 export function ResponsiveTableWrap({
   children,
   label = "Swipe horizontally to view full table",

@@ -25,13 +25,13 @@ export const regions: Region[] = [
     keyIssues: [
       "Political persecution and election-related violence",
       "Tribal and ethnic conflict",
-      "LGBTQI+ persecution — Uganda Anti-Homosexuality Act 2023",
+      "LGBTQI+ persecution - Uganda Anti-Homosexuality Act 2023",
       "Human trafficking routes through East Africa",
       "Land disputes and forced displacement",
     ],
     overview: [
       "East Africa generates a substantial volume of UK asylum and immigration tribunal work. Kenya, Uganda, Zimbabwe, and Tanzania appear frequently in First-tier Tribunal appeals, while regional experts must address sharply different conditions across English-speaking, Swahili-speaking, and post-conflict jurisdictions.",
-      "Investment treaty arbitration in East Africa centres on energy, infrastructure, and mining — particularly in Tanzania, Kenya, and Uganda. Expert witnesses provide country conditions analysis, regulatory framework evidence, and African law expertise for ICSID and UNCITRAL proceedings.",
+      "Investment treaty arbitration in East Africa centres on energy, infrastructure, and mining - particularly in Tanzania, Kenya, and Uganda. Expert witnesses provide country conditions analysis, regulatory framework evidence, and African law expertise for ICSID and UNCITRAL proceedings.",
     ],
     faqs: [
       {
@@ -57,9 +57,9 @@ export const regions: Region[] = [
     keyIssues: [
       "Boko Haram and ISWAP persecution in the Sahel",
       "Biafra and Igbo political claims",
-      "FGM risk — Nigeria and Guinea",
+      "FGM risk - Nigeria and Guinea",
       "LGBTQI+ persecution under national criminal laws",
-      "Mining, bauxite, and gold arbitration — Guinea, Mali, Burkina Faso",
+      "Mining, bauxite, and gold arbitration - Guinea, Mali, Burkina Faso",
     ],
     overview: [
       "West Africa is the most diverse asylum source region on the continent for UK tribunals. Nigeria alone accounts for one of the highest volumes of UK asylum claims from any single African state, spanning Boko Haram violence, LGBTQI+ persecution, FGM risk, and political activism across 36 states.",
@@ -69,7 +69,7 @@ export const regions: Region[] = [
       {
         question: "Why are Nigerian asylum cases so complex?",
         answer:
-          "Nigeria is the most populous African country and generates diverse asylum claims — from Boko Haram/ISWAP violence in the north, to LGBTQI+ persecution (Same Sex Marriage Prohibition Act 2014), FGM risk, and political persecution. Expert witnesses provide state-specific analysis covering Nigeria's 36 states and internal relocation options.",
+          "Nigeria is the most populous African country and generates diverse asylum claims - from Boko Haram/ISWAP violence in the north, to LGBTQI+ persecution (Same Sex Marriage Prohibition Act 2014), FGM risk, and political persecution. Expert witnesses provide state-specific analysis covering Nigeria's 36 states and internal relocation options.",
       },
       {
         question: "How significant is investment arbitration in West Africa currently?",
@@ -87,14 +87,14 @@ export const regions: Region[] = [
     h1: "Horn of Africa Expert Witness Services for UK Solicitors",
     countries: "Somalia, Eritrea, Ethiopia, Sudan, South Sudan, Djibouti",
     keyIssues: [
-      "Somalia clan structure and Al-Shabaab — MOJ country guidance",
-      "Eritrea forced military conscription — MA Eritrea guidance",
-      "Ethiopian ethnic conflict — Tigray, Oromo, Amhara",
+      "Somalia clan structure and Al-Shabaab - MOJ country guidance",
+      "Eritrea forced military conscription - MA Eritrea guidance",
+      "Ethiopian ethnic conflict - Tigray, Oromo, Amhara",
       "Sudan civil war and Darfur atrocities",
       "South Sudan ongoing conflict",
     ],
     countryGuidance:
-      "MOJ & Ors (Return to Mogadishu) Somalia CG [2014] UKUT 00442; MA (draft evaders — illegal departure) Eritrea CG [2019] UKUT 272",
+      "MOJ & Ors (Return to Mogadishu) Somalia CG [2014] UKUT 00442; MA (draft evaders - illegal departure) Eritrea CG [2019] UKUT 272",
     overview: [
       "The Horn of Africa produces some of the most legally complex UK asylum cases, governed by leading country guidance decisions on Somalia and Eritrea. Expert witnesses must address MOJ and MA factors while incorporating developments since those decisions were handed down.",
       "Sudan's civil war since April 2023 has dramatically altered the risk landscape, while Ethiopia's Tigray conflict generated significant new claims. Expert evidence must be current, granular, and tied to specific geographic and ethnic contexts.",
@@ -121,21 +121,21 @@ export const regions: Region[] = [
     h1: "Southern Africa Expert Witness Services for UK Solicitors",
     countries: "Zimbabwe, South Africa, DRC (Democratic Republic of Congo), Mozambique, Angola, Namibia, Botswana",
     keyIssues: [
-      "Zimbabwe political persecution — RN Zimbabwe guidance",
+      "Zimbabwe political persecution - RN Zimbabwe guidance",
       "DRC ethnic conflict and mining disputes",
       "South Africa commercial arbitration (asylum claims less common)",
       "Mozambique gas sector and Cabo Delgado insurgency",
       "Angola and Namibia political and economic conditions",
     ],
     overview: [
-      "Southern Africa combines high-volume Zimbabwe asylum work — governed by RN country guidance — with major investment treaty disputes in the DRC mining sector and Mozambique's LNG industry. Expert witnesses must navigate both tribunal country conditions work and complex ICSID proceedings.",
+      "Southern Africa combines high-volume Zimbabwe asylum work - governed by RN country guidance - with major investment treaty disputes in the DRC mining sector and Mozambique's LNG industry. Expert witnesses must navigate both tribunal country conditions work and complex ICSID proceedings.",
       "South Africa itself generates fewer asylum claims in UK tribunals but features prominently in commercial litigation requiring African law expert evidence. The region demands experts with country-specific rather than pan-regional credentials.",
     ],
     faqs: [
       {
         question: "What is the country guidance on Zimbabwe?",
         answer:
-          "RN and Others (Returnees) Zimbabwe CG [2008] UKAIT 00083 and subsequent cases address the risk on return to Zimbabwe for perceived MDC supporters and others at risk. The political situation has evolved significantly since 2008 — expert witnesses provide current analysis of conditions under ZANU-PF and the post-Mugabe government.",
+          "RN and Others (Returnees) Zimbabwe CG [2008] UKAIT 00083 and subsequent cases address the risk on return to Zimbabwe for perceived MDC supporters and others at risk. The political situation has evolved significantly since 2008 - expert witnesses provide current analysis of conditions under ZANU-PF and the post-Mugabe government.",
       },
       {
         question: "What investment disputes involve Southern Africa?",
@@ -157,10 +157,10 @@ export const regions: Region[] = [
       "Libya civil war and militia risk",
       "Moroccan political persecution and Sahrawi claims",
       "LGBTQI+ persecution across North Africa",
-      "ICSID disputes — Egypt and Algeria most-litigated African states",
+      "ICSID disputes - Egypt and Algeria most-litigated African states",
     ],
     overview: [
-      "North Africa generates asylum claims from political activists, religious minorities, LGBTQI+ individuals, and those fleeing civil conflict — particularly in Libya. Arabic-language expertise and understanding of post-Arab Spring political dynamics are essential for credible expert reports.",
+      "North Africa generates asylum claims from political activists, religious minorities, LGBTQI+ individuals, and those fleeing civil conflict - particularly in Libya. Arabic-language expertise and understanding of post-Arab Spring political dynamics are essential for credible expert reports.",
       "Egypt and Algeria are among the most frequently sued African states at ICSID. Egypt faced a spike in claims following the 2011 uprising; Algeria's disputes concentrate in oil and gas. Libya's fragmented governance creates unique challenges for both asylum and arbitration expert evidence.",
     ],
     faqs: [

@@ -24,7 +24,7 @@ export const faqs: FAQ[] = [
   {
     question: "How do LGBTQI+ Africa expert witnesses approach their reports?",
     answer:
-      "LGBTQI+ expert reports address criminalisation frameworks, enforcement practice, community and family violence, NGO protection, and internal relocation feasibility. Reports are consistent with the HJ (Iran) standard and do not determine the claimant's sexuality — they provide country conditions context for the tribunal's assessment.",
+      "LGBTQI+ expert reports address criminalisation frameworks, enforcement practice, community and family violence, NGO protection, and internal relocation feasibility. Reports are consistent with the HJ (Iran) standard and do not determine the claimant's sexuality - they provide country conditions context for the tribunal's assessment.",
   },
   {
     question: "What FGM evidence do expert reports address?",
@@ -49,7 +49,7 @@ export const faqs: FAQ[] = [
   {
     question: "What CPR Part 35 duties apply to Africa expert witnesses?",
     answer:
-      "In England and Wales, CPR Part 35 governs expert evidence. An expert's primary duty is to the court — not the instructing party. Experts must provide independent, objective evidence; the duties were established in The Ikarian Reefer [1993] 2 Lloyd's Rep 68. Reports must state the substance of all material instructions, not omit material facts, and distinguish opinion from fact. Where a Single Joint Expert (SJE) is appointed, the same overriding duty to the court applies on jointly defined issues. Africa country experts must comply with the same standards as any UK expert witness.",
+      "In England and Wales, CPR Part 35 governs expert evidence. An expert's primary duty is to the court - not the instructing party. Experts must provide independent, objective evidence; the duties were established in The Ikarian Reefer [1993] 2 Lloyd's Rep 68. Reports must state the substance of all material instructions, not omit material facts, and distinguish opinion from fact. Where a Single Joint Expert (SJE) is appointed, the same overriding duty to the court applies on jointly defined issues. Africa country experts must comply with the same standards as any UK expert witness.",
   },
   {
     question: "What sources do Africa expert reports cite?",
@@ -59,6 +59,6 @@ export const faqs: FAQ[] = [
   {
     question: "How early should I instruct an Africa expert witness?",
     answer:
-      "Instruct as soon as grounds are identified — ideally at appeal lodgement or when preparing the Home Office refusal challenge. Late instruction risks adjournments and limits the expert's ability to conduct thorough research. For arbitration, instruct during memorial preparation.",
+      "Instruct as soon as grounds are identified - ideally at appeal lodgement or when preparing the Home Office refusal challenge. Late instruction risks adjournments and limits the expert's ability to conduct thorough research. For arbitration, instruct during memorial preparation.",
   },
 ];
