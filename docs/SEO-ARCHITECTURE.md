@@ -1,12 +1,12 @@
-# SEO Architecture — africaexpertwitness.com
+# SEO Architecture — nigeriaexpert.com
 
-**Canonical domain:** `https://www.africaexpertwitness.com`  
-**Site name:** AfricaExpertWitness  
-**Locale:** `en_GB` (UK solicitors, immigration practitioners, arbitration counsel)
+**Canonical domain:** `https://www.nigeriaexpert.com`  
+**Site name:** NigeriaExpert  
+**Locale:** `en_GB` (UK immigration solicitors, law firms, Legal Aid practitioners)
 
-This document is the single source of truth for keyword strategy, content clusters, internal linking, structured data, GEO (Generative Engine Optimization), off-page SEO, competitor monitoring, expansion, and launch. All slugs and URLs align with `data/*.ts` and `lib/schema.ts`.
+This document is the single source of truth for keyword strategy, content clusters, internal linking, GEO (Generative Engine Optimization), off-page SEO, schema architecture, and launch deployment for nigeriaexpert.com. All slugs and URLs align with the canonical SEO brief naming convention.
 
-**Implementation status (summary):** Full site built (62 SSG pages). SEO architecture implemented: internal linking, schema, GEO tables, sitemap, glossary anchors. See [Appendix F](#appendix-f-implementation-status-matrix) and [PROJECT-SUMMARY.md](./PROJECT-SUMMARY.md).
+**Implementation status:** Implemented in codebase (June 2026). Canonical slugs, internal linking matrix (`data/related-links.ts`), GEO artifacts, schema, sitemap inventory (`lib/seo/publicUrlInventory.ts`), and 301 redirects (`lib/seo/slug-redirects.ts`) align with this document. Run `npm run seo:verify` after changes.
 
 ---
 
@@ -14,194 +14,171 @@ This document is the single source of truth for keyword strategy, content cluste
 
 ### Tier 1 — Transactional
 
-**Target pages:** homepage, services, region pages, country pages.
-
-#### Primary
+**Target pages:** homepage, services, asylum profiles, qualifications, case types, contact.
 
 | Keyword | Primary URL |
 |---------|-------------|
-| africa expert witness | `/` |
-| africa expert witness UK | `/` |
-| african country expert witness | `/countries`, `/expertise-areas/country-conditions-human-rights` |
-| africa asylum expert witness UK | `/`, `/case-types/asylum-appeal-first-tier-tribunal` |
-| africa country conditions expert witness | `/expertise-areas/country-conditions-human-rights` |
-
-#### Regional
-
-| Keyword | Primary URL |
-|---------|-------------|
-| east africa expert witness UK | `/regions/east-africa` |
-| west africa expert witness UK | `/regions/west-africa` |
-| horn of africa expert witness | `/regions/horn-of-africa` |
-| southern africa expert witness | `/regions/southern-africa` |
-| north africa expert witness UK | `/regions/north-africa` |
-
-#### Country-specific (12 primary targets)
-
-| Keyword | Primary URL | Data |
-|---------|-------------|------|
-| nigeria expert witness UK | `/countries/nigeria` | `data/countries.ts` |
-| somalia expert witness UK | `/countries/somalia` | `data/countries.ts` |
-| eritrea expert witness UK | `/countries/eritrea` | `data/countries.ts` |
-| ethiopia expert witness UK | `/countries/ethiopia` | `data/countries.ts` |
-| sudan expert witness UK | `/countries/sudan` | `data/countries.ts` |
-| zimbabwe expert witness UK | `/countries/zimbabwe` | `data/countries.ts` |
-| DRC expert witness UK | `/countries/democratic-republic-of-congo` | `data/countries.ts` |
-| ghana expert witness UK | `/countries/ghana` | `data/countries.ts` |
-| kenya expert witness UK | `/countries/kenya` | `data/countries.ts` |
-| uganda expert witness UK | `/countries/uganda` | `data/countries.ts` |
-| guinea expert witness | `/countries/guinea` | `data/countries.ts` |
-| libya expert witness UK | `/countries/libya` | `data/countries.ts` |
-
-#### Specialist
-
-| Keyword | Primary URL |
-|---------|-------------|
-| lgbtqi africa expert witness UK | `/expertise-areas/lgbtqi-asylum-africa` |
-| fgm expert witness UK africa | `/expertise-areas/fgm-gender-based-violence` |
-| africa investment arbitration expert | `/expertise-areas/investment-treaty-arbitration-africa` |
-| africa mining expert witness ICSID | `/expertise-areas/investment-treaty-arbitration-africa`, `/guides/west-africa-mining-arbitration` |
-| west africa mining arbitration expert | `/guides/west-africa-mining-arbitration`, `/regions/west-africa` |
+| Nigeria expert witness UK | `/` |
+| Nigeria country expert UK | `/`, `/what-is-a-nigeria-expert-witness` |
+| Nigeria asylum expert report UK | `/services`, `/how-to-instruct` |
+| Nigeria country report asylum | `/services`, `/cpin-country-guidance` |
+| Nigeria expert immigration tribunal | `/qualifications`, `/case-types/asylum-appeal-ftt` |
+| Nigeria LGBTQ expert witness UK | `/asylum-profiles/lgbtq-asylum-nigeria` |
+| Nigeria IPOB expert report UK | `/asylum-profiles/ipob-biafra` |
+| Nigeria FGM expert witness UK | `/asylum-profiles/fgm-gbv` |
+| Nigeria trafficking expert report | `/asylum-profiles/trafficking-juju` |
+| Nigeria asylum solicitor expert | `/guides/instructing-nigeria-expert`, `/contact` |
 
 ### Tier 2 — Informational
 
-**Target pages:** guides, FAQ.
+**Target pages:** CPIN pillar, guides, asylum profiles, glossary.
 
 | Keyword | Primary URL |
 |---------|-------------|
-| what is somalia country guidance MOJ | `/guides/somalia-country-guidance-moj` |
-| how to challenge home office CPIN africa | `/guides/home-office-cpin-africa-rebuttal` |
-| eritrea military service asylum UK | `/countries/eritrea`, `/guides/somalia-country-guidance-moj` (MA cross-link) |
-| uganda anti homosexuality act asylum | `/countries/uganda`, `/guides/lgbtqi-africa-asylum-evidence` |
-| guinea icsid arbitration expert | `/countries/guinea`, `/guides/west-africa-mining-arbitration` |
-| fgm prevalence west africa asylum | `/expertise-areas/fgm-gender-based-violence`, `/regions/west-africa` |
-| legal aid africa expert witness report | `/guides/instructing-africa-experts-legal-aid`, `/fees` |
-| africa expert witness report turnaround | `/how-to-instruct`, `/faq` |
-| ethiopia tigray asylum expert witness | `/countries/ethiopia` |
-| zimbabwe political persecution expert | `/countries/zimbabwe`, `/expertise-areas/political-persecution-state-protection` |
+| Nigeria CPIN 2025 2026 | `/cpin-country-guidance`, `/guides/nigeria-cpin-guide-solicitors` |
+| Nigeria IPOB asylum UK | `/asylum-profiles/ipob-biafra`, `/guides/ipob-biafra-expert-guide` |
+| Nigeria LGBTQ asylum state protection | `/asylum-profiles/lgbtq-asylum-nigeria`, `/cpin-country-guidance#sogiesc` |
+| Nigeria FGM asylum evidence | `/asylum-profiles/fgm-gbv`, `/guides/fgm-nigeria-guide` |
+| Nigeria country guidance case | `/cpin-country-guidance`, `/glossary#country-guidance-case` |
+| Nigeria trafficking juju asylum UK | `/asylum-profiles/trafficking-juju`, `/guides/trafficking-juju-guide` |
+| Nigeria internal relocation Lagos | `/asylum-profiles/internal-relocation-lagos`, `/cpin-country-guidance#internal-relocation` |
+| Nigeria Boko Haram asylum UK | `/asylum-profiles/boko-haram-northeast`, `/cpin-country-guidance` |
+| Nigeria actors of protection | `/asylum-profiles/actors-of-protection`, `/cpin-country-guidance#actors-of-protection` |
+| Nigeria SOGIESC CPIN June 2025 | `/cpin-country-guidance#sogiesc`, `/asylum-profiles/lgbtq-asylum-nigeria` |
 
 ### Tier 3 — Long-tail
 
-**Target pages:** country pages, expertise pages, case-type pages, FAQ.
+**Target pages:** asylum profiles, guides, case types, fees, qualifications.
 
 | Keyword | Primary URL(s) |
 |---------|----------------|
-| somalia expert witness first tier tribunal | `/countries/somalia`, `/case-types/asylum-appeal-first-tier-tribunal` |
-| eritrea forced conscription expert report | `/countries/eritrea` |
-| nigeria LGBTQI+ asylum expert witness | `/countries/nigeria`, `/expertise-areas/lgbtqi-asylum-africa` |
-| guinea fgm expert witness UK | `/countries/guinea`, `/expertise-areas/fgm-gender-based-violence` |
-| mali mining arbitration expert witness | *No country page yet — see Section 8* |
-| kenya anti homosexuality expert evidence | `/countries/kenya`, `/expertise-areas/lgbtqi-asylum-africa` |
-| DRC cobalt mining ICSID expert | `/countries/democratic-republic-of-congo`, `/case-types/investment-treaty-icsid-arbitration` |
-| sudan darfur asylum expert witness UK | `/countries/sudan` |
-| ethiopia oromo persecution expert report | `/countries/ethiopia` |
-| africa expert witness fees legal aid | `/fees`, `/guides/instructing-africa-experts-legal-aid` |
+| IPOB asylum expert report UK | `/asylum-profiles/ipob-biafra`, `/case-types/ipob-biafra-asylum` |
+| Nigeria LGBTQ SSMPA asylum expert | `/asylum-profiles/lgbtq-asylum-nigeria`, `/glossary#ssmpa` |
+| Nigeria FGM daughter at risk expert report | `/asylum-profiles/fgm-gbv`, `/case-types/fgm-asylum` |
+| Nigeria trafficking juju expert witness UK | `/asylum-profiles/trafficking-juju`, `/guides/trafficking-juju-guide` |
+| Nigeria political persecution expert witness UK | `/asylum-profiles/political-persecution`, `/case-types/asylum-appeal-ftt` |
+| Nigeria Boko Haram north east asylum expert | `/asylum-profiles/boko-haram-northeast`, `/case-types/asylum-appeal-ftt` |
+| Nigeria EUAA country guidance 2026 | `/cpin-country-guidance#euaa-2026` |
+| Nigeria asylum CPIN challenge expert UK | `/cpin-country-guidance`, `/guides/nigeria-cpin-guide-solicitors`, `/services#cpin-challenge` |
+| Nigeria internal relocation expert report UK | `/asylum-profiles/internal-relocation-lagos`, `/case-types/upper-tribunal-nigeria` |
+| Legal Aid Nigeria expert report asylum | `/fees`, `/guides/instructing-nigeria-expert`, `/how-to-instruct` |
 
 ### Keyword → URL implementation reference
 
 | Cluster | URL pattern | Meta source |
 |---------|-------------|-------------|
-| Brand / transactional | `/` | Build homepage `metaTitle` / `metaDescription` |
-| Country transactional | `/countries/{slug}` | `metaTitle`, `metaDescription` in `data/countries.ts` |
-| Regional transactional | `/regions/{slug}` | `data/regions.ts` |
-| Expertise transactional | `/expertise-areas/{slug}` | `data/expertise-areas.ts` |
+| Brand / transactional | `/` | Page-level `createMetadata()` |
+| Asylum profile transactional | `/asylum-profiles/{slug}` | `metaTitle`, `metaDescription`, `h1` in `data/asylum-profiles.ts` |
+| CPIN pillar / informational | `/cpin-country-guidance` | Page-level metadata + section anchors |
 | Case-type transactional | `/case-types/{slug}` | `data/case-types.ts` |
-| Informational | `/guides/{slug}` | `data/guides.ts` |
-| Utility / process | `/how-to-instruct`, `/fees`, `/faq` | Page-level metadata |
+| Informational guides | `/guides/{slug}` | `data/guides.ts` |
+| Utility / process | `/how-to-instruct`, `/fees`, `/qualifications`, `/faq` | Page-level metadata |
+| Services | `/services`, `/services#{id}` | `data/services.ts` |
 
 ---
 
-## 2. Content Cluster Map
+## 2. Content Clusters
 
-Eight topical hubs drive internal linking, anchor text, and content depth. Each hub has a pillar URL and supporting pages.
+Six topical hubs drive internal linking, anchor text, and content depth. Hub 5 (CPIN Master) connects all profile and case-type spokes.
 
-### Hub 1: Somalia & Horn of Africa
+```mermaid
+flowchart TB
+  CPIN["/cpin-country-guidance Pillar"]
+  LGBTQ["Hub1 LGBTQ"]
+  IPOB["Hub2 IPOB"]
+  FGM["Hub3 FGM"]
+  Traff["Hub4 Trafficking"]
+  Instruct["Hub6 Instruction"]
+  CPIN --> LGBTQ
+  CPIN --> IPOB
+  CPIN --> FGM
+  CPIN --> Traff
+  LGBTQ --> Instruct
+  IPOB --> Instruct
+  FGM --> Instruct
+  Traff --> Instruct
+```
 
-| Role | URL |
-|------|-----|
-| Pillar | `/regions/horn-of-africa` |
-| Supporting | `/countries/somalia`, `/countries/eritrea`, `/countries/ethiopia`, `/countries/sudan` |
-| Guide | `/guides/somalia-country-guidance-moj` |
-| Case type | `/case-types/asylum-appeal-first-tier-tribunal` |
-| Glossary | `/glossary#moj-ors-somalia-cg-2014`, `/glossary#ma-draft-evaders-eritrea-cg-2019`, `/glossary#al-shabaab` |
-
-### Hub 2: LGBTQI+ Asylum Africa
-
-| Role | URL |
-|------|-----|
-| Pillar | `/expertise-areas/lgbtqi-asylum-africa` |
-| Supporting | `/guides/lgbtqi-africa-asylum-evidence`, `/countries/uganda`, `/countries/nigeria`, `/countries/ghana`, `/countries/kenya` |
-| Case type | `/case-types/lgbtqi-asylum-africa-cases` |
-| Glossary | `/glossary#anti-homosexuality-act-2023-uganda`, `/glossary#hj-iran-standard-lgbtqi-asylum-test` |
-| FAQ | `/faq` (LGBTQI+ Q&As) |
-
-### Hub 3: FGM & Gender-Based Violence
+### Hub 1: LGBTQ+ Nigeria
 
 | Role | URL |
 |------|-----|
-| Pillar | `/expertise-areas/fgm-gender-based-violence` |
-| Supporting | `/guides/fgm-expert-evidence-africa`, `/countries/guinea`, `/countries/nigeria`, `/countries/somalia`, `/regions/west-africa` |
-| Case type | `/case-types/fgm-asylum-cases` |
-| Glossary | `/glossary#fgm-female-genital-mutilation` |
-| FAQ | `/faq` (FGM Q&As) |
+| Profile | `/asylum-profiles/lgbtq-asylum-nigeria` |
+| Guide | `/guides/lgbtq-nigeria-asylum-guide` |
+| Case type | `/case-types/lgbtq-asylum-nigeria` |
+| Glossary | `/glossary#ssmpa` |
+| CPIN section | `/cpin-country-guidance#sogiesc` |
 
-### Hub 4: West Africa Mining Arbitration
-
-| Role | URL |
-|------|-----|
-| Pillar | `/expertise-areas/investment-treaty-arbitration-africa` |
-| Supporting | `/guides/west-africa-mining-arbitration`, `/countries/guinea`, `/countries/libya`, `/regions/west-africa` |
-| Case type | `/case-types/investment-treaty-icsid-arbitration` |
-| Glossary | `/glossary#icsid-international-centre-for-settlement-of-investment-disputes`, `/glossary#ohada-organisation-for-the-harmonisation-of-business-law-in-africa` |
-| FAQ | `/faq` (arbitration Q&As) |
-
-### Hub 5: Home Office CPIN Challenges
+### Hub 2: IPOB/Biafra
 
 | Role | URL |
 |------|-----|
-| Pillar | `/guides/home-office-cpin-africa-rebuttal` |
-| Supporting | `/services#rebuttal-sje`, `/case-types/upper-tribunal-country-guidance` |
-| Glossary | `/glossary#country-policy-information-note-cpin`, `/glossary#country-guidance-case` |
-| FAQ | `/faq` (country guidance Q&As) |
+| Profile | `/asylum-profiles/ipob-biafra` |
+| Guide | `/guides/ipob-biafra-expert-guide` |
+| Case type | `/case-types/ipob-biafra-asylum` |
+| Glossary | `/glossary#ipob` |
+| CPIN section | `/cpin-country-guidance#ipob-separatist` |
 
-### Hub 6: Legal Aid Instruction
-
-| Role | URL |
-|------|-----|
-| Pillar | `/guides/instructing-africa-experts-legal-aid` |
-| Supporting | `/fees` (Legal Aid section), `/how-to-instruct` |
-| Glossary | `/glossary#legal-aid` |
-| FAQ | `/faq` (Legal Aid Q&As) |
-
-### Hub 7: Southern Africa
+### Hub 3: FGM/GBV
 
 | Role | URL |
 |------|-----|
-| Pillar | `/regions/southern-africa` |
-| Supporting | `/countries/zimbabwe`, `/countries/democratic-republic-of-congo` |
-| Glossary | `/glossary#rn-zimbabwe-cg-2008` |
-| Case type | `/case-types/commercial-litigation-african-law` |
+| Profile | `/asylum-profiles/fgm-gbv` |
+| Guide | `/guides/fgm-nigeria-guide` |
+| Case type | `/case-types/fgm-asylum` |
+| Glossary | `/glossary#fgm` |
 
-### Hub 8: North Africa & Investment
+### Hub 4: Trafficking/Juju
 
 | Role | URL |
 |------|-----|
-| Pillar | `/regions/north-africa` |
-| Supporting | `/countries/libya`, `/expertise-areas/investment-treaty-arbitration-africa`, `/case-types/investment-treaty-icsid-arbitration` |
+| Profile | `/asylum-profiles/trafficking-juju` |
+| Guide | `/guides/trafficking-juju-guide` |
+| Case type | `/case-types/trafficking-nrm` |
+| Glossary | `/glossary#juju-rituals`, `/glossary#nrm` |
 
-### Slug inventory (data layer)
+### Hub 5: CPIN Master
 
-**Regions (5):** `east-africa`, `west-africa`, `horn-of-africa`, `southern-africa`, `north-africa`
+| Role | URL |
+|------|-----|
+| Pillar | `/cpin-country-guidance` |
+| All profiles | `/asylum-profiles/[slug]` (8 pages) |
+| All case types | `/case-types/[slug]` (8 pages) |
+| CPIN guide | `/guides/nigeria-cpin-guide-solicitors` |
 
-**Countries (12):** `nigeria`, `somalia`, `eritrea`, `ethiopia`, `sudan`, `zimbabwe`, `democratic-republic-of-congo`, `ghana`, `kenya`, `uganda`, `guinea`, `libya`
+Hub 5 also connects secondary profiles not covered by Hubs 1–4:
 
-**Expertise areas (8):** `political-persecution-state-protection`, `lgbtqi-asylum-africa`, `fgm-gender-based-violence`, `trafficking-modern-slavery-africa`, `investment-treaty-arbitration-africa`, `african-law-legal-systems`, `nationality-statelessness`, `country-conditions-human-rights`
+- `/asylum-profiles/boko-haram-northeast`
+- `/asylum-profiles/actors-of-protection`
+- `/asylum-profiles/internal-relocation-lagos`
+- `/asylum-profiles/political-persecution`
 
-**Case types (8):** `asylum-appeal-first-tier-tribunal`, `upper-tribunal-country-guidance`, `lgbtqi-asylum-africa-cases`, `fgm-asylum-cases`, `trafficking-modern-slavery-cases`, `investment-treaty-icsid-arbitration`, `commercial-litigation-african-law`, `extradition-africa`
+### Hub 6: Instruction Process
 
-**Guides (6):** `somalia-country-guidance-moj`, `lgbtqi-africa-asylum-evidence`, `fgm-expert-evidence-africa`, `west-africa-mining-arbitration`, `home-office-cpin-africa-rebuttal`, `instructing-africa-experts-legal-aid`
+| Role | URL |
+|------|-----|
+| Process | `/how-to-instruct` |
+| Credentials | `/qualifications` |
+| Legal Aid fees | `/fees` (Legal Aid section) |
+| Solicitor guide | `/guides/instructing-nigeria-expert` |
 
-**Services (8 IDs):** `country-condition-reports`, `lgbtqi-asylum`, `fgm-gbv`, `trafficking`, `investment-arbitration`, `african-law`, `nationality-statelessness`, `rebuttal-sje`
+### Slug inventory
+
+**Asylum profiles (8):**
+
+`lgbtq-asylum-nigeria`, `ipob-biafra`, `boko-haram-northeast`, `fgm-gbv`, `trafficking-juju`, `actors-of-protection`, `internal-relocation-lagos`, `political-persecution`
+
+**Case types (8):**
+
+`asylum-appeal-ftt`, `upper-tribunal-nigeria`, `lgbtq-asylum-nigeria`, `fgm-asylum`, `trafficking-nrm`, `ipob-biafra-asylum`, `deportation-removal-nigeria`, `fresh-claims-nigeria`
+
+**Guides (6):**
+
+`nigeria-cpin-guide-solicitors`, `lgbtq-nigeria-asylum-guide`, `ipob-biafra-expert-guide`, `fgm-nigeria-guide`, `trafficking-juju-guide`, `instructing-nigeria-expert`
+
+**Services (8 IDs):**
+
+`country-condition-reports`, `lgbtq-asylum`, `ipob-biafra-risk`, `fgm-expert-reports`, `trafficking-juju-reports`, `cpin-challenge`, `internal-relocation-analysis`, `oral-evidence`
 
 ### Glossary anchor ID convention
 
@@ -211,257 +188,156 @@ Generate fragment IDs from term text:
 term.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
 ```
 
-**SEO-critical anchor mappings** (short aliases in cluster docs → canonical ID):
+**SEO-critical anchor mappings:**
 
 | Cluster reference | Glossary term | Canonical anchor ID |
 |-------------------|---------------|------------------------|
-| `#moj-somalia` | MOJ & Ors Somalia CG [2014] | `moj-ors-somalia-cg-2014` |
-| `#ma-eritrea` | MA (draft evaders) Eritrea CG [2019] | `ma-draft-evaders-eritrea-cg-2019` |
-| `#al-shabaab` | Al-Shabaab | `al-shabaab` |
+| `#ssmpa` | SSMPA (Same Sex Marriage Prohibition Act 2013) | `ssmpa-same-sex-marriage-prohibition-act-2013` |
+| `#ipob` | IPOB (Indigenous People of Biafra) | `ipob-indigenous-people-of-biafra` |
+| `#fgm` | FGM (Female Genital Mutilation) | `fgm-female-genital-mutilation` |
 | `#cpin` | Country Policy Information Note (CPIN) | `country-policy-information-note-cpin` |
-| `#icsid` | ICSID | `icsid-international-centre-for-settlement-of-investment-disputes` |
-| `#ohada` | OHADA | `ohada-organisation-for-the-harmonisation-of-business-law-in-africa` |
-| `#rn-zimbabwe` | RN Zimbabwe CG [2008] | `rn-zimbabwe-cg-2008` |
-| `#anti-homosexuality-act` | Anti-Homosexuality Act 2023 (Uganda) | `anti-homosexuality-act-2023-uganda` |
-| `#hj-iran-standard` | HJ (Iran) Standard | `hj-iran-standard-lgbtqi-asylum-test` |
-| `#fgm` | FGM | `fgm-female-genital-mutilation` |
+| `#nrm` | National Referral Mechanism (NRM) | `national-referral-mechanism-nrm` |
+| `#state-protection` | State Protection | `state-protection` |
+| `#internal-relocation` | Internal Relocation Alternative | `internal-relocation-alternative` |
 | `#country-guidance-case` | Country Guidance Case | `country-guidance-case` |
-
-Full glossary anchor table: [Appendix C](#appendix-c-glossary-anchor-ids-all-34-terms).
+| `#juju-rituals` | Juju Rituals | `juju-rituals` |
+| `#hj-iran` | HJ (Iran) [2010] | `hj-iran-2010` |
 
 ---
 
 ## 3. Internal Linking Rules
 
-### Rule sets (mandatory)
+### Rule A — Every `/asylum-profiles/[slug]` must link to:
 
-#### 1. Every `/countries/[slug]` must link to:
-
-- Its `/regions/[slug]` parent (`regionSlug` in `data/countries.ts`)
-- At least **2** `/expertise-areas/[slug]` pages
-- At least **1** `/guides/[slug]` page
-- `/case-types/[slug]` relevant to that country's main issues
-- `/contact`
-
-#### 2. Every `/regions/[slug]` must link to:
-
-- All `/countries/[slug]` in that region
-- Relevant `/expertise-areas/[slug]` pages
-- Relevant `/guides/[slug]` pages
-- `/contact`
-
-#### 3. Every `/expertise-areas/[slug]` must link to:
-
-- Relevant `/countries/[slug]` pages
-- Relevant `/regions/[slug]` pages
-- At least **1** `/guides/[slug]` page
-- `/case-types/[slug]` pages
-- `/contact`
-
-#### 4. Every `/guides/[slug]` must link to:
-
-- `/guides` hub
-- Relevant `/countries/[slug]` pages
-- Relevant `/expertise-areas/[slug]` pages
+- `/cpin-country-guidance` (relevant CPIN section anchor)
+- Relevant `/case-types/[slug]` page(s)
+- Relevant `/guides/[slug]` page(s)
 - `/how-to-instruct`
 - `/contact`
 
-#### 5. Glossary terms link to:
+### Rule B — Every `/guides/[slug]` must link to:
 
-- Most relevant `/countries/[slug]`
-- Most relevant `/guides/[slug]`
-- Most relevant `/expertise-areas/[slug]`
-
-(12 of 34 terms already have `link` in `data/glossary.ts`; extend the remainder per cluster map.)
-
-#### 6. Homepage must link to:
-
-- All **5** `/regions/[slug]` pages
-- **Top 6** `/countries/[slug]`: Nigeria, Somalia, Eritrea, Uganda, Zimbabwe, DRC (highest UK search volume)
-- All **8** `/expertise-areas/[slug]` pages
-- `/what-is-an-africa-expert-witness` *(page not yet built)*
-- `/guides`
-- `/faq`
+- Relevant `/asylum-profiles/[slug]` page(s)
+- `/cpin-country-guidance`
+- `/how-to-instruct`
 - `/contact`
+
+### Additional recommended rules
+
+#### Every `/case-types/[slug]` must link to:
+
+- Relevant `/asylum-profiles/[slug]` page(s)
+- `/how-to-instruct`
+- `/contact`
+
+#### `/cpin-country-guidance` must link to:
+
+- All 8 `/asylum-profiles/[slug]` pages
+- All 6 `/guides/[slug]` pages
+- `/how-to-instruct`
+- `/contact`
+
+#### Homepage must link to:
+
+- Top 4 transactional profiles: LGBTQ+, IPOB, FGM, Trafficking
+- `/cpin-country-guidance`
+- `/asylum-profiles` hub
+- `/guides` hub
+- `/how-to-instruct`
+- `/contact`
+
+#### Glossary terms must link to:
+
+- Most relevant `/asylum-profiles/[slug]`
+- Most relevant `/guides/[slug]`
+- `/cpin-country-guidance` where applicable
 
 ### Enforcement guidance
 
-**Recommended data model extension** — add to `Country`, `Region`, `ExpertiseArea`, `Guide`, and `CaseType`:
+**Recommended data model extension** — add to `AsylumProfile`, `CaseType`, and `Guide`:
 
 ```ts
 relatedLinks?: { label: string; href: string }[];
 ```
 
-Populate from [Appendix D: Country Minimum Links Matrix](#appendix-d-country-minimum-links-matrix) until templates derive links from cluster tables.
+Populate from [Appendix D: Profile Minimum Links Matrix](#appendix-d-profile-minimum-links-matrix).
 
 **Page template requirements:**
 
-- Use a shared `RelatedLinks` or `ContentClusterNav` component in `PageShell`.
-- Country pages: read `regionSlug`; render parent region prominently above fold.
-- Breadcrumbs on all non-home pages via `components/ui/Breadcrumbs.tsx`.
-- Glossary: render each term with `id={anchorId}`; use canonical IDs from Appendix C.
+- Use a shared `RelatedLinks` or `ContentClusterNav` component in page shell.
+- Breadcrumbs on all non-home pages.
+- Glossary: render each term with `id={anchorId}` using canonical IDs from Section 2.
+- Use descriptive anchor text (e.g. "June 2025 SOGIESC CPIN on Nigeria" not "click here").
 
-**Cross-linking priority:** Hub pillar → supporting pages → contact. Use descriptive anchor text (e.g. "Somalia MOJ country guidance guide" not "click here").
-
----
-
-## 4. Schema Architecture
-
-### Root entity
-
-```json
-{
-  "@type": "Organization",
-  "@id": "https://www.africaexpertwitness.com/#organization"
-}
-```
-
-Implemented in `lib/schema.ts` → `organizationSchema()`. Includes `sameAs: [LinkedIn]` from `lib/constants.ts`.
-
-### Schema graph overview
-
-```mermaid
-flowchart TB
-  Org["Organization #organization"]
-  Home["ProfessionalService #professional-service"]
-  Svc["Service ×8 /services#id"]
-  Art["Article ×6 /guides/slug"]
-  Per["Person ×3 /experts"]
-  FAQ["FAQPage 40+ routes"]
-  BC["BreadcrumbList all non-home"]
-  Org --> Home
-  Org --> Svc
-  Org --> Art
-  Org --> Per
-  Org --> FAQ
-  BC --> Org
-```
-
-### Children of Organization
-
-| Type | Count | URL / @id | Helper |
-|------|-------|-----------|--------|
-| ProfessionalService | 1 | `/` — `#professional-service` | `professionalServiceSchema()`, `homepageGraph()` |
-| Service | 8 | `/services#{id}` | `serviceNode()`, `servicesPageGraph()` |
-| Article | 6 | `/guides/{slug}` | `articleSchema()` |
-| Person | 3 | `/experts` (listing; no per-expert slugs) | `personSchema()` |
-| FAQPage | 40+ | See below | `faqSchema()` |
-| BreadcrumbList | All non-home | Per-page | `breadcrumbSchema()` |
-
-### Service `@id` values (`data/services.ts`)
-
-| Service ID | Fragment URL |
-|------------|--------------|
-| `country-condition-reports` | `/services#country-condition-reports` |
-| `lgbtqi-asylum` | `/services#lgbtqi-asylum` |
-| `fgm-gbv` | `/services#fgm-gbv` |
-| `trafficking` | `/services#trafficking` |
-| `investment-arbitration` | `/services#investment-arbitration` |
-| `african-law` | `/services#african-law` |
-| `nationality-statelessness` | `/services#nationality-statelessness` |
-| `rebuttal-sje` | `/services#rebuttal-sje` |
-
-Hub 5 anchor: `/services#rebuttal-sje` → CPIN rebuttal service.
-
-### FAQPage coverage
-
-Emit `faqSchema()` on:
-
-- `/faq` (site-wide FAQ from `data/faq.ts`)
-- `/glossary` (optional: top terms as FAQ)
-- `/regions/[slug]` — each region with `faqs` in data
-- `/countries/[slug]` — each country has `faqs`
-- `/expertise-areas/[slug]` — where `faqs` defined
-- `/case-types/[slug]` — each case type has `faqs`
-
-### Article linking
-
-`/guides/home-office-cpin-africa-rebuttal` should pass `aboutServiceId: "rebuttal-sje"` to `articleSchema()` for `about: { @id: .../services#rebuttal-sje }`.
-
-### Page → schema template matrix
-
-| Route | JSON-LD types |
-|-------|---------------|
-| `/` | `@graph`: Organization, ProfessionalService |
-| `/services` | `@graph`: Organization, Service ×8 |
-| `/guides/[slug]` | Organization, Article, BreadcrumbList |
-| `/experts` | `@graph`: Organization, Person ×3 |
-| `/countries/[slug]` | Organization, BreadcrumbList, FAQPage |
-| `/regions/[slug]` | Organization, BreadcrumbList, FAQPage |
-| `/expertise-areas/[slug]` | Organization, BreadcrumbList, FAQPage (if faqs) |
-| `/case-types/[slug]` | Organization, BreadcrumbList, FAQPage |
-| `/faq` | Organization, FAQPage, BreadcrumbList |
-| `/glossary` | Organization, BreadcrumbList (+ optional FAQPage) |
-| Static utility pages | Organization, BreadcrumbList |
-
-**Render via:** `components/ui/JsonLd.tsx` on each page.
-
-### Post-launch optional schema
-
-- `WebSite` with `SearchAction`
-- Individual `Person` URLs per expert (requires expert slugs)
-- `LegalService` subtype
+**Cross-linking priority:** Hub pillar → profile/guide → instruction → contact.
 
 ---
 
-## 5. GEO Optimization Targets
+## 4. GEO Optimization Targets
 
 Content structured for AI citation and featured snippets: definition-first, tables, numbered steps, citeable statistics.
 
 | # | URL | Required extractable artifact | Data / UI |
 |---|-----|------------------------------|-----------|
-| 1 | `/guides/somalia-country-guidance-moj` | MOJ framework summary table (clan, remittances, integration) | Guide content + build table component |
-| 2 | `/expertise-areas/lgbtqi-asylum-africa` | Criminalisation by-country table | New table in page template |
-| 3 | `/expertise-areas/fgm-gender-based-violence` | FGM prevalence by country table | New table in page template |
-| 4 | `/guides/west-africa-mining-arbitration` | West Africa ICSID claims data table | Guide content + table |
-| 5 | `/` | African asylum statistics table (nationality / outcome) | Homepage section (to build) |
-| 6 | `/glossary` | 34 terms, definition-first (`data/glossary.ts`) | Term list with anchor IDs |
-| 7 | `/guides/home-office-cpin-africa-rebuttal` | CPIN rebuttal methodology (numbered steps) | Guide `methodology` or sections |
-| 8 | `/how-to-instruct` | Instruction process timeline | New page content |
-| 9 | `/countries/[slug]` | Key issues summaries | `keyIssues` + `overview` in `data/countries.ts` |
-| 10 | `/regions/[slug]` | Regional overview summaries | Region content in `data/regions.ts` |
+| 1 | `/cpin-country-guidance` | Nigeria CPIN quick reference table (topic, version/date, key finding) | Pillar page table component |
+| 2 | `/cpin-country-guidance` | EUAA 2026 country guidance summary | Section `#euaa-2026` |
+| 3 | `/asylum-profiles/lgbtq-asylum-nigeria` | LGBTQ+ Nigeria legal position (SSMPA, Sharia states, state protection) | Profile lead + summary table |
+| 4 | `/asylum-profiles/ipob-biafra` | IPOB risk explanation (proscription, arrest risk, diaspora activity) | Profile lead + risk factors list |
+| 5 | `/asylum-profiles/trafficking-juju` | Juju rituals trafficking mechanism (definition-first, numbered steps) | Profile section with ordered list |
+| 6 | `/qualifications` | Immigration Tribunal expert duties summary (Practice Direction para 10) | Qualifications page H2 block |
+| 7 | `/fees`, `/how-to-instruct` | Legal Aid instruction process (LAA prior authority, typical rates) | Fees Legal Aid section + instruction steps |
 
 **GEO content rules:**
 
 - Lead with a direct answer paragraph (40–60 words) before depth.
 - Tables use `<table>` with `<caption>` and header row for accessibility and parsing.
-- Include source citations (OSCOLA-style) where statistics are cited.
+- Include source citations (OSCOLA-style) where statistics or CPIN positions are cited.
 - Avoid gating key factual content behind accordions only.
+
+**CPIN quick reference table (GEO #1) — required rows:**
+
+| CPIN Topic | Version/Date | Key Finding |
+|-----------|-------------|-------------|
+| Actors of Protection | August 2024 | Protection generally limited outside Lagos/Abuja for many profiles |
+| Separatist Groups South-East (IPOB) | April 2026 | Members/supporters face arrest risk |
+| SOGIESC | June 2025 | State protection generally unavailable for LGBTQ+ |
+| FGM | Updated 2024 | Enforcement of prohibition inconsistent |
+| Trafficking of Women | Updated 2024 | State protection inadequate for victims |
+| Medical Treatment | December 2025 | Variable access to healthcare |
+| Internal Relocation | Current | Lagos and Abuja viable for some profiles only |
 
 ---
 
-## 6. Off-Page SEO Targets
+## 5. Off-Page SEO Targets
 
 ### Directories (listing submissions)
 
 | Directory | URL | Target page to link |
 |-----------|-----|---------------------|
-| UK Register of Expert Witnesses | jspubs.com | `/`, country pages |
-| Electronic Immigration Network | ein.org.uk | `/`, `/countries/*` |
-| Expert Witness Institute (EWI) UK | ewi.org.uk | `/qualifications`, `/experts` |
-| Asylum Research Consultancy (ARC) | asylumresearchconsultancy.com | `/guides/*`, `/countries/*` |
-| UNHCR UK partner directories | As applicable | `/countries/*` asylum hubs |
+| Electronic Immigration Network (EIN) | [ein.org.uk/experts](https://ein.org.uk/experts) | `/`, `/asylum-profiles/*` |
+| ILPA membership directory | ILPA member directory | `/qualifications`, `/guides/*` |
+| OISC accredited adviser directories | OISC adviser listings | `/`, `/how-to-instruct` |
+| Free Movement | [freemovement.org.uk](https://freemovement.org.uk) | `/cpin-country-guidance`, `/guides/*` |
+| Law Society immigration expert finder | Law Society directory | `/qualifications`, `/contact` |
 
-**Tracking template:**
+**Submission tracking template:**
 
 | Directory | Owner | Submitted | Live URL | Referral sessions/mo |
 |-----------|-------|-----------|----------|----------------------|
-| jspubs.com | | | | |
-| ein.org.uk | | | | |
-| EWI | | | | |
-| ARC | | | | |
+| EIN | | | | |
+| ILPA | | | | |
+| OISC | | | | |
+| Free Movement | | | | |
+| Law Society | | | | |
 
 ### Publications (citations / guest content)
 
 | Publication | Focus |
 |-------------|-------|
-| Free Movement | freemovement.org.uk — asylum, country guidance |
+| Free Movement | freemovement.org.uk — asylum, country guidance, CPIN challenges |
+| ILPA | Immigration practitioners, tribunal practice |
 | Legal Action Group (LAG) | Legal aid, tribunal practice |
 | UK Human Rights Blog | Human rights, country conditions |
-| ILPA | Immigration practitioners |
-| African Law & Business | africanlawbusiness.com — arbitration |
-| Global Arbitration Review (Africa) | ICSID, mining disputes |
-| Africa Investment Arbitration newsletters | Treaty arbitration |
 
 **Outreach KPI template:**
 
@@ -471,244 +347,208 @@ Content structured for AI citation and featured snippets: definition-first, tabl
 
 ### Digital PR angles
 
-1. **African Asylum Claims in UK 2025: Data by Nationality and Outcome** — supports homepage statistics table (GEO #5).
-2. **Uganda Anti-Homosexuality Act: Impact on UK Asylum Claims 2023–2025** — Hub 2, `/countries/uganda`.
-3. **West Africa Mining Arbitration Surge: What Counsel Need to Know** — Hub 4, `/guides/west-africa-mining-arbitration`.
-4. **FGM Prevalence and UK Asylum: Country-by-Country Expert Evidence Guide** — Hub 3.
-5. **Somalia Country Guidance: How Much Has Changed Since MOJ [2014]?** — Hub 1, `/guides/somalia-country-guidance-moj`.
+1. **Nigeria CPIN 2025–2026: What UK Asylum Solicitors Need to Know** — supports `/cpin-country-guidance` and GEO #1–2.
+2. **IPOB and UK Diaspora Activity: April 2026 CPIN Implications** — Hub 2, `/asylum-profiles/ipob-biafra`.
+3. **SSMPA and the June 2025 SOGIESC CPIN: LGBTQ+ Nigeria Asylum Evidence** — Hub 1, `/asylum-profiles/lgbtq-asylum-nigeria`.
+4. **Juju Rituals in Nigerian Trafficking Cases: What Experts Must Explain** — Hub 4, `/asylum-profiles/trafficking-juju`.
+5. **Legal Aid Instruction of Nigeria Country Experts: A Solicitor's Checklist** — Hub 6, `/guides/instructing-nigeria-expert`.
 
 ---
 
-## 7. Competitor Monitoring
-
-### Monthly review URLs
-
-| Competitor source | URL | What to track |
-|-------------------|-----|---------------|
-| jspubs.com country listings | jspubs.com/expert-witness/si/a/ | Per-country page depth, new African entries |
-| EIN country filter | ein.org.uk/experts/country | African country coverage |
-| thehuman-rights.com | East Africa section | Content depth, guides |
-| africanhrc.org | africanhrc.org/services-9 | LGBTQI+ Africa positioning |
-| expertcourtreports.co.uk | origin-expert-witness/ | Country pages, pricing, turnaround |
-
-### Tracking rubric (score 1–5 monthly)
-
-- **Content depth** per country (word count, guidance cited, FAQs)
-- **Backlinks** (Ahrefs/SEMrush domain refs to country URLs)
-- **New guides** published
-- **Pricing signals** (fees page, directory listings)
-- **Turnaround time claims**
-
-### Monthly log template
-
-| Month | Competitor | Country/page reviewed | Depth (1–5) | New content? | Pricing noted | Action for us |
-|-------|------------|----------------------|-------------|--------------|---------------|---------------|
-| | | | | | | |
-
----
-
-## 8. Future Expansion
-
-After initial launch, add country pages for high-volume African asylum nationalities:
-
-Cameroon, Sierra Leone, Gambia, Liberia, Senegal, **Mali**, South Sudan, Djibouti, Burkina Faso, Niger, Central African Republic, Mozambique, Angola, DRC (expand existing), Tanzania, Rwanda, Burundi.
-
-**Target:** 30+ country pages — each targeting `[country] expert witness UK`.
-
-**URL pattern:** `/countries/{slug}`  
-**Meta title pattern:** `{Country} Expert Witness UK | ...` (see existing entries in `data/countries.ts`)
-
-**Reference data:** `data/african-countries.ts` lists 54 nations; `data/countries.ts` currently implements 12.
-
-**Tier 3 gap:** Keywords such as `mali mining arbitration expert witness` require `/countries/mali` from this expansion.
-
-**SEO moat:** No competitor currently maintains 30+ dedicated African country expert witness pages with interlinked clusters — long-tail dominance opportunity.
-
----
-
-## 9. Deployment Checklist
+## 6. Deployment Checklist
 
 | Task | Implementation | Status |
 |------|----------------|--------|
 | Vercel deployment | Connect repo; production branch deploy | Pending |
-| DNS: apex → www | `middleware.ts` 301 redirect + registrar `www` CNAME | Middleware done |
-| `NEXT_PUBLIC_SITE_URL` | Override `SITE_URL` in `lib/constants.ts` or env | Pending |
-| `NEXT_PUBLIC_FORMSPREE_FORM_ID` | `components/forms/ContactForm.tsx` | Pending |
+| DNS: apex → www | `middleware.ts` 301 redirect + registrar `www` CNAME | Pending |
+| `NEXT_PUBLIC_SITE_URL` | `https://www.nigeriaexpert.com` in `lib/constants.ts` or env | Pending |
+| `NEXT_PUBLIC_FORMSPREE_FORM_ID` | Contact form component | Pending |
 | `GOOGLE_SITE_VERIFICATION` | `metadata.verification.google` in `app/layout.tsx` | Pending |
 | `BING_SITE_VERIFICATION` | `metadata.other` or Bing meta tag in layout | Pending |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | `components/seo/GoogleAnalytics.tsx` in layout | Wired (needs env value) |
-| Submit sitemap | GSC + Bing Webmaster — `app/sitemap.ts` built | Pending (post-deploy) |
-| LinkedIn company page | `LINKEDIN_URL` in `lib/constants.ts`; `sameAs` in schema | URL defined |
-| Directory submissions | jspubs, ein.org.uk, EWI, ARC | Manual post-launch |
+| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | Analytics component in layout (consent-gated) | Pending |
+| `html lang="en-GB"` | Root layout `<html lang="en-GB">` | Pending |
+| `hreflang` | `en-GB`, `en-US`, `x-default` in `alternates.languages` | Pending |
+| Submit sitemap | GSC + Bing Webmaster — `app/sitemap.ts` | Pending (post-deploy) |
+| LinkedIn company page | `NigeriaExpertWitness` → `sameAs` in Organization schema | Pending |
+| EIN directory submission | ein.org.uk/experts | Manual post-launch |
+| ILPA submission | ILPA membership directory | Manual post-launch |
 
-**Canonical & robots:**
+**Canonical and robots:**
 
 - All pages: canonical via `createMetadata()` in `lib/metadata.ts`
 - Staging/preview: `noindex: true` on non-production hosts
 - Production: `app/robots.ts` allow `/`, point to sitemap
+- Exclude from sitemap: `/contact`, `/thank-you`, `/privacy`, `/terms`
+
+**Reference implementation:** `africa-expert-witness/app/layout.tsx`, `africa-expert-witness/lib/metadata.ts`
 
 ---
 
-## Appendix A: Full URL Inventory (~54 routes)
+## Appendix A: Full URL Inventory (~45 routes)
 
-### Static & hub pages (14)
+### Static and hub pages (15)
 
 | URL | Sitemap priority |
 |-----|------------------|
 | `/` | 1.0 |
-| `/services` | 0.8 |
-| `/regions` | 0.8 |
-| `/countries` | 0.9 |
-| `/expertise-areas` | 0.8 |
-| `/case-types` | 0.8 |
-| `/guides` | 0.9 |
-| `/experts` | 0.7 |
-| `/faq` | 0.7 |
-| `/glossary` | 0.7 |
-| `/contact` | 0.6 |
-| `/fees` | 0.6 |
-| `/how-to-instruct` | 0.7 |
-| `/qualifications` | 0.6 |
-| `/what-is-an-africa-expert-witness` | 0.8 *(planned)* |
+| `/cpin-country-guidance` | 0.95 |
+| `/asylum-profiles` | 0.93 |
+| `/services` | 0.90 |
+| `/what-is-a-nigeria-expert-witness` | 0.90 |
+| `/case-types` | 0.88 |
+| `/how-to-instruct` | 0.88 |
+| `/qualifications` | 0.88 |
+| `/fees` | 0.87 |
+| `/faq` | 0.87 |
+| `/guides` | 0.87 |
+| `/experts` | 0.75 |
+| `/glossary` | 0.75 |
+| `/contact` | 0.6 (excluded from sitemap) |
+| `/thank-you` | noindex |
 
-### Dynamic pages (39)
+### Dynamic pages (30)
 
-| Pattern | Count |
-|---------|-------|
-| `/regions/{slug}` | 5 |
-| `/countries/{slug}` | 12 |
-| `/guides/{slug}` | 6 |
-| `/expertise-areas/{slug}` | 8 |
-| `/case-types/{slug}` | 8 |
+| Pattern | Count | Sitemap priority |
+|---------|-------|------------------|
+| `/asylum-profiles/{slug}` | 8 | 0.92 |
+| `/case-types/{slug}` | 8 | 0.88 |
+| `/guides/{slug}` | 6 | 0.82 |
 
-**Total indexable URLs:** ~53–54 (excluding hash-only `/services#` fragments; include in sitemap as `/services`).
+### Legal / utility (noindex)
 
----
+| URL | Robots |
+|-----|--------|
+| `/privacy` | noindex, follow |
+| `/terms` | noindex, follow |
+| `/thank-you` | noindex, nofollow |
 
-## Appendix B: Title & Meta Ownership
-
-| Entity | File | Fields |
-|--------|------|--------|
-| Countries | `data/countries.ts` | `metaTitle`, `metaDescription`, `h1` |
-| Regions | `data/regions.ts` | `metaTitle`, `metaDescription`, `h1` |
-| Guides | `data/guides.ts` | `metaTitle`, `metaDescription` |
-| Expertise areas | `data/expertise-areas.ts` | `metaTitle`, `metaDescription`, `h1` |
-| Case types | `data/case-types.ts` | `metaTitle`, `metaDescription`, `h1` |
-| Homepage, utility pages | Page-level `createMetadata()` | To implement in `app/` |
-
-Use `lib/metadata.ts` → `createMetadata({ title, description, path })` on every route.
+**Total indexable URLs:** ~44 (excluding `/contact`, `/thank-you`, `/privacy`, `/terms`).
 
 ---
 
-## Appendix C: Glossary Anchor IDs (all 34 terms)
+## Appendix B: Sitemap Priorities
 
-| Term | Anchor ID |
-|------|-----------|
-| Al-Shabaab | `al-shabaab` |
-| Anti-Homosexuality Act 2023 (Uganda) | `anti-homosexuality-act-2023-uganda` |
-| But-For Analysis | `but-for-analysis` |
-| Clan Structure (Somalia) | `clan-structure-somalia` |
-| Complementary Protection | `complementary-protection` |
-| Country Guidance Case | `country-guidance-case` |
-| Country of Origin Information (COI) | `country-of-origin-information-coi` |
-| Country Policy Information Note (CPIN) | `country-policy-information-note-cpin` |
-| CPR Part 35 | `cpr-part-35` |
-| Diaspora Remittances (MOJ Somalia context) | `diaspora-remittances-moj-somalia-context` |
-| FGM (Female Genital Mutilation) | `fgm-female-genital-mutilation` |
-| Forced Military Conscription (Eritrea) | `forced-military-conscription-eritrea` |
-| HJ (Iran) Standard (LGBTQI+ asylum test) | `hj-iran-standard-lgbtqi-asylum-test` |
-| Home Office Refusal | `home-office-refusal` |
-| ICSID | `icsid-international-centre-for-settlement-of-investment-disputes` |
-| Internal Relocation Alternative | `internal-relocation-alternative` |
-| Kanun | `kanun` |
-| Legal Aid | `legal-aid` |
-| MA (draft evaders) Eritrea CG [2019] | `ma-draft-evaders-eritrea-cg-2019` |
-| MOJ & Ors Somalia CG [2014] | `moj-ors-somalia-cg-2014` |
-| Modern Slavery | `modern-slavery` |
-| National Referral Mechanism (NRM) | `national-referral-mechanism-nrm` |
-| Non-State Actor Persecution | `non-state-actor-persecution` |
-| OHADA | `ohada-organisation-for-the-harmonisation-of-business-law-in-africa` |
-| OSCOLA Citation Standard | `oscola-citation-standard` |
-| Particular Social Group (PSG) | `particular-social-group-psg` |
-| Persecution | `persecution` |
-| Political Opinion (asylum ground) | `political-opinion-asylum-ground` |
-| Refugee Convention 1951 | `refugee-convention-1951` |
-| RN Zimbabwe CG [2008] | `rn-zimbabwe-cg-2008` |
-| Single Joint Expert (SJE) | `single-joint-expert-sje` |
-| State Protection | `state-protection` |
-| Upper Tribunal (UKUT) | `upper-tribunal-ukut` |
-| Well-Founded Fear | `well-founded-fear` |
+| Route family | Priority |
+|--------------|----------|
+| `/` | 1.0 |
+| `/cpin-country-guidance` | 0.95 |
+| `/asylum-profiles` (hub) | 0.93 |
+| `/asylum-profiles/[slug]` | 0.92 |
+| `/services`, `/what-is-a-nigeria-expert-witness` | 0.90 |
+| `/case-types` (hub), `/case-types/[slug]` | 0.88 |
+| `/how-to-instruct`, `/qualifications` | 0.88 |
+| `/fees`, `/faq`, `/guides` (hub) | 0.87 |
+| `/guides/[slug]` | 0.82 |
+| `/glossary`, `/experts` | 0.75 |
 
 ---
 
-## Appendix D: Country Minimum Links Matrix
+## Appendix C: Schema Architecture Summary
 
-Minimum internal links per Section 3 Rule 1. Implement via `relatedLinks` or page template.
+### Root entity
 
-| Country | Region | Expertise (≥2) | Guide (≥1) | Case types |
-|---------|--------|----------------|------------|------------|
-| nigeria | west-africa | lgbtqi-asylum-africa, fgm-gender-based-violence, political-persecution-state-protection | lgbtqi-africa-asylum-evidence, fgm-expert-evidence-africa | lgbtqi-asylum-africa-cases, fgm-asylum-cases, asylum-appeal-first-tier-tribunal |
-| somalia | horn-of-africa | political-persecution-state-protection, country-conditions-human-rights | somalia-country-guidance-moj | asylum-appeal-first-tier-tribunal, upper-tribunal-country-guidance |
-| eritrea | horn-of-africa | political-persecution-state-protection, country-conditions-human-rights | somalia-country-guidance-moj *(MA/CG context)* | asylum-appeal-first-tier-tribunal, upper-tribunal-country-guidance |
-| ethiopia | horn-of-africa | political-persecution-state-protection, country-conditions-human-rights | somalia-country-guidance-moj | asylum-appeal-first-tier-tribunal |
-| sudan | horn-of-africa | political-persecution-state-protection, country-conditions-human-rights | home-office-cpin-africa-rebuttal | asylum-appeal-first-tier-tribunal |
-| zimbabwe | southern-africa | political-persecution-state-protection, country-conditions-human-rights | home-office-cpin-africa-rebuttal | asylum-appeal-first-tier-tribunal, upper-tribunal-country-guidance |
-| democratic-republic-of-congo | southern-africa | investment-treaty-arbitration-africa, political-persecution-state-protection | west-africa-mining-arbitration | investment-treaty-icsid-arbitration, commercial-litigation-african-law |
-| ghana | west-africa | lgbtqi-asylum-africa, country-conditions-human-rights | lgbtqi-africa-asylum-evidence | lgbtqi-asylum-africa-cases, asylum-appeal-first-tier-tribunal |
-| kenya | east-africa | lgbtqi-asylum-africa, political-persecution-state-protection | lgbtqi-africa-asylum-evidence | lgbtqi-asylum-africa-cases, asylum-appeal-first-tier-tribunal |
-| uganda | east-africa | lgbtqi-asylum-africa, political-persecution-state-protection | lgbtqi-africa-asylum-evidence | lgbtqi-asylum-africa-cases, asylum-appeal-first-tier-tribunal |
-| guinea | west-africa | fgm-gender-based-violence, investment-treaty-arbitration-africa | fgm-expert-evidence-africa, west-africa-mining-arbitration | fgm-asylum-cases, investment-treaty-icsid-arbitration |
-| libya | north-africa | investment-treaty-arbitration-africa, country-conditions-human-rights | west-africa-mining-arbitration | investment-treaty-icsid-arbitration, extradition-africa |
+```json
+{
+  "@type": "Organization",
+  "@id": "https://www.nigeriaexpert.com/#organization"
+}
+```
 
-**All country pages:** `/contact`
+### Schema graph overview
 
-### Region → countries (Rule 2)
+```mermaid
+flowchart TB
+  Org["Organization #organization"]
+  Home["ProfessionalService #professional-service"]
+  Svc["Service x8 /services#id"]
+  ArtCPIN["Article /cpin-country-guidance"]
+  ArtGuide["Article x6 /guides/slug"]
+  Per["Person x3 /experts"]
+  FAQ["FAQPage dynamic routes"]
+  BC["BreadcrumbList all non-home"]
+  Org --> Home
+  Org --> Svc
+  Org --> ArtCPIN
+  Org --> ArtGuide
+  Org --> Per
+  Org --> FAQ
+  BC --> Org
+```
 
-| Region | Countries |
-|--------|-----------|
-| east-africa | kenya, uganda |
-| west-africa | nigeria, ghana, guinea |
-| horn-of-africa | somalia, eritrea, ethiopia, sudan |
-| southern-africa | zimbabwe, democratic-republic-of-congo |
-| north-africa | libya |
+### Children of Organization
+
+| Type | Count | URL / @id | Notes |
+|------|-------|-----------|-------|
+| ProfessionalService | 1 | `/` — `#professional-service` | Homepage |
+| Service | 8 | `/services#{id}` | See services inventory in Section 2 |
+| Article | 1 | `/cpin-country-guidance` | CPIN pillar |
+| Article | 6 | `/guides/{slug}` | Guide pages |
+| Person | 3 | `/experts` | Expert listing |
+| FAQPage | 24+ | All dynamic routes with FAQs | 2 FAQs minimum per profile/case type |
+| BreadcrumbList | All non-home | Per-page | |
+| WebSite | 1 | `/` | SearchAction optional |
+
+### Page → schema template matrix
+
+| Route | JSON-LD types |
+|-------|---------------|
+| `/` | Organization, ProfessionalService, WebSite |
+| `/services` | Organization, Service ×8 |
+| `/cpin-country-guidance` | Organization, Article, BreadcrumbList, FAQPage |
+| `/guides/[slug]` | Organization, Article, BreadcrumbList |
+| `/asylum-profiles/[slug]` | Organization, BreadcrumbList, FAQPage |
+| `/case-types/[slug]` | Organization, BreadcrumbList, FAQPage |
+| `/experts` | Organization, Person ×3 |
+| `/faq` | Organization, FAQPage, BreadcrumbList |
+| `/glossary` | Organization, BreadcrumbList |
+| Static utility pages | Organization, BreadcrumbList |
+
+**LinkedIn `sameAs`:** `https://www.linkedin.com/company/NigeriaExpertWitness`
+
+---
+
+## Appendix D: Profile Minimum Links Matrix
+
+Minimum internal links per Section 3 Rule A. Implement via `relatedLinks` or page template.
+
+| Profile slug | CPIN anchor | Case types | Guides |
+|--------------|-------------|------------|--------|
+| `lgbtq-asylum-nigeria` | `#sogiesc` | `lgbtq-asylum-nigeria`, `asylum-appeal-ftt` | `lgbtq-nigeria-asylum-guide` |
+| `ipob-biafra` | `#ipob-separatist` | `ipob-biafra-asylum`, `asylum-appeal-ftt` | `ipob-biafra-expert-guide` |
+| `boko-haram-northeast` | — | `asylum-appeal-ftt`, `fresh-claims-nigeria` | `nigeria-cpin-guide-solicitors` |
+| `fgm-gbv` | — | `fgm-asylum`, `asylum-appeal-ftt` | `fgm-nigeria-guide` |
+| `trafficking-juju` | — | `trafficking-nrm`, `asylum-appeal-ftt` | `trafficking-juju-guide` |
+| `actors-of-protection` | `#actors-of-protection` | `asylum-appeal-ftt`, `upper-tribunal-nigeria` | `nigeria-cpin-guide-solicitors` |
+| `internal-relocation-lagos` | `#internal-relocation` | `upper-tribunal-nigeria`, `asylum-appeal-ftt` | `nigeria-cpin-guide-solicitors` |
+| `political-persecution` | — | `asylum-appeal-ftt`, `deportation-removal-nigeria` | `nigeria-cpin-guide-solicitors` |
+
+**All asylum profile pages:** `/how-to-instruct`, `/contact`
+
+### Guide → profile links (Rule B)
+
+| Guide slug | Required profile links |
+|------------|------------------------|
+| `nigeria-cpin-guide-solicitors` | All 8 profiles (or top 4 + link to hub) |
+| `lgbtq-nigeria-asylum-guide` | `lgbtq-asylum-nigeria` |
+| `ipob-biafra-expert-guide` | `ipob-biafra` |
+| `fgm-nigeria-guide` | `fgm-gbv` |
+| `trafficking-juju-guide` | `trafficking-juju` |
+| `instructing-nigeria-expert` | Top 4 transactional profiles |
 
 ---
 
 ## Appendix E: Recommended Build Order
 
-1. Root layout, `createMetadata()`, `JsonLd`, Header/Footer from `components/layout/`
-2. Dynamic routes: `countries`, `regions`, `expertise-areas`, `case-types`, `guides`
-3. Static utility: `services`, `faq`, `glossary`, `contact`, `fees`, `how-to-instruct`, `experts`, `qualifications`
-4. Homepage with Section 3 Rule 6 links + GEO statistics table
-5. `RelatedLinks` component + Appendix D matrix
-6. `app/sitemap.ts`, `app/robots.ts`, env verification tags
-7. GEO tables on expertise guides and homepage
-8. `/what-is-an-africa-expert-witness` pillar page
-
----
-
-## Appendix F: Implementation Status Matrix
-
-| Asset | Data | Route | Metadata | Schema | Internal links |
-|-------|------|-------|----------|--------|----------------|
-| Homepage | Yes | Yes | Yes | Organization, ProfessionalService, WebSite | Yes (Rule 6) |
-| Countries ×12 | Yes | Yes | Yes | Organization, Breadcrumb, FAQPage | Yes (`related-links.ts`) |
-| Regions ×5 | Yes | Yes | Yes | Organization, Breadcrumb, FAQPage | Yes |
-| Guides ×6 | Yes | Yes | Yes | Organization, Article, Breadcrumb | Yes + GEO tables |
-| Expertise ×8 | Yes | Yes | Yes | Organization, Breadcrumb, FAQPage | Yes + GEO tables (LGBTQI+, FGM) |
-| Case types ×8 | Yes | Yes | Yes | Organization, Breadcrumb, FAQPage | Yes |
-| Services ×8 | Yes | Yes | Yes | Service ×8 graph | Partial |
-| FAQ | Yes | Yes | Yes | Organization, FAQPage, Breadcrumb | Partial |
-| Glossary ×34 | Yes | Yes | Yes | Organization, FAQPage, Breadcrumb | All 34 terms linked |
-| Experts ×3 | Yes | Yes | Yes | Organization, Person ×3 | Footer only (removed from nav) |
-| Contact / Fees / How-to-instruct | Yes | Yes | Yes | Organization, Breadcrumb | Partial |
-| What is an Africa expert witness | Yes | Yes | Yes | Organization, Breadcrumb | Homepage link |
-| Sitemap / Robots | — | Yes | — | — | — |
-| GA4 / Search verification | — | Wired in layout | Env-dependent | — | — |
-| Apex → www redirect | — | Yes (`middleware.ts`) | — | — | — |
-| Thank-you / 404 | Yes | Yes | noindex (thank-you) | — | — |
-
-**Post-launch manual:** directory submissions, PR outreach, competitor log, country page expansion (Section 8).
+1. Root layout (`lang="en-GB"`, hreflang), `createMetadata()`, `JsonLd`, Header/Footer
+2. Data layer: `asylum-profiles.ts`, `case-types.ts`, `guides.ts`, `glossary.ts`, `services.ts`
+3. Dynamic routes: `/asylum-profiles/[slug]`, `/case-types/[slug]`, `/guides/[slug]`
+4. Static pages: `/cpin-country-guidance`, `/services`, `/how-to-instruct`, `/qualifications`, `/fees`, `/faq`, `/glossary`, `/contact`, `/experts`
+5. Homepage with top 4 profile links, CPIN pillar link, guides hub
+6. `RelatedLinks` component + Appendix D matrix
+7. GEO tables on `/cpin-country-guidance` and profile pages (Section 4)
+8. `app/sitemap.ts`, `app/robots.ts`, env verification tags
+9. `middleware.ts` apex → www redirect
+10. Post-launch: EIN and ILPA directory submissions, GSC/Bing sitemap submit
 
 ---
 
@@ -716,7 +556,6 @@ Minimum internal links per Section 3 Rule 1. Implement via `relatedLinks` or pag
 
 | Version | Date | Notes |
 |---------|------|-------|
-| 1.0 | 2026-05-15 | Initial SEO architecture — aligned to `data/*.ts` and `lib/schema.ts` |
-| 1.1 | 2026-05-15 | Implementation complete — see PROJECT-SUMMARY.md |
+| 1.0 | 2026-06-09 | Initial SEO architecture for nigeriaexpert.com |
 
-**Related files:** `lib/metadata.ts`, `lib/schema.ts`, `lib/constants.ts`, `middleware.ts`, `data/navigation.ts`
+**Related files (to be created):** `lib/metadata.ts`, `lib/schema.ts`, `lib/constants.ts`, `middleware.ts`, `data/asylum-profiles.ts`, `data/case-types.ts`, `data/guides.ts`, `data/glossary.ts`

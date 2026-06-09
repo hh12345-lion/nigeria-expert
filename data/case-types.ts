@@ -8,220 +8,229 @@ export type CaseType = {
   h1: string;
   content: string[];
   faqs: FAQ[];
-  relatedExpertise: string[];
+  relatedProfiles: string[];
+  relatedServices: string[];
 };
 
 export const caseTypes: CaseType[] = [
   {
-    slug: "asylum-appeal-first-tier-tribunal",
-    title: "Asylum Appeal - First-tier Tribunal",
-    metaTitle: "Africa Expert Witness for Asylum Appeals | First-tier Tribunal UK",
+    slug: "asylum-appeal-ftt",
+    title: "FTT Asylum Appeal",
+    metaTitle: "Nigeria Expert Witness for FTT Asylum Appeals | First-tier Tribunal UK",
     metaDescription:
-      "Africa expert witness for First-tier Tribunal asylum appeals. Country condition reports for UK immigration cases across 54 African nations.",
-    h1: "Africa Expert Witness for First-tier Tribunal Asylum Appeals",
+      "Nigeria expert witness for First-tier Tribunal asylum appeals. Country condition reports for LGBTQ+, IPOB, FGM, Boko Haram, and trafficking claims. Legal Aid compatible.",
+    h1: "Nigeria Expert Witness for First-tier Tribunal Asylum Appeals",
     content: [
-      "First-tier Tribunal (Immigration and Asylum Chamber) appeals are the primary forum for challenging Home Office refusals of African asylum claims. Expert country condition reports provide the independent, authoritative evidence tribunals require to assess credibility, risk on return, and internal relocation.",
-      "Reports must be CPR Part 35 compliant, cite sources to OSCOLA standards, and address the specific grounds raised - whether political persecution, LGBTQI+, FGM, trafficking, or clan-based claims. Early instruction is critical to avoid adjournments.",
-      "AfricaExpertWitness matches solicitors with country-specific experts who have tribunal acceptance records and field research experience in the relevant African jurisdiction.",
+      "First-tier Tribunal (Immigration and Asylum Chamber) appeals are the primary forum for challenging Home Office refusals of Nigerian asylum claims. Nigeria is one of the highest-volume asylum claim nationalities in the UK, spanning LGBTQ+ persecution under SSMPA, IPOB separatist claims, Boko Haram risk, FGM, trafficking with juju rituals, and political persecution.",
+      "Expert country condition reports provide the independent, authoritative evidence tribunals require to assess credibility, risk on return, state protection, and internal relocation. Reports must comply with Immigration Tribunal Practice Direction paragraph 10 and the Expert Reports in the Immigration Tribunal guide (October 2025) by Adam Pipe of No.8 Chambers.",
+      "Early instruction is critical. Allow 2 to 3 weeks for a standard report. NigeriaExpert matches solicitors with qualified Nigeria country experts who have tribunal acceptance records, current CPIN knowledge, and field research experience in Nigeria.",
     ],
     faqs: [
       {
-        question: "When should I instruct an Africa expert for a First-tier Tribunal appeal?",
+        question: "When should I instruct a Nigeria expert for a First-tier Tribunal appeal?",
         answer:
-          "Instruct as soon as the appeal is lodged and grounds are identified. Allow 2–3 weeks for a standard report. Urgent instructions (5 business days) are available for imminent hearings. Late instruction risks adjournment applications and increased costs.",
+          "Instruct as soon as the appeal is lodged and grounds are identified. Allow 2 to 3 weeks for a standard report. Urgent instructions are available for imminent hearings. Late instruction risks adjournment applications and increased costs.",
       },
       {
-        question: "What should an Africa expert report for the First-tier Tribunal contain?",
+        question: "What should a Nigeria expert report for the FTT contain?",
         answer:
-          "Reports should address the specific factual matrix: country conditions relevant to the claim, state protection analysis, internal relocation feasibility, consistency with country guidance where applicable, and source citations to Home Office COI, UN, and field research.",
+          "Reports should address the specific factual matrix: country conditions relevant to the claim, state protection analysis, internal relocation feasibility, consistency with current CPINs and EUAA 2026 guidance, and source citations to Home Office COI, UNHCR, and field research.",
       },
     ],
-    relatedExpertise: ["country-conditions-human-rights", "political-persecution-state-protection"],
+    relatedProfiles: ["lgbtq-asylum-nigeria", "ipob-biafra", "actors-of-protection"],
+    relatedServices: ["country-condition-reports", "cpin-challenge"],
   },
   {
-    slug: "upper-tribunal-country-guidance",
-    title: "Upper Tribunal - Country Guidance",
-    metaTitle: "Africa Expert Witness Upper Tribunal | Country Guidance Cases UK",
+    slug: "upper-tribunal-nigeria",
+    title: "Upper Tribunal Nigeria",
+    metaTitle: "Nigeria Expert Witness Upper Tribunal | Country Guidance UK",
     metaDescription:
-      "Africa expert witness for Upper Tribunal country guidance cases. MOJ Somalia, MA Eritrea, RN Zimbabwe, and departure applications.",
-    h1: "Africa Expert Witness for Upper Tribunal Country Guidance Cases",
+      "Nigeria expert witness for Upper Tribunal country guidance and departure cases. Current CPIN analysis, EUAA 2026 guidance, and oral evidence.",
+    h1: "Nigeria Expert Witness for Upper Tribunal Proceedings",
     content: [
-      "Upper Tribunal (Immigration and Asylum Chamber) country guidance cases establish binding precedent for how African asylum claims are assessed across the UK. Leading cases include MOJ Somalia, MA Eritrea, and RN Zimbabwe.",
-      "Expert evidence in country guidance and departure cases must meet the highest evidential standards. Experts address whether existing guidance remains current, identify material changes since the leading decision, and provide the granular country analysis the UT requires.",
-      "Solicitors instructing experts for UT work should identify whether the case is a country guidance application, a departure from guidance, or a CG review - each requiring different expert scope and methodology.",
+      "Upper Tribunal (Immigration and Asylum Chamber) proceedings include country guidance applications, departure from guidance cases, and appeals from First-tier Tribunal decisions on Nigerian asylum claims. Expert evidence in UT work must meet the highest evidential standards.",
+      "With multiple updated Nigeria CPINs in 2025 to 2026, including SOGIESC (June 2025), separatist groups South-East (April 2026), and medical treatment (December 2025), experts must address whether existing guidance and CPIN positions remain current and provide granular country analysis.",
+      "Oral evidence is most common in Upper Tribunal country guidance cases. NigeriaExpert experts are experienced in tribunal attendance and cross-examination on Nigeria country conditions.",
     ],
     faqs: [
       {
-        question: "What is a country guidance case?",
+        question: "When is oral evidence required in Upper Tribunal Nigeria cases?",
         answer:
-          "A country guidance (CG) case is an Upper Tribunal decision designated as providing authoritative guidance on how claims from a particular country should be assessed. CG decisions are binding on First-tier Tribunals until departed from or superseded.",
+          "Oral evidence is most common in country guidance cases or where the tribunal directs. Experts should be prepared to give evidence on current CPIN positions, field research findings, and profile-specific risk analysis under cross-examination.",
       },
       {
-        question: "Which African country guidance cases are most significant?",
+        question: "Which Nigeria CPINs are most relevant to Upper Tribunal work?",
         answer:
-          "MOJ & Ors (Return to Mogadishu) Somalia CG [2014] UKUT 00442; MA (draft evaders) Eritrea CG [2019] UKUT 272; and RN and Others (Returnees) Zimbabwe CG [2008] UKAIT 00083 are the leading African CG cases in UK immigration law.",
+          "The April 2026 CPIN on separatist groups South-East, June 2025 SOGIESC CPIN, August 2024 actors of protection CPIN, and EUAA Country Guidance Nigeria 2026 are the most frequently cited in current Upper Tribunal Nigeria cases.",
       },
     ],
-    relatedExpertise: ["country-conditions-human-rights", "political-persecution-state-protection"],
+    relatedProfiles: ["ipob-biafra", "lgbtq-asylum-nigeria", "internal-relocation-lagos"],
+    relatedServices: ["cpin-challenge", "oral-evidence"],
   },
   {
-    slug: "lgbtqi-asylum-africa-cases",
-    title: "LGBTQI+ Asylum - Africa",
-    metaTitle: "LGBTQI+ Africa Asylum Expert Witness UK | Uganda, Nigeria & Ghana",
+    slug: "lgbtq-asylum-nigeria",
+    title: "LGBTQ+ Asylum Nigeria Claims",
+    metaTitle: "LGBTQ+ Nigeria Asylum Expert Witness UK | SSMPA Expert Reports",
     metaDescription:
-      "LGBTQI+ Africa asylum expert witness for UK tribunals. Uganda Anti-Homosexuality Act, Nigerian SSMPA, and sexuality evidence standards.",
-    h1: "LGBTQI+ Asylum from Africa - Expert Witness Evidence",
+      "LGBTQ+ Nigeria asylum expert witness for UK tribunals. SSMPA 2013, June 2025 SOGIESC CPIN, HJ (Iran) standard, and internal relocation analysis.",
+    h1: "LGBTQ+ Asylum Claims from Nigeria: Expert Witness Evidence",
     content: [
-      "LGBTQI+ asylum claims from Africa are among the fastest-growing categories in UK immigration tribunals. Uganda's Anti-Homosexuality Act 2023, Nigeria's SSMPA 2014, and pending Ghanaian legislation have driven significant increases in claim volume.",
-      "Expert reports address criminalisation frameworks, enforcement practice, community and family violence, NGO protection availability, and internal relocation - which is rarely viable where criminalisation applies nationwide. Reports must be consistent with the HJ (Iran) and HT (Cameroon) standards.",
-      "Country-specific expertise is essential. An expert on Uganda cannot credibly report on Nigeria or Ghana without dedicated knowledge of each jurisdiction's legal and social conditions.",
+      "LGBTQ+ asylum claims from Nigeria are among the highest-volume sexuality-based claims in UK immigration tribunals. Nigeria's SSMPA 2013 criminalises same-sex relationships nationwide, with death penalty under Sharia law in 12 northern states.",
+      "Expert reports address criminalisation frameworks, enforcement practice, community and family violence, NGO protection availability, and internal relocation impossibility. Reports must be consistent with the HJ (Iran) [2010] UKSC 31 standard and the June 2025 updated SOGIESC CPIN.",
+      "Country-specific expertise is essential. Expert witnesses must demonstrate current knowledge of Nigeria's legal framework, social attitudes, and the specific risk profile of the appellant.",
     ],
     faqs: [
       {
-        question: "What evidence standard applies to LGBTQI+ asylum claims?",
+        question: "What evidence standard applies to LGBTQ+ Nigeria asylum claims?",
         answer:
-          "The HJ (Iran) standard requires tribunals to accept the claimant's sexuality unless there is good reason to reject it. Expert witnesses do not determine sexuality but provide country conditions evidence on risk, enforcement, and protection - supporting the tribunal's overall assessment.",
+          "The HJ (Iran) standard requires tribunals to accept the claimant's sexuality unless there is good reason to reject it. Expert witnesses provide country conditions evidence on risk, enforcement, and protection, supporting the tribunal's overall assessment.",
       },
       {
-        question: "Which African countries generate the most LGBTQI+ UK asylum claims?",
+        question: "Can LGBTQ+ Nigerians internally relocate within Nigeria?",
         answer:
-          "Uganda, Nigeria, Ghana, Kenya, Tanzania, Cameroon, DRC, Guinea, Gambia, and Sierra Leone. Uganda has seen the sharpest increase following the Anti-Homosexuality Act 2023.",
+          "No. The EUAA 2026 country guidance confirms that where persecution is by the state, internal protection is not available because SSMPA enforcement applies nationwide. Expert witnesses address this directly in relocation analysis.",
       },
     ],
-    relatedExpertise: ["lgbtqi-asylum-africa"],
+    relatedProfiles: ["lgbtq-asylum-nigeria", "internal-relocation-lagos", "actors-of-protection"],
+    relatedServices: ["lgbtq-asylum", "internal-relocation-analysis"],
   },
   {
-    slug: "fgm-asylum-cases",
-    title: "FGM Asylum Cases",
-    metaTitle: "FGM Africa Asylum Expert Witness UK | Expert Evidence Guide",
+    slug: "fgm-asylum",
+    title: "FGM Asylum Nigeria",
+    metaTitle: "FGM Nigeria Asylum Expert Witness UK | Expert Evidence Guide",
     metaDescription:
-      "FGM Africa asylum expert witness for UK tribunals. Prevalence analysis, daughters at risk, and state protection in Guinea, Somalia, Mali, and Nigeria.",
-    h1: "FGM Asylum Cases from Africa - Expert Witness Evidence",
+      "FGM Nigeria asylum expert witness for UK tribunals. Prevalence analysis, daughter-at-risk claims, VAPP Act 2015, and state protection.",
+    h1: "FGM Asylum Claims from Nigeria: Expert Witness Evidence",
     content: [
-      "FGM-based asylum claims require expert analysis of prevalence by country, ethnic group, and region. Guinea, Somalia, Mali, Sierra Leone, and Gambia have the highest documented prevalence globally.",
-      "Claims succeed where ongoing risk exists - including daughters at risk, Type III re-infibulation, and medical complications - even where the claimant has already undergone FGM. Expert witnesses assess state protection adequacy and internal relocation feasibility.",
-      "Reports must address the specific ethnic and geographic context of the claimant, not generic national statistics alone.",
+      "FGM asylum claims from Nigeria require expert evidence on prevalence by state and ethnic group, enforcement of the VAPP Act 2015, and state protection availability. Nigeria has one of the highest absolute numbers of FGM cases globally.",
+      "Daughter-at-risk claims require the expert to assess whether the extended family has indicated intent, whether state protection is realistically available in the specific locality, and whether internal relocation would provide sufficient protection.",
+      "Expert reports address intersectionality with trafficking, forced marriage, and honour-based violence where relevant to the appellant's profile.",
     ],
     faqs: [
       {
-        question: "Can FGM asylum claims succeed if FGM has already occurred?",
+        question: "What does an FGM expert report for Nigeria contain?",
         answer:
-          "Yes. Claims can succeed based on ongoing risk of re-infibulation, daughters at risk, or medical complications requiring treatment unavailable on return. Expert witnesses address prospective risk, not only historical harm.",
+          "Reports address FGM prevalence in the specific ethnic group and state, legal framework under the VAPP Act 2015, enforcement practice, state protection availability, and internal relocation feasibility for the specific profile.",
       },
       {
-        question: "Which countries require FGM expert evidence most frequently?",
+        question: "How do tribunals assess daughter-at-risk FGM claims from Nigeria?",
         answer:
-          "Guinea, Somalia, Mali, Sierra Leone, Gambia, and Nigeria (state-specific variation). Expert witnesses provide ethnic and regional prevalence analysis beyond national averages.",
+          "Tribunals assess whether there is a real risk of FGM for the daughter, considering family intent, community practice, state protection, and relocation options. Expert evidence provides the country-specific analysis required for this assessment.",
       },
     ],
-    relatedExpertise: ["fgm-gender-based-violence"],
+    relatedProfiles: ["fgm-gbv", "internal-relocation-lagos", "actors-of-protection"],
+    relatedServices: ["fgm-expert-reports", "internal-relocation-analysis"],
   },
   {
-    slug: "trafficking-modern-slavery-cases",
-    title: "Trafficking & Modern Slavery",
-    metaTitle: "Trafficking Africa Expert Witness UK | NRM & Asylum Evidence",
+    slug: "trafficking-nrm",
+    title: "Trafficking & NRM Nigeria",
+    metaTitle: "Trafficking Nigeria Expert Witness UK | NRM & Juju Ritual Evidence",
     metaDescription:
-      "Trafficking and modern slavery Africa expert witness for UK NRM and asylum cases. Nigeria, Ghana, and West African route analysis.",
-    h1: "Trafficking & Modern Slavery Cases from Africa",
+      "Trafficking Nigeria expert witness for UK tribunals. NRM cases, juju ritual evidence, Edo State routes, reintegration risk, and state protection.",
+    h1: "Trafficking & NRM Cases from Nigeria: Expert Witness Evidence",
     content: [
-      "African trafficking cases in the UK span asylum claims, National Referral Mechanism referrals, and modern slavery statements. Nigerian and Ghanaian trafficking routes - including juju oath exploitation - are among the most documented in UK tribunals.",
-      "Expert witnesses analyse trafficking patterns, state protection failures, re-trafficking risk on return, and the credibility of accounts involving ritual exploitation. Reports support both positive asylum decisions and NRM reasonable grounds decisions.",
-      "Country conditions evidence on corruption, law enforcement capacity, and NGO support availability is essential for credible trafficking assessments.",
+      "Trafficking cases from Nigeria frequently involve juju ritual control, particularly from Edo State and Benin City trafficking networks. Expert witnesses explain the role of juju in debt bondage and the cultural context tribunals need to assess credibility and reintegration risk.",
+      "The National Referral Mechanism (NRM) in the UK provides a framework for identifying trafficking victims. Expert reports support both asylum and trafficking-related protection claims by addressing state protection inadequacies in Nigeria and re-trafficking risk on return.",
+      "Reports cite the updated Home Office CPIN on trafficking of women and address the specific trafficking route, network, and reintegration support available in the appellant's home area.",
     ],
     faqs: [
       {
-        question: "How does expert evidence support NRM trafficking cases?",
+        question: "How does juju evidence support trafficking asylum claims?",
         answer:
-          "Expert reports provide country conditions context for reasonable grounds and conclusive grounds decisions - documenting trafficking prevalence, state protection failures, and re-trafficking risk that caseworkers and tribunals require.",
+          "Expert witnesses explain how juju rituals are used to control trafficking victims, why victims may fear disclosure, and how the ritual context affects credibility assessments. This cultural evidence is essential for tribunals assessing trafficking claims from Nigeria.",
       },
       {
-        question: "What is juju trafficking and how do experts address it?",
+        question: "What is the re-trafficking risk for returned victims in Nigeria?",
         answer:
-          "Juju (or ritual) trafficking involves oath-taking ceremonies used to control victims, primarily from Nigeria. Expert witnesses document the cultural context, credibility of accounts, and risk on return to trafficking networks.",
+          "Returned trafficking victims face retaliation from networks, stigma, family rejection, and re-trafficking. State protection is often inadequate in high-trafficking areas such as Edo State. Expert witnesses assess individual risk against current conditions.",
       },
     ],
-    relatedExpertise: ["trafficking-modern-slavery-africa"],
+    relatedProfiles: ["trafficking-juju", "actors-of-protection", "fgm-gbv"],
+    relatedServices: ["trafficking-juju-reports", "country-condition-reports"],
   },
   {
-    slug: "investment-treaty-icsid-arbitration",
-    title: "Investment Treaty & ICSID Arbitration",
-    metaTitle: "ICSID Africa Expert Witness UK | Investment Treaty Arbitration",
+    slug: "ipob-biafra-asylum",
+    title: "IPOB & Biafra Asylum",
+    metaTitle: "IPOB Biafra Asylum Expert Witness UK | April 2026 CPIN",
     metaDescription:
-      "ICSID and investment treaty arbitration Africa expert witness. Guinea mining, West Africa licence revocations, and country conditions evidence.",
-    h1: "Investment Treaty & ICSID Arbitration - Africa Expert Witness",
+      "IPOB and Biafra asylum expert witness for UK tribunals. Proscription, arrest risk, UK diaspora activity, and April 2026 CPIN South-East Nigeria.",
+    h1: "IPOB & Biafra Asylum Claims: Expert Witness Evidence",
     content: [
-      "African states face unprecedented volumes of ICSID and UNCITRAL investment treaty claims. West African mining disputes - Guinea's $28.9 billion Axis International claim, Mali, Burkina Faso, Niger licence revocations - dominate the 2024–2025 landscape.",
-      "Expert witnesses provide country conditions analysis for expropriation and fair and equitable treatment claims, African law evidence on regulatory frameworks, and sector-specific knowledge in mining, oil and gas, and infrastructure.",
-      "Counsel should instruct experts early in memorial preparation to ensure evidence addresses the specific treaty standards, governing law, and factual matrix of each dispute.",
+      "IPOB asylum claims have increased significantly following the April 2026 updated CPIN on separatist groups in South-East Nigeria. The CPIN confirms arrest and detention risk for members, supporters, and associates, including those whose only IPOB connection is UK diaspora activity.",
+      "Expert reports assess the individual's profile against current enforcement patterns in Imo, Anambra, Abia, Enugu, and Ebonyi states. Reports distinguish between high-profile and low-profile membership and address whether UK-based demonstrations or online activity would attract Nigerian authority attention.",
+      "Reports cite the April 2026 CPIN, EUAA 2026 guidance, and field research on detention conditions and airport interception practices.",
     ],
     faqs: [
       {
-        question: "What expert disciplines are needed in African ICSID cases?",
+        question: "What does the April 2026 CPIN say about IPOB risk?",
         answer:
-          "Typically: country conditions experts, African law experts, sector specialists (mining, energy), and quantum/damages experts. The specific mix depends on the treaty standards in dispute and governing law.",
+          "The April 2026 CPIN confirms that IPOB members, supporters, and associates face real risk of arrest and detention. It also confirms that individuals with no prior IPOB profile in Nigeria have been arrested at airports for expressing IPOB views.",
       },
       {
-        question: "Which African countries face the most ICSID claims?",
+        question: "How do experts assess UK diaspora IPOB activity?",
         answer:
-          "Guinea, Egypt, Algeria, DRC, Tanzania, Kenya, Mozambique, and Libya. West Africa has seen the sharpest increase in 2024–2025 following military regime mining licence revocations.",
+          "Experts assess whether the appellant's UK-based demonstrations, online activity, social media posts, or leadership roles would bring them to the attention of Nigerian security forces on return, citing the April 2026 CPIN and field research.",
       },
     ],
-    relatedExpertise: ["investment-treaty-arbitration-africa", "african-law-legal-systems"],
+    relatedProfiles: ["ipob-biafra", "political-persecution", "actors-of-protection"],
+    relatedServices: ["ipob-biafra-risk", "cpin-challenge"],
   },
   {
-    slug: "commercial-litigation-african-law",
-    title: "Commercial Litigation - African Law",
-    metaTitle: "African Law Expert Witness UK | Commercial Litigation",
+    slug: "deportation-removal-nigeria",
+    title: "Deportation & Removal Nigeria",
+    metaTitle: "Deportation Removal Nigeria Expert Witness UK | Risk on Return",
     metaDescription:
-      "African law expert witness for UK commercial litigation. Domestic law, OHADA, court procedures, and governing law analysis.",
-    h1: "Commercial Litigation - African Law Expert Witness",
+      "Deportation and removal Nigeria expert witness for UK tribunals. Risk on return analysis, state protection, and interim relief evidence.",
+    h1: "Deportation & Removal to Nigeria: Expert Witness Evidence",
     content: [
-      "UK commercial courts regularly hear disputes involving African governing law clauses, African party defendants, and enforcement of African judgments. African law experts provide authoritative evidence on how domestic legal systems operate in practice.",
-      "Expertise spans OHADA uniform acts, ECOWAS and SADC frameworks, domestic court procedures, and the interaction between national law and international treaty obligations. CPR Part 35 compliance is standard.",
-      "Experts are qualified in relevant African jurisdictions and provide evidence that goes beyond textbook law to address practical enforcement realities.",
+      "Deportation and removal cases require expert evidence on risk on return, state protection, and internal relocation for Nigerian nationals. This includes appeals against deportation orders, judicial review of removal directions, and interim relief applications.",
+      "Expert reports address the specific profile of the individual facing removal, citing current CPINs and EUAA 2026 guidance. Reports must be prepared quickly where removal is imminent.",
+      "NigeriaExpert provides urgent instruction capability for deportation cases with hearing dates or removal directions pending.",
     ],
     faqs: [
       {
-        question: "When is an African law expert needed in UK commercial litigation?",
+        question: "Can expert evidence stop a deportation to Nigeria?",
         answer:
-          "Where governing law is African, where foreign law questions arise on procedure or substance, or where enforcement of African judgments is in issue. Experts provide authoritative evidence that UK judges cannot determine without assistance.",
+          "Expert evidence supports the legal arguments made by the appellant's representatives. The expert provides independent country condition analysis on risk on return, state protection, and relocation that the tribunal or court considers alongside other evidence.",
       },
       {
-        question: "What is OHADA and when does it apply?",
+        question: "How quickly can a Nigeria expert report be prepared for deportation cases?",
         answer:
-          "OHADA (Organisation for the Harmonisation of Business Law in Africa) provides uniform commercial law across 17 member states. Experts explain when OHADA uniform acts govern and how they interact with national law.",
+          "Urgent reports can be prepared within 5 business days where necessary. Contact us with the removal date or hearing date for availability confirmation.",
       },
     ],
-    relatedExpertise: ["african-law-legal-systems"],
+    relatedProfiles: ["actors-of-protection", "internal-relocation-lagos", "political-persecution"],
+    relatedServices: ["country-condition-reports", "internal-relocation-analysis"],
   },
   {
-    slug: "extradition-africa",
-    title: "Extradition - Africa",
-    metaTitle: "Africa Extradition Expert Witness UK | Country Conditions Evidence",
+    slug: "fresh-claims-nigeria",
+    title: "Fresh Claims Nigeria",
+    metaTitle: "Fresh Claims Nigeria Expert Witness UK | New Evidence Reports",
     metaDescription:
-      "Africa extradition expert witness for UK courts. Country conditions, torture risk, fair trial, and prison conditions evidence.",
-    h1: "Extradition Cases Involving African States - Expert Witness",
+      "Fresh claims Nigeria expert witness for UK immigration cases. New country evidence, updated CPIN analysis, and changed conditions reports.",
+    h1: "Fresh Claims from Nigeria: Expert Witness Evidence",
     content: [
-      "Extradition proceedings involving African requesting states require expert evidence on prison conditions, torture risk, fair trial guarantees, and political persecution. Experts support both requested person challenges and government responses.",
-      "Reports address the specific requesting state, relevant human rights records, and conditions in detention facilities. Political cases - particularly from countries with documented torture - require current, granular analysis.",
-      "Expert evidence supports section 87 and human rights act challenges in UK extradition courts.",
+      "Fresh claims require evidence that conditions in Nigeria have changed or that new evidence exists which was not previously considered. With multiple CPIN updates in 2025 to 2026, fresh claim evidence often addresses material changes since the original decision.",
+      "Expert witnesses identify what has changed since the previous decision, whether new CPINs or EUAA guidance affect the appellant's profile, and provide updated country condition analysis addressing the fresh claim threshold.",
+      "Common fresh claim triggers include updated CPINs (SOGIESC June 2025, separatist groups April 2026), changed security conditions in the North-East, and new evidence of UK diaspora activity attracting Nigerian authority attention.",
     ],
     faqs: [
       {
-        question: "What does an Africa expert provide in extradition proceedings?",
+        question: "What makes a fresh claim expert report different from an appeal report?",
         answer:
-          "Evidence on prison conditions, torture and ill-treatment risk, fair trial standards, political persecution, and country conditions relevant to human rights bars to extradition under the Extradition Act 2003.",
+          "Fresh claim reports must identify what is new since the previous decision, address the fresh claim threshold, and explain why the new evidence could not reasonably have been provided earlier. The expert focuses on material changes in country conditions or new profile information.",
       },
       {
-        question: "Which African states most frequently feature in UK extradition?",
+        question: "Which CPIN updates are most relevant to Nigeria fresh claims?",
         answer:
-          "Nigeria, South Africa, Kenya, Ghana, Rwanda, and Egypt feature regularly. Each requires country-specific expert analysis of detention conditions and human rights records.",
+          "The June 2025 SOGIESC CPIN, April 2026 separatist groups South-East CPIN, December 2025 medical treatment CPIN, and EUAA Country Guidance Nigeria 2026 are the most significant recent updates affecting fresh claims.",
       },
     ],
-    relatedExpertise: ["country-conditions-human-rights", "political-persecution-state-protection"],
+    relatedProfiles: ["ipob-biafra", "lgbtq-asylum-nigeria", "boko-haram-northeast"],
+    relatedServices: ["cpin-challenge", "country-condition-reports"],
   },
 ];
 
-export function getCaseType(slug: string) {
+export function getCaseType(slug: string): CaseType | undefined {
   return caseTypes.find((c) => c.slug === slug);
 }

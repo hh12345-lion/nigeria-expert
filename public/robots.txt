@@ -4,4 +4,4 @@ Allow: /
 Disallow: /thank-you
 Disallow: /api/
 
-Sitemap: https://www.africaexpertwitness.com/sitemap.xml
+Sitemap: https://www.nigeriaexpert.com/sitemap.xml

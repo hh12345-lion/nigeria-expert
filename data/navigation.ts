@@ -1,7 +1,6 @@
+import { asylumProfiles } from "./asylum-profiles";
 import { caseTypes } from "./case-types";
-import { countries } from "./countries";
-import { expertiseAreas } from "./expertise-areas";
-import { regions } from "./regions";
+import { guides } from "./guides";
 import { services } from "./services";
 
 export const servicesNavLinks = services.map((s) => ({
@@ -9,19 +8,9 @@ export const servicesNavLinks = services.map((s) => ({
   href: `/services/${s.id}`,
 }));
 
-export const regionsNavLinks = regions.map((r) => ({
-  label: r.title,
-  href: `/regions/${r.slug}`,
-}));
-
-export const countriesNavLinks = countries.map((c) => ({
-  label: c.name,
-  href: `/countries/${c.slug}`,
-}));
-
-export const expertiseAreasNavLinks = expertiseAreas.map((e) => ({
-  label: e.title,
-  href: `/expertise-areas/${e.slug}`,
+export const asylumProfilesNavLinks = asylumProfiles.map((p) => ({
+  label: p.title,
+  href: `/asylum-profiles/${p.slug}`,
 }));
 
 export const caseTypesNavLinks = caseTypes.map((c) => ({
@@ -30,31 +19,33 @@ export const caseTypesNavLinks = caseTypes.map((c) => ({
 }));
 
 export const resourcesNavLinks = [
+  { label: "CPIN & Country Guidance", href: "/cpin-country-guidance" },
   { label: "Solicitor Guides", href: "/guides" },
   { label: "How to Instruct", href: "/how-to-instruct" },
+  { label: "Fees", href: "/fees" },
+  { label: "FAQ", href: "/faq" },
   { label: "Qualifications", href: "/qualifications" },
+  { label: "Glossary", href: "/glossary" },
+  { label: "Our Experts", href: "/experts" },
 ] as const;
+
+export const guidesNavLinks = guides.map((g) => ({
+  label: g.h1.replace(/:.*$/, "").slice(0, 40),
+  href: `/guides/${g.slug}`,
+}));
 
 export const mobileNavGroups = [
   {
-    title: "Services",
-    links: [{ label: "All Services", href: "/services" }, ...servicesNavLinks],
-  },
-  {
-    title: "Regions",
-    links: [{ label: "All Regions", href: "/regions" }, ...regionsNavLinks],
-  },
-  {
-    title: "Countries",
-    links: [{ label: "All Countries", href: "/countries" }, ...countriesNavLinks],
-  },
-  {
-    title: "Expertise Areas",
-    links: [{ label: "All Expertise Areas", href: "/expertise-areas" }, ...expertiseAreasNavLinks],
+    title: "Asylum Profiles",
+    links: [{ label: "All Asylum Profiles", href: "/asylum-profiles" }, ...asylumProfilesNavLinks],
   },
   {
     title: "Case Types",
     links: [{ label: "All Case Types", href: "/case-types" }, ...caseTypesNavLinks],
+  },
+  {
+    title: "Services",
+    links: [{ label: "All Services", href: "/services" }, ...servicesNavLinks],
   },
   {
     title: "Resources",

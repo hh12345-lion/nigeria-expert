@@ -22,11 +22,11 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Africa Expert Witness UK | Country Reports, Asylum & Investment Arbitration",
-    template: "%s | AfricaExpertWitness",
+    default: "Nigeria Expert Witness UK | Country Reports for Asylum & Immigration Tribunals",
+    template: "%s | NigeriaExpert",
   },
   description:
-    "Find a qualified Africa expert witness in the UK. Country condition reports for asylum, LGBTQI+ cases, investment arbitration, and commercial disputes across 54 African nations.",
+    "Find a qualified Nigeria expert witness in the UK. Country condition reports for asylum appeals, LGBTQ+, IPOB/Biafra, Boko Haram, FGM, trafficking, and state protection analysis. Legal Aid compatible.",
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
     other: process.env.BING_SITE_VERIFICATION

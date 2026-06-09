@@ -37,6 +37,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     <>
       <PageJsonLd breadcrumbs={crumbs} faqs={service.faqs} />
       <PageShell title={service.title} subtitle={service.description} breadcrumbs={crumbs}>
+        {service.content.map((p, i) => (
+          <p key={i} className="mb-4 text-[#374151] leading-relaxed">
+            {p}
+          </p>
+        ))}
+
         <div className="mt-6">
           <ResponsiveTableWrap>
             <table className="w-full min-w-[500px] text-left text-sm">
@@ -59,15 +65,21 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             </table>
           </ResponsiveTableWrap>
         </div>
-        <Link href={service.relatedHref} className="mt-6 inline-block text-sm font-medium text-[#C8922A] hover:underline">
-          Related expertise & guidance →
+
+        <Link
+          href={service.relatedHref}
+          className="mt-6 inline-block text-sm font-medium text-[#C8922A] hover:underline"
+        >
+          Related guidance and profiles
         </Link>
+
         <FAQSection faqs={service.faqs} title="Frequently asked questions" />
+
         <Link
           href="/contact"
           className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white hover:bg-[#b07f22]"
         >
-          Contact Us
+          Instruct an Expert
         </Link>
       </PageShell>
     </>

@@ -34,7 +34,7 @@ export function organizationSchema() {
   return {
     "@type": "Organization",
     "@id": `${SITE_URL}/#organization`,
-    name: "AfricaExpertWitness",
+    name: "NigeriaExpert",
     url: SITE_URL,
     email: SITE_EMAIL,
     address: { "@type": "PostalAddress", addressCountry: "GB" },
@@ -46,25 +46,25 @@ export function organizationSchema() {
 export function professionalServiceSchema() {
   const services = [
     "Country Condition Reports",
-    "LGBTQI+ Asylum Expert Evidence",
-    "FGM & Gender-Based Violence Reports",
-    "Trafficking & Modern Slavery Reports",
-    "Investment Treaty Arbitration Support",
-    "African Law Expert Evidence",
-    "Nationality & Statelessness Assessment",
-    "Rebuttal Reports & Single Joint Expert",
+    "LGBTQ+ Asylum Reports",
+    "IPOB/Biafra Risk Assessment",
+    "FGM Expert Reports",
+    "Trafficking & Juju Reports",
+    "CPIN Challenge Reports",
+    "Internal Relocation Analysis",
+    "Expert Witness Oral Evidence",
   ];
   return {
     "@type": "ProfessionalService",
     "@id": `${SITE_URL}/#professional-service`,
-    name: "Africa Expert Witness Services",
+    name: "Nigeria Expert Witness Services",
     url: SITE_URL,
-    serviceType: "Africa Expert Witness",
+    serviceType: "Nigeria Expert Witness",
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: "United Kingdom",
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Africa Expert Witness Services",
+      name: "Nigeria Expert Witness Services",
       itemListElement: services.map((name) => ({
         "@type": "Offer",
         itemOffered: { "@type": "Service", name },
@@ -85,7 +85,7 @@ export function websiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: "AfricaExpertWitness",
+    name: "NigeriaExpert",
     url: SITE_URL,
     inLanguage: "en-GB",
     publisher: { "@id": `${SITE_URL}/#organization` },
@@ -100,7 +100,7 @@ export function websiteSchema() {
 export function serviceNode(id: string, name: string, description: string) {
   return {
     "@type": "Service",
-    "@id": `${SITE_URL}/services/${id}`,
+    "@id": `${SITE_URL}/services#${id}`,
     url: `${SITE_URL}/services/${id}`,
     name,
     description,
@@ -136,7 +136,7 @@ export function articleSchema(opts: {
     author: { "@id": `${SITE_URL}/#organization` },
     publisher: { "@id": `${SITE_URL}/#organization` },
     ...(opts.aboutServiceId
-      ? { about: { "@id": `${SITE_URL}/services/${opts.aboutServiceId}` } }
+      ? { about: { "@id": `${SITE_URL}/services#${opts.aboutServiceId}` } }
       : {}),
   };
 }

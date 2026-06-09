@@ -3,11 +3,9 @@
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import {
+  asylumProfilesNavLinks,
   caseTypesNavLinks,
-  countriesNavLinks,
-  expertiseAreasNavLinks,
   mobileNavGroups,
-  regionsNavLinks,
   resourcesNavLinks,
   servicesNavLinks,
 } from "@/data/navigation";
@@ -42,7 +40,7 @@ export function Header() {
 
       <div className="header-bar mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href="/" className="flex min-h-[44px] min-w-0 shrink items-center gap-2 font-bold text-[#0D3B2E]">
-          <span className="truncate text-base sm:text-lg lg:text-xl">AfricaExpertWitness</span>
+          <span className="truncate text-base sm:text-lg lg:text-xl">NigeriaExpert</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
@@ -52,12 +50,10 @@ export function Header() {
           >
             Home
           </Link>
-          <NavDropdown label="Services" href="/services" items={servicesNavLinks} />
-          <NavDropdown label="Regions" href="/regions" items={regionsNavLinks} />
-          <NavDropdown label="Countries" href="/countries" items={countriesNavLinks} scrollable />
-          <NavDropdown label="Expertise Areas" href="/expertise-areas" items={expertiseAreasNavLinks} scrollable />
+          <NavDropdown label="Asylum Profiles" href="/asylum-profiles" items={asylumProfilesNavLinks} scrollable />
           <NavDropdown label="Case Types" href="/case-types" items={caseTypesNavLinks} scrollable />
-          <NavDropdown label="Resources" href="/guides" items={[...resourcesNavLinks]} />
+          <NavDropdown label="Services" href="/services" items={servicesNavLinks} scrollable />
+          <NavDropdown label="Resources" href="/guides" items={[...resourcesNavLinks]} scrollable />
           <Link
             href="/contact"
             className="ml-2 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-4 py-2 text-sm font-semibold text-white hover:bg-[#b07f22]"

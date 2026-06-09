@@ -52,9 +52,9 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
       isEnabled: () => Boolean(gaId),
       load: () => {
         if (!gaId || loadedScripts.has("google-analytics")) return;
-        injectScript("aew-gtag-js", `https://www.googletagmanager.com/gtag/js?id=${gaId}`);
+        injectScript("ne-gtag-js", `https://www.googletagmanager.com/gtag/js?id=${gaId}`);
         const inline = document.createElement("script");
-        inline.id = "aew-gtag-inline";
+        inline.id = "ne-gtag-inline";
         inline.textContent = `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -65,8 +65,8 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
         loadedScripts.add("google-analytics");
       },
       unload: () => {
-        removeScript("aew-gtag-js");
-        removeInlineScript("aew-gtag-inline");
+        removeScript("ne-gtag-js");
+        removeInlineScript("ne-gtag-inline");
         loadedScripts.delete("google-analytics");
       },
     },
@@ -77,7 +77,7 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
       load: () => {
         if (!gtmId || loadedScripts.has("google-tag-manager")) return;
         const inline = document.createElement("script");
-        inline.id = "aew-gtm-inline";
+        inline.id = "ne-gtm-inline";
         inline.textContent = `
           (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -89,8 +89,8 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
         loadedScripts.add("google-tag-manager");
       },
       unload: () => {
-        removeInlineScript("aew-gtm-inline");
-        removeScript(`aew-gtm-external-${gtmId}`);
+        removeInlineScript("ne-gtm-inline");
+        removeScript(`ne-gtm-external-${gtmId}`);
         loadedScripts.delete("google-tag-manager");
       },
     },
@@ -101,7 +101,7 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
       load: () => {
         if (!metaPixelId || loadedScripts.has("meta-pixel")) return;
         const inline = document.createElement("script");
-        inline.id = "aew-meta-pixel";
+        inline.id = "ne-meta-pixel";
         inline.textContent = `
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -118,7 +118,7 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
         loadedScripts.add("meta-pixel");
       },
       unload: () => {
-        removeInlineScript("aew-meta-pixel");
+        removeInlineScript("ne-meta-pixel");
         loadedScripts.delete("meta-pixel");
         if (typeof window !== "undefined") {
           (window as Window & { fbq?: unknown }).fbq = undefined;
@@ -132,7 +132,7 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
       load: () => {
         if (!linkedInId || loadedScripts.has("linkedin-insight")) return;
         const inline = document.createElement("script");
-        inline.id = "aew-linkedin-insight";
+        inline.id = "ne-linkedin-insight";
         inline.textContent = `
           _linkedin_partner_id = "${linkedInId}";
           window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
@@ -140,14 +140,14 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
         `;
         document.head.appendChild(inline);
         injectScript(
-          "aew-linkedin-js",
+          "ne-linkedin-js",
           "https://snap.licdn.com/li.lms-analytics/insight.min.js"
         );
         loadedScripts.add("linkedin-insight");
       },
       unload: () => {
-        removeInlineScript("aew-linkedin-insight");
-        removeScript("aew-linkedin-js");
+        removeInlineScript("ne-linkedin-insight");
+        removeScript("ne-linkedin-js");
         loadedScripts.delete("linkedin-insight");
       },
     },
@@ -158,7 +158,7 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
       load: () => {
         if (!hotjarId || loadedScripts.has("hotjar")) return;
         const inline = document.createElement("script");
-        inline.id = "aew-hotjar";
+        inline.id = "ne-hotjar";
         inline.textContent = `
           (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -173,7 +173,7 @@ export function createScriptRegistry(): TrackingScriptConfig[] {
         loadedScripts.add("hotjar");
       },
       unload: () => {
-        removeInlineScript("aew-hotjar");
+        removeInlineScript("ne-hotjar");
         loadedScripts.delete("hotjar");
       },
     },

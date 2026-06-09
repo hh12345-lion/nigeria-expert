@@ -6,7 +6,7 @@ import Script from "next/script";
  */
 export function ConsentDefaultsScript() {
   return (
-    <Script id="aew-consent-defaults" strategy="beforeInteractive">
+    <Script id="ne-consent-defaults" strategy="beforeInteractive">
       {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}

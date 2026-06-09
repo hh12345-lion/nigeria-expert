@@ -2,38 +2,36 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { AFRICAN_COUNTRIES, CASE_TYPES, KEY_ISSUES, URGENCY_OPTIONS, FUNDING_OPTIONS } from "@/data/african-countries";
+import { SITE_EMAIL } from "@/lib/constants";
+import { CASE_PROFILES, FUNDING_OPTIONS, PROCEEDINGS, URGENCY_OPTIONS } from "@/data/contact-options";
 
-const inputClass = "w-full rounded-[4px] border border-[#D1E3D8] px-4 py-3 text-[#374151] focus:border-[#0D3B2E] focus:outline-none focus:ring-1 focus:ring-[#0D3B2E] min-h-[44px]";
+const inputClass =
+  "w-full min-w-0 rounded-[4px] border border-[#D1E3D8] px-4 py-3 text-base text-[#374151] focus:border-[#0D3B2E] focus:outline-none focus:ring-1 focus:ring-[#0D3B2E] min-h-[44px]";
 const labelClass = "mb-1 block text-sm font-medium text-[#0D3B2E]";
 
 export function ContactForm() {
   const router = useRouter();
   const [status, setStatus] = useState<"idle" | "loading" | "error">("idle");
-  const [selectedIssues, setSelectedIssues] = useState<string[]>([]);
-
-  const toggleIssue = (issue: string) => {
-    setSelectedIssues((prev) => prev.includes(issue) ? prev.filter((i) => i !== issue) : [...prev, issue]);
-  };
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("loading");
     const form = e.currentTarget;
     const data = new FormData(form);
+
     const payload = {
-      fullName: String(data.get("name") ?? ""),
-      organisation: String(data.get("organisation") ?? ""),
-      email: String(data.get("email") ?? ""),
-      phone: String(data.get("phone") ?? ""),
-      country: String(data.get("country") ?? ""),
-      caseType: String(data.get("case_type") ?? ""),
-      keyIssues: selectedIssues.join("; "),
-      deadline: String(data.get("deadline") ?? ""),
-      funding: String(data.get("funding") ?? ""),
-      urgency: String(data.get("urgency") ?? ""),
-      summary: String(data.get("summary") ?? ""),
+      fullName: String(data.get("name") ?? "").trim(),
+      organisation: String(data.get("law_firm") ?? "").trim(),
+      email: String(data.get("email") ?? "").trim(),
+      phone: String(data.get("phone") ?? "").trim(),
+      caseProfile: String(data.get("case_profile") ?? "").trim(),
+      proceedings: String(data.get("proceedings") ?? "").trim(),
+      funding: String(data.get("funding") ?? "").trim(),
+      deadline: String(data.get("deadline") ?? "").trim(),
+      urgency: String(data.get("urgency") ?? "").trim(),
+      summary: String(data.get("summary") ?? "").trim(),
     };
+
     try {
       const res = await fetch("/api/submit-lead", {
         method: "POST",
@@ -48,59 +46,128 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div><label className={labelClass}>Full Name *</label><input name="name" required className={inputClass} /></div>
-        <div><label className={labelClass}>Law Firm / Organisation *</label><input name="organisation" required className={inputClass} /></div>
-        <div><label className={labelClass}>Email *</label><input type="email" name="email" required className={inputClass} /></div>
-        <div><label className={labelClass}>Phone</label><input type="tel" name="phone" className={inputClass} /></div>
+    <form onSubmit={handleSubmit} className="min-w-0 space-y-5">
+      <div className="grid min-w-0 gap-5 sm:grid-cols-2">
+        <div className="min-w-0">
+          <label className={labelClass} htmlFor="name">
+            Full Name *
+          </label>
+          <input id="name" name="name" required autoComplete="name" className={inputClass} />
+        </div>
+        <div className="min-w-0">
+          <label className={labelClass} htmlFor="law_firm">
+            Law Firm *
+          </label>
+          <input id="law_firm" name="law_firm" required autoComplete="organization" className={inputClass} />
+        </div>
+        <div className="min-w-0">
+          <label className={labelClass} htmlFor="email">
+            Email *
+          </label>
+          <input id="email" type="email" name="email" required autoComplete="email" className={inputClass} />
+        </div>
+        <div className="min-w-0">
+          <label className={labelClass} htmlFor="phone">
+            Phone
+          </label>
+          <input id="phone" type="tel" name="phone" autoComplete="tel" className={inputClass} />
+        </div>
       </div>
-      <div className="grid gap-5 sm:grid-cols-2">
-        <div>
-          <label className={labelClass}>African Country/Region of Case *</label>
-          <select name="country" required className={inputClass}>
-            <option value="">Select country</option>
-            {AFRICAN_COUNTRIES.map((c) => <option key={c} value={c}>{c}</option>)}
+
+      <div className="grid min-w-0 gap-5 sm:grid-cols-2">
+        <div className="min-w-0">
+          <label className={labelClass} htmlFor="case_profile">
+            Case Profile
+          </label>
+          <select id="case_profile" name="case_profile" className={inputClass}>
+            <option value="">Select profile</option>
+            {CASE_PROFILES.map((p) => (
+              <option key={p} value={p}>
+                {p}
+              </option>
+            ))}
           </select>
         </div>
-        <div>
-          <label className={labelClass}>Case Type</label>
-          <select name="case_type" className={inputClass}>
-            <option value="">Select case type</option>
-            {CASE_TYPES.map((c) => <option key={c} value={c}>{c}</option>)}
+        <div className="min-w-0">
+          <label className={labelClass} htmlFor="proceedings">
+            Proceedings
+          </label>
+          <select id="proceedings" name="proceedings" className={inputClass}>
+            <option value="">Select proceedings</option>
+            {PROCEEDINGS.map((p) => (
+              <option key={p} value={p}>
+                {p}
+              </option>
+            ))}
           </select>
         </div>
       </div>
-      <div>
-        <p className={labelClass}>Key Issues</p>
-        <div className="flex flex-wrap gap-2">
-          {KEY_ISSUES.map((issue) => (
-            <button key={issue} type="button" onClick={() => toggleIssue(issue)}
-              className={`min-h-[44px] rounded-[4px] border px-3 py-2 text-sm ${selectedIssues.includes(issue) ? "border-[#0D3B2E] bg-[#0D3B2E] text-white" : "border-[#D1E3D8] bg-white text-[#374151]"}`}>
-              {issue}
-            </button>
+
+      <div className="grid min-w-0 gap-5 sm:grid-cols-2">
+        <div className="min-w-0">
+          <label className={labelClass} htmlFor="funding">
+            Funding
+          </label>
+          <select id="funding" name="funding" className={inputClass}>
+            <option value="">Select funding</option>
+            {FUNDING_OPTIONS.map((f) => (
+              <option key={f} value={f}>
+                {f}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="min-w-0">
+          <label className={labelClass} htmlFor="deadline">
+            Deadline / hearing date
+          </label>
+          <input id="deadline" type="date" name="deadline" className={inputClass} />
+        </div>
+      </div>
+
+      <div className="min-w-0">
+        <label className={labelClass} htmlFor="urgency">
+          Urgency
+        </label>
+        <select id="urgency" name="urgency" className={inputClass}>
+          <option value="">Select urgency</option>
+          {URGENCY_OPTIONS.map((u) => (
+            <option key={u} value={u}>
+              {u}
+            </option>
           ))}
-        </div>
+        </select>
       </div>
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-        <div><label className={labelClass}>Hearing/Deadline Date</label><input type="date" name="deadline" className={inputClass} /></div>
-        <div>
-          <label className={labelClass}>Funding</label>
-          <select name="funding" className={inputClass}>
-            {FUNDING_OPTIONS.map((f) => <option key={f} value={f}>{f}</option>)}
-          </select>
-        </div>
-        <div className="md:col-span-2 lg:col-span-1">
-          <label className={labelClass}>Urgency</label>
-          <select name="urgency" className={inputClass}>
-            {URGENCY_OPTIONS.map((u) => <option key={u} value={u}>{u}</option>)}
-          </select>
-        </div>
+
+      <div className="min-w-0">
+        <label className={labelClass} htmlFor="summary">
+          Brief case description *
+        </label>
+        <textarea
+          id="summary"
+          name="summary"
+          required
+          rows={5}
+          className={`${inputClass} min-h-[120px] resize-y`}
+        />
       </div>
-      <div><label className={labelClass}>Brief Case Summary</label><textarea name="summary" rows={5} className={`${inputClass} min-h-[120px]`} /></div>
-      {status === "error" && <p className="text-red-600 text-sm">Unable to submit. Please email info@africaexpertwitness.com directly.</p>}
-      <button type="submit" disabled={status === "loading"} className="w-full min-h-[44px] rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white hover:bg-[#b07f22] disabled:opacity-60 sm:w-auto">
-        {status === "loading" ? "Submitting…" : "Instruct an Expert Witness"}
+
+      {status === "error" && (
+        <p className="rounded-[4px] border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          Something went wrong. Please try again or email us at{" "}
+          <a href={`mailto:${SITE_EMAIL}`} className="font-medium underline">
+            {SITE_EMAIL}
+          </a>
+          .
+        </p>
+      )}
+
+      <button
+        type="submit"
+        disabled={status === "loading"}
+        className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#C8922A] px-6 py-3 text-base font-semibold text-white hover:bg-[#b07f22] disabled:opacity-60 sm:w-auto"
+      >
+        {status === "loading" ? "Submitting..." : "Instruct an Expert"}
       </button>
     </form>
   );

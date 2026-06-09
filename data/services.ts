@@ -13,6 +13,7 @@ export type Service = {
   description: string;
   metaTitle: string;
   metaDescription: string;
+  content: string[];
   relatedHref: string;
   methodology: ServicePhase[];
   faqs: FAQ[];
@@ -21,253 +22,293 @@ export type Service = {
 export const services: Service[] = [
   {
     id: "country-condition-reports",
-    title: "Country Condition Reports (Asylum & Immigration)",
+    title: "Country Condition Reports (General Nigeria)",
     navLabel: "Country Condition Reports",
     description:
-      "Authoritative country condition reports for UK First-tier Tribunal and Upper Tribunal asylum appeals across all 54 African nations.",
-    metaTitle: "Africa Country Condition Reports UK | Asylum & Immigration Expert Evidence",
+      "Comprehensive Nigeria country condition reports for asylum appeals, covering state protection, internal relocation, and profile-specific risk analysis.",
+    metaTitle: "Nigeria Country Condition Reports UK | Asylum Expert Evidence",
     metaDescription:
-      "CPR Part 35 country condition reports for UK asylum and immigration tribunals across all 54 African nations. OSCOLA-cited, tribunal-ready expert evidence.",
-    relatedHref: "/expertise-areas/country-conditions-human-rights",
+      "CPR Part 35 Nigeria country condition reports for UK asylum and immigration tribunals. State protection, internal relocation, and profile-specific analysis.",
+    content: [
+      "Nigeria country condition reports provide the independent, authoritative evidence UK immigration tribunals require to assess risk on return, state protection, and internal relocation for Nigerian asylum claimants.",
+      "Reports address the specific factual matrix of each case, citing Home Office CPINs, EUAA Country Guidance Nigeria 2026, UNHCR sources, and field research. All reports comply with Immigration Tribunal Practice Direction paragraph 10.",
+    ],
+    relatedHref: "/asylum-profiles/actors-of-protection",
     methodology: [
-      { phase: "Case scoping", whatWeDo: "Identify country, claim grounds, and applicable country guidance", deliverable: "Scope confirmation and expert match" },
-      { phase: "Research", whatWeDo: "Field research, Home Office COI, UN, and primary sources", deliverable: "Source bibliography" },
-      { phase: "Report drafting", whatWeDo: "OSCOLA-cited report addressing specific claim matrix", deliverable: "CPR Part 35 compliant expert report" },
+      { phase: "Case scoping", whatWeDo: "Identify asylum profile, relevant CPINs, and claim grounds", deliverable: "Scope confirmation and expert match" },
+      { phase: "Research", whatWeDo: "Field research, Home Office COI, UNHCR, and primary sources", deliverable: "Source bibliography" },
+      { phase: "Report drafting", whatWeDo: "OSCOLA-cited report addressing the specific claim matrix", deliverable: "Practice Direction compliant expert report" },
     ],
     faqs: [
       {
-        question: "What should a country condition report include for UK tribunals?",
+        question: "What should a Nigeria country condition report include?",
         answer:
-          "Reports address the specific claim matrix - political opinion, religion, clan, internal relocation, and state protection - with OSCOLA-cited sources including Home Office COI, UNHCR, and field research. They must comply with CPR Part 35 and address any binding country guidance.",
+          "Reports address profile-specific risk, state protection analysis, internal relocation feasibility, and consistency with current CPINs and EUAA 2026 guidance, with OSCOLA-cited sources and field research.",
       },
       {
-        question: "How long does a standard Africa country condition report take?",
-        answer: "Typically 2–3 weeks from instruction. Urgent turnaround (5 business days) may be available subject to expert availability and case complexity.",
+        question: "How long does a standard Nigeria country condition report take?",
+        answer: "Typically 2 to 3 weeks from instruction. Urgent turnaround (5 business days) may be available subject to expert availability.",
       },
       {
-        question: "Which African countries do you cover?",
-        answer: "All 54 African nations, including high-volume tribunal countries such as Nigeria, Somalia, Eritrea, Ethiopia, Sudan, Zimbabwe, DRC, Ghana, Kenya, and Uganda.",
+        question: "Are Nigeria country condition reports Legal Aid compatible?",
+        answer: "Yes. Most reports in asylum proceedings are Legal Aid funded. LAA prior authority is required before instruction.",
       },
     ],
   },
   {
-    id: "lgbtqi-asylum",
-    title: "LGBTQI+ Asylum Expert Evidence",
-    navLabel: "LGBTQI+ Asylum",
+    id: "lgbtq-asylum",
+    title: "LGBTQ+ Asylum Reports",
+    navLabel: "LGBTQ+ Asylum Reports",
     description:
-      "Country-specific LGBTQI+ asylum reports covering criminalisation, enforcement, community violence, and internal relocation.",
-    metaTitle: "LGBTQI+ Africa Asylum Expert Witness UK | Country Conditions Reports",
+      "Specialist reports on SSMPA 2013, Sharia law in northern states, June 2025 SOGIESC CPIN, social attitudes, and state protection.",
+    metaTitle: "LGBTQ+ Nigeria Asylum Expert Reports UK | SSMPA & SOGIESC CPIN",
     metaDescription:
-      "LGBTQI+ asylum expert reports for UK tribunals: criminalisation, enforcement, community violence, and internal relocation across African countries.",
-    relatedHref: "/expertise-areas/lgbtqi-asylum-africa",
+      "LGBTQ+ Nigeria asylum expert reports for UK tribunals. SSMPA 2013, June 2025 SOGIESC CPIN, HJ (Iran) standard, and internal relocation analysis.",
+    content: [
+      "LGBTQ+ asylum claims from Nigeria require specialist expert evidence on SSMPA 2013, Sharia law enforcement in northern states, social attitudes, and the June 2025 updated SOGIESC CPIN.",
+      "Expert reports assess whether the appellant's specific profile creates a real risk beyond the general CPIN position, consistent with the HJ (Iran) [2010] standard.",
+    ],
+    relatedHref: "/asylum-profiles/lgbtq-asylum-nigeria",
     methodology: [
-      { phase: "Legal framework", whatWeDo: "Analyse criminal laws, penalties, and enforcement practice", deliverable: "Legislative analysis section" },
+      { phase: "Legal framework", whatWeDo: "Analyse SSMPA, Sharia law, and enforcement practice", deliverable: "Legislative analysis section" },
       { phase: "Risk assessment", whatWeDo: "Community violence, state protection, NGO availability", deliverable: "Risk on return analysis" },
-      { phase: "Report", whatWeDo: "HJ/HT consistent country conditions report", deliverable: "Tribunal-ready expert report" },
+      { phase: "Report", whatWeDo: "HJ (Iran) consistent country conditions report", deliverable: "Tribunal-ready expert report" },
     ],
     faqs: [
       {
-        question: "How do LGBTQI+ expert reports approach sexuality?",
+        question: "How do LGBTQ+ expert reports approach sexuality?",
         answer:
-          "Experts provide country conditions context only - they do not determine the claimant's sexuality. Reports are consistent with HJ (Iran) and address criminalisation, enforcement, and risk on return.",
+          "Experts provide country conditions context only. They do not determine the claimant's sexuality. Reports address criminalisation, enforcement, and risk on return under the HJ (Iran) standard.",
       },
       {
-        question: "Which countries have the highest LGBTQI+ asylum volume?",
-        answer: "Uganda, Nigeria, and Ghana are among the most common in UK tribunals. Reports are tailored to the specific country and claim matrix.",
+        question: "What does the June 2025 SOGIESC CPIN say?",
+        answer:
+          "The CPIN confirms that LGBTQ+ individuals face serious risk from state and non-state actors, and that state protection is generally unavailable in Nigeria.",
       },
       {
-        question: "Can reports address internal relocation for LGBTQI+ claimants?",
-        answer: "Yes. Reports assess whether internal relocation is a viable option, including visibility, community attitudes, and state protection in alternative locations.",
+        question: "Can LGBTQ+ Nigerians internally relocate?",
+        answer:
+          "No. The EUAA 2026 guidance confirms internal protection is not available where persecution is by the state, because SSMPA enforcement applies nationwide.",
       },
     ],
   },
   {
-    id: "fgm-gbv",
-    title: "FGM & Gender-Based Violence Reports",
-    navLabel: "FGM & GBV",
+    id: "ipob-biafra-risk",
+    title: "IPOB/Biafra Risk Assessment",
+    navLabel: "IPOB/Biafra Risk Assessment",
     description:
-      "FGM prevalence analysis, daughters at risk assessment, and gender-based violence country conditions for UK tribunals.",
-    metaTitle: "FGM & Gender-Based Violence Expert Reports Africa | UK Tribunals",
+      "Profile-specific risk assessment for IPOB members, supporters, and associates, including UK diaspora activity under the April 2026 CPIN.",
+    metaTitle: "IPOB Biafra Risk Assessment Expert Reports UK | April 2026 CPIN",
     metaDescription:
-      "FGM prevalence and gender-based violence expert reports for UK asylum tribunals - daughters at risk, state protection, and internal relocation.",
-    relatedHref: "/expertise-areas/fgm-gender-based-violence",
+      "IPOB and Biafra risk assessment expert reports for UK tribunals. Proscription, arrest risk, UK diaspora activity, and April 2026 CPIN South-East Nigeria.",
+    content: [
+      "IPOB was proscribed as a terrorist organisation in September 2017. The April 2026 updated CPIN on separatist groups in South-East Nigeria confirms arrest and detention risk for members, supporters, and associates.",
+      "Expert reports assess the individual's profile, including UK diaspora activity, against current enforcement patterns in Imo, Anambra, Abia, Enugu, and Ebonyi states.",
+    ],
+    relatedHref: "/asylum-profiles/ipob-biafra",
     methodology: [
-      { phase: "Prevalence analysis", whatWeDo: "Country, ethnic, and regional FGM data", deliverable: "Prevalence profile" },
+      { phase: "Profile analysis", whatWeDo: "Assess IPOB connection, visibility, and UK activity", deliverable: "Profile risk summary" },
+      { phase: "Country research", whatWeDo: "Current CPIN, enforcement patterns, airport interceptions", deliverable: "Country conditions analysis" },
+      { phase: "Report", whatWeDo: "Profile-specific risk on return assessment", deliverable: "Tribunal-ready expert report" },
+    ],
+    faqs: [
+      {
+        question: "What risk do IPOB members face on return to Nigeria?",
+        answer:
+          "Since proscription in September 2017, members, supporters, and associates face real risk of arrest and detention. The April 2026 CPIN confirms this risk for both high-profile and low-profile individuals.",
+      },
+      {
+        question: "Does UK-based IPOB activity create a risk on return?",
+        answer:
+          "Yes. The April 2026 CPIN confirms individuals with no prior IPOB profile in Nigeria have been arrested at airports for expressing IPOB views.",
+      },
+      {
+        question: "How do experts distinguish IPOB from other separatist groups?",
+        answer:
+          "Reports address IPOB specifically, distinguishing it from MASSOB and other South-East separatist movements, with profile-specific analysis.",
+      },
+    ],
+  },
+  {
+    id: "fgm-expert-reports",
+    title: "FGM Expert Reports",
+    navLabel: "FGM Expert Reports",
+    description:
+      "FGM prevalence analysis by state and ethnic group, VAPP Act 2015 enforcement, daughter-at-risk claims, and state protection assessment.",
+    metaTitle: "FGM Nigeria Expert Reports UK | Gender-Based Violence Evidence",
+    metaDescription:
+      "FGM Nigeria expert reports for UK asylum tribunals. Prevalence by state and ethnic group, VAPP Act, daughter-at-risk claims, and state protection.",
+    content: [
+      "Nigeria has one of the highest absolute numbers of FGM cases globally. Expert reports provide community-specific and state-specific prevalence analysis, not national generalisations.",
+      "Reports address VAPP Act 2015 enforcement, daughter-at-risk claims, and whether state protection is realistically available in the appellant's specific locality.",
+    ],
+    relatedHref: "/asylum-profiles/fgm-gbv",
+    methodology: [
+      { phase: "Prevalence analysis", whatWeDo: "State, ethnic, and regional FGM data", deliverable: "Prevalence profile" },
       { phase: "Risk assessment", whatWeDo: "Ongoing risk, daughters at risk, state protection", deliverable: "Risk analysis" },
-      { phase: "Report", whatWeDo: "Tailored FGM expert report", deliverable: "CPR Part 35 compliant report" },
+      { phase: "Report", whatWeDo: "Tailored FGM expert report", deliverable: "Practice Direction compliant report" },
     ],
     faqs: [
       {
         question: "What FGM evidence do expert reports address?",
         answer:
-          "Prevalence by country, ethnic group, and region; ongoing risk including daughters at risk; Type III re-infibulation; state protection; and internal relocation feasibility.",
+          "Prevalence by state and ethnic group, VAPP Act enforcement, daughter-at-risk analysis, state protection availability, and internal relocation feasibility.",
       },
       {
         question: "Can a claim succeed if FGM has already occurred?",
-        answer: "Yes. Claims can succeed where prospective risk exists, including daughters at risk or re-infibulation following Type III FGM.",
+        answer: "Yes. Claims can succeed where prospective risk exists, including daughters at risk or ongoing gender-based violence.",
       },
       {
-        question: "Which countries feature most in FGM asylum cases?",
-        answer: "Somalia, Guinea, Nigeria, Egypt, and other countries with documented FGM prevalence. Reports are tailored to ethnic and regional profiles.",
+        question: "How prevalent is FGM in Nigeria?",
+        answer:
+          "Nigeria has among the highest absolute numbers globally, with significant variation by state and ethnic group. Reports provide locality-specific analysis.",
       },
     ],
   },
   {
-    id: "trafficking",
-    title: "Trafficking & Modern Slavery Reports",
-    navLabel: "Trafficking",
+    id: "trafficking-juju-reports",
+    title: "Trafficking & Juju Reports",
+    navLabel: "Trafficking & Juju Reports",
     description:
-      "Trafficking route analysis, juju exploitation context, and re-trafficking risk for NRM and asylum proceedings.",
-    metaTitle: "Africa Trafficking Expert Witness UK | Modern Slavery & NRM Reports",
+      "Expert evidence on juju ritual control in trafficking networks, Edo State routes, NRM context, and reintegration risk.",
+    metaTitle: "Trafficking & Juju Nigeria Expert Reports UK | NRM Evidence",
     metaDescription:
-      "Trafficking and modern slavery expert reports for UK NRM and asylum proceedings - route analysis, juju context, and re-trafficking risk on return.",
-    relatedHref: "/expertise-areas/trafficking-modern-slavery-africa",
+      "Trafficking and juju ritual expert reports for UK tribunals. Edo State routes, NRM context, reintegration risk, and state protection for victims.",
+    content: [
+      "Trafficking cases from Nigeria frequently involve juju ritual control, particularly from Edo State and Benin City networks. Expert witnesses explain the cultural and psychological mechanism tribunals need to assess credibility.",
+      "Reports address re-trafficking risk, stigma, family rejection, and inadequate state protection for returned victims in high-trafficking areas.",
+    ],
+    relatedHref: "/asylum-profiles/trafficking-juju",
     methodology: [
-      { phase: "Route analysis", whatWeDo: "Document trafficking patterns from origin country", deliverable: "Trafficking context section" },
-      { phase: "Protection assessment", whatWeDo: "State protection and re-trafficking risk on return", deliverable: "Protection analysis" },
-      { phase: "Report", whatWeDo: "NRM and tribunal-ready report", deliverable: "Expert report" },
+      { phase: "Context analysis", whatWeDo: "Juju mechanism, trafficking route, network structure", deliverable: "Trafficking context summary" },
+      { phase: "Risk assessment", whatWeDo: "Re-trafficking, stigma, state protection on return", deliverable: "Return risk analysis" },
+      { phase: "Report", whatWeDo: "Cultural context and country conditions report", deliverable: "Tribunal-ready expert report" },
     ],
     faqs: [
       {
-        question: "What does a trafficking expert report cover?",
+        question: "What is juju and how is it used in Nigerian trafficking?",
         answer:
-          "Origin-country trafficking patterns, juju and ritual exploitation context where relevant, state protection, and re-trafficking risk on return for NRM and asylum proceedings.",
+          "Juju rituals bind victims through fear of supernatural consequences. Experts explain this mechanism and its effect on credibility assessments without sensationalising the practice.",
       },
       {
-        question: "Are reports suitable for National Referral Mechanism cases?",
-        answer: "Yes. Reports can support NRM reasonable grounds decisions and asylum appeals with country-specific trafficking context.",
+        question: "What is the re-trafficking risk for returned victims?",
+        answer:
+          "Returned victims face retaliation from networks, stigma, family rejection, and re-trafficking. State protection is often inadequate in high-trafficking areas such as Edo State.",
       },
       {
-        question: "Which West African countries feature in trafficking cases?",
-        answer: "Nigeria, Ghana, and other West African countries are common in UK trafficking cases. Reports address specific routes and exploitation patterns.",
+        question: "How do juju reports support NRM cases?",
+        answer:
+          "Expert reports complement NRM decisions by addressing country conditions on return and explaining why victims may fear disclosure due to juju control.",
       },
     ],
   },
   {
-    id: "investment-arbitration",
-    title: "Investment Treaty Arbitration Support",
-    navLabel: "Investment Arbitration",
+    id: "cpin-challenge",
+    title: "CPIN Challenge Reports",
+    navLabel: "CPIN Challenge Reports",
     description:
-      "Country conditions and regulatory framework evidence for ICSID, UNCITRAL, and ICC investment treaty disputes.",
-    metaTitle: "Africa Investment Treaty Arbitration Expert | ICSID & UNCITRAL Evidence",
+      "Independent analysis challenging Home Office CPIN findings with field research and profile-specific assessment beyond generic CPIN positions.",
+    metaTitle: "Nigeria CPIN Challenge Expert Reports UK | Independent Analysis",
     metaDescription:
-      "Investment treaty arbitration expert evidence for African disputes - ICSID, UNCITRAL, regulatory change, and expropriation context.",
-    relatedHref: "/expertise-areas/investment-treaty-arbitration-africa",
+      "Challenge Home Office Nigeria CPIN findings with independent expert reports. Field research, updated evidence, and profile-specific analysis for UK tribunals.",
+    content: [
+      "CPIN challenge reports provide independent analysis where the Home Office CPIN position does not reflect the appellant's specific profile or where country conditions have materially changed.",
+      "Common challenge areas include actors of protection (August 2024 CPIN), internal relocation to Lagos/Abuja, SOGIESC (June 2025 CPIN), and separatist groups (April 2026 CPIN).",
+    ],
+    relatedHref: "/cpin-country-guidance",
     methodology: [
-      { phase: "Dispute scoping", whatWeDo: "Identify treaty standards, governing law, and sector", deliverable: "Expert team proposal" },
-      { phase: "Analysis", whatWeDo: "Country conditions, regulatory change, and expropriation context", deliverable: "Memorial-ready expert analysis" },
-      { phase: "Testimony", whatWeDo: "Written evidence and hearing testimony if required", deliverable: "Expert report and oral evidence" },
+      { phase: "CPIN review", whatWeDo: "Identify relevant CPIN findings and gaps", deliverable: "CPIN analysis memo" },
+      { phase: "Independent research", whatWeDo: "Field research, NGO reports, updated country evidence", deliverable: "Challenge evidence base" },
+      { phase: "Report", whatWeDo: "Profile-specific analysis beyond CPIN generalisations", deliverable: "CPIN challenge expert report" },
     ],
     faqs: [
       {
-        question: "What investment arbitration cases involve Africa?",
+        question: "When should solicitors instruct a CPIN challenge report?",
         answer:
-          "Sub-Saharan Africa accounted for 16% of new ICSID cases in 2024, including mining, energy, and expropriation disputes in Guinea, DRC, Mali, Burkina Faso, and Egypt.",
+          "When the appellant's profile differs from the general CPIN position, when CPINs are outdated, or when field research contradicts Home Office findings on state protection or internal relocation.",
       },
       {
-        question: "What evidence do country experts provide in ICSID cases?",
+        question: "Can experts simply reproduce CPIN content?",
         answer:
-          "Country conditions, regulatory framework changes, political risk, and factual context for treaty breach and damages analysis - memorial-ready written evidence and testimony if required.",
+          "No. Reports that reproduce CPIN without independent analysis fail the standard in the Adam Pipe October 2025 guide. Challenge reports must provide independent, sourced analysis.",
       },
       {
-        question: "How are experts instructed in arbitration?",
-        answer: "Typically during memorial preparation. Early instruction allows thorough research on governing law, sector regulation, and country conditions.",
+        question: "Which Nigeria CPINs are most frequently challenged?",
+        answer:
+          "Actors of protection (August 2024), SOGIESC (June 2025), separatist groups South-East (April 2026), and internal relocation findings.",
       },
     ],
   },
   {
-    id: "african-law",
-    title: "African Law Expert Evidence",
-    navLabel: "African Law",
+    id: "internal-relocation-analysis",
+    title: "Internal Relocation Analysis",
+    navLabel: "Internal Relocation Analysis",
     description:
-      "Governing law, court procedures, OHADA, and domestic legal framework evidence for commercial litigation and arbitration.",
-    metaTitle: "African Law Expert Witness UK | OHADA & Commercial Litigation",
+      "Profile-specific analysis of internal relocation to Lagos, Abuja, and other cities, addressing safety and the unduly harsh test.",
+    metaTitle: "Nigeria Internal Relocation Expert Analysis UK | Lagos & Abuja",
     metaDescription:
-      "African law expert evidence for UK commercial litigation and arbitration - governing law, OHADA, court procedures, and domestic legal frameworks.",
-    relatedHref: "/expertise-areas/african-law-legal-systems",
+      "Internal relocation expert analysis for Nigeria asylum cases. Lagos and Abuja feasibility, unduly harsh test, and EUAA 2026 guidance.",
+    content: [
+      "Internal relocation to Lagos or Abuja is frequently proposed in Nigerian asylum cases. Whether relocation is viable depends entirely on the appellant's profile and personal circumstances.",
+      "Expert reports address both safety and the unduly harsh test, considering support networks, employment prospects, accommodation, and healthcare access in the proposed relocation city.",
+    ],
+    relatedHref: "/asylum-profiles/internal-relocation-lagos",
     methodology: [
-      { phase: "Legal framework", whatWeDo: "Identify governing law and applicable instruments", deliverable: "Legal framework memorandum" },
-      { phase: "Analysis", whatWeDo: "Domestic law and practice analysis", deliverable: "Expert opinion" },
-      { phase: "Report", whatWeDo: "CPR Part 35 or arbitration-compliant report", deliverable: "Expert report" },
+      { phase: "Profile assessment", whatWeDo: "Identify persecutory actors and national reach", deliverable: "Profile relocation summary" },
+      { phase: "City analysis", whatWeDo: "Lagos/Abuja conditions, cost of living, protection availability", deliverable: "City-specific analysis" },
+      { phase: "Report", whatWeDo: "Safety and unduly harsh test conclusion", deliverable: "Internal relocation expert report" },
     ],
     faqs: [
       {
-        question: "What does an African law expert witness provide?",
+        question: "Can LGBTQ+ Nigerians internally relocate to Lagos or Abuja?",
         answer:
-          "Evidence on governing law, court procedures, OHADA instruments, and domestic legal frameworks for commercial litigation and arbitration involving African jurisdictions.",
+          "No. Where persecution is by the state under SSMPA, internal protection is not available because enforcement applies nationwide per EUAA 2026 guidance.",
       },
       {
-        question: "When is African law expert evidence needed in UK courts?",
+        question: "How does the unduly harsh test apply?",
         answer:
-          "Where foreign law is a question of fact under conflict of laws rules, or where arbitration requires expert opinion on African legal systems and practice.",
+          "Beyond safety, tribunals assess whether relocation would be unduly harsh considering personal circumstances, support networks, language, employment, and accommodation.",
       },
       {
-        question: "Do experts cover OHADA jurisdictions?",
-        answer: "Yes. Experts can address OHADA uniform acts and member-state implementation for West and Central African commercial disputes.",
+        question: "For which profiles might internal relocation be viable?",
+        answer:
+          "For some Boko Haram targets and certain political dissidents, relocation to Lagos or Abuja may be feasible depending on profile visibility and persecutory reach.",
       },
     ],
   },
   {
-    id: "nationality-statelessness",
-    title: "Nationality & Statelessness Assessment",
-    navLabel: "Nationality",
+    id: "oral-evidence",
+    title: "Expert Witness Oral Evidence",
+    navLabel: "Oral Evidence",
     description:
-      "Citizenship law analysis and statelessness risk assessment for UK immigration tribunals.",
-    metaTitle: "Africa Nationality & Statelessness Expert Witness UK",
+      "Tribunal attendance and oral evidence for country guidance cases, Upper Tribunal proceedings, and directed expert attendance.",
+    metaTitle: "Nigeria Expert Witness Oral Evidence UK | Tribunal Attendance",
     metaDescription:
-      "Nationality and statelessness expert assessments for UK immigration tribunals - citizenship law, documentation risk, and return feasibility.",
-    relatedHref: "/expertise-areas/nationality-statelessness",
+      "Nigeria expert witness oral evidence and tribunal attendance for country guidance cases, Upper Tribunal proceedings, and directed expert evidence.",
+    content: [
+      "Oral evidence is most common in Upper Tribunal country guidance cases or where the tribunal directs expert attendance. NigeriaExpert experts are experienced in giving evidence and cross-examination on Nigeria country conditions.",
+      "Experts prepare for oral evidence by reviewing the report, letter of instruction, tribunal bundle, and anticipated cross-examination on methodology and sources.",
+    ],
+    relatedHref: "/case-types/upper-tribunal-nigeria",
     methodology: [
-      { phase: "Citizenship analysis", whatWeDo: "Review nationality laws and documentation requirements", deliverable: "Citizenship assessment" },
-      { phase: "Risk assessment", whatWeDo: "Statelessness and documentation risk on return", deliverable: "Risk analysis" },
-      { phase: "Report", whatWeDo: "Tribunal-ready nationality expert report", deliverable: "Expert report" },
+      { phase: "Preparation", whatWeDo: "Review report, bundle, and anticipated questions", deliverable: "Oral evidence preparation" },
+      { phase: "Tribunal attendance", whatWeDo: "Give evidence and respond to cross-examination", deliverable: "Oral evidence at hearing" },
+      { phase: "Follow-up", whatWeDo: "Written answers if directed post-hearing", deliverable: "Supplementary written responses" },
     ],
     faqs: [
       {
-        question: "What does a nationality expert report address?",
+        question: "When is oral evidence required for Nigeria cases?",
         answer:
-          "Citizenship law of the relevant African state, acquisition and loss of nationality, documentation requirements, and statelessness risk on return.",
+          "Most commonly in Upper Tribunal country guidance cases or where the tribunal directs. First-tier Tribunal cases may also require oral evidence on complex country guidance points.",
       },
       {
-        question: "When are nationality experts instructed?",
+        question: "How should solicitors prepare experts for oral evidence?",
         answer:
-          "In cases involving disputed nationality, documentation barriers, or risk of being unable to establish identity or citizenship on return.",
+          "Provide the full tribunal bundle, grounds of appeal, Home Office decision, and any country guidance decisions. Confirm hearing date and format (in person or video) well in advance.",
       },
       {
-        question: "Can reports address dual nationality issues?",
-        answer: "Yes. Reports analyse how domestic law treats dual nationals and practical consequences for return and documentation.",
-      },
-    ],
-  },
-  {
-    id: "rebuttal-sje",
-    title: "Rebuttal Reports & Single Joint Expert",
-    navLabel: "Rebuttal & SJE",
-    description:
-      "Rebuttal of Home Office CPINs and opposing expert reports; Single Joint Expert appointments for contested country conditions.",
-    metaTitle: "Africa Expert Rebuttal Reports & Single Joint Expert UK",
-    metaDescription:
-      "Rebuttal of Home Office CPINs and opposing expert reports; Single Joint Expert appointments for contested Africa country conditions.",
-    relatedHref: "/guides/home-office-cpin-africa-rebuttal",
-    methodology: [
-      { phase: "Review", whatWeDo: "Analyse opposing report or CPIN position", deliverable: "Gap analysis" },
-      { phase: "Rebuttal", whatWeDo: "Source-backed challenge to specific propositions", deliverable: "Rebuttal report" },
-      { phase: "SJE", whatWeDo: "Joint instructions and agreed issues for SJE", deliverable: "Single Joint Expert report" },
-    ],
-    faqs: [
-      {
-        question: "What is a CPIN rebuttal report?",
-        answer:
-          "A source-backed challenge to specific propositions in a Home Office Country Policy Information Note, addressing gaps, outdated sources, or mischaracterisation of country conditions.",
-      },
-      {
-        question: "When is a Single Joint Expert appropriate?",
-        answer:
-          "Where both parties agree on appointing one expert on defined country conditions issues, reducing costs and conflicting expert evidence.",
-      },
-      {
-        question: "How quickly can rebuttal reports be prepared?",
-        answer: "Typically 1–2 weeks depending on scope. Urgent rebuttals may be available before hearing dates subject to expert availability.",
+        question: "Is there an additional fee for tribunal attendance?",
+        answer: "Yes. Oral evidence fees are quoted separately based on hearing duration, preparation time, and travel if required.",
       },
     ],
   },
@@ -275,8 +316,4 @@ export const services: Service[] = [
 
 export function getService(id: string): Service | undefined {
   return services.find((s) => s.id === id);
-}
-
-export function getServicePath(id: string): string {
-  return `/services/${id}`;
 }

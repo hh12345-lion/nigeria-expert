@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 export function CTASection({
-  title = "Instruct an Africa Expert Witness",
-  description = "Submit your case details for a confidential response within one business day. Legal Aid rates available across all 54 African countries.",
+  title = "Instruct a Nigeria Expert Witness",
+  description = "Submit your case details for a confidential response within one business day. Legal Aid compatible rates available for all major Nigerian asylum profiles.",
 }: {
   title?: string;
   description?: string;
@@ -17,7 +17,7 @@ export function CTASection({
             href="/contact"
             className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#0D3B2E] px-6 py-3 font-semibold text-white transition hover:bg-[#0a2f24] sm:w-auto sm:min-w-[200px] sm:px-8"
           >
-            Contact Us
+            Instruct an Expert
           </Link>
           <Link
             href="/how-to-instruct"

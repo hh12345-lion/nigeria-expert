@@ -1,18 +1,17 @@
 import { NextResponse } from "next/server";
 import { appendRow } from "@/lib/google-sheets";
 
-const BRAND_NAME = "AfricaExpertWitness";
+const BRAND_NAME = "Nigeria Expert";
 
 type LeadBody = {
   fullName?: string;
   organisation?: string;
   email?: string;
   phone?: string;
-  country?: string;
-  caseType?: string;
-  keyIssues?: string;
-  deadline?: string;
+  caseProfile?: string;
+  proceedings?: string;
   funding?: string;
+  deadline?: string;
   urgency?: string;
   summary?: string;
 };
@@ -40,7 +39,8 @@ export async function POST(request: Request) {
     if (!process.env.GOOGLE_SHEET_ID) missing.push("GOOGLE_SHEET_ID");
     return NextResponse.json(
       {
-        error: "Lead storage not configured. Add Google Sheets vars to .env.local (not .env.example) and restart `npm run dev`.",
+        error:
+          "Lead storage not configured. Add Google Sheets vars to .env.local and restart the dev server.",
         ...(process.env.NODE_ENV === "development" && { missing }),
       },
       { status: 500 }
@@ -67,11 +67,10 @@ export async function POST(request: Request) {
     sanitize(body.organisation ?? ""),
     email,
     sanitize(body.phone ?? ""),
-    sanitize(body.country ?? ""),
-    sanitize(body.caseType ?? ""),
-    sanitize(body.keyIssues ?? ""),
-    body.deadline ?? "",
+    sanitize(body.caseProfile ?? ""),
+    sanitize(body.proceedings ?? ""),
     sanitize(body.funding ?? ""),
+    body.deadline ?? "",
     sanitize(body.urgency ?? ""),
     sanitize(body.summary ?? ""),
     BRAND_NAME,
@@ -93,17 +92,16 @@ export async function POST(request: Request) {
     const payload = {
       Timestamp: row[0],
       "Full Name": row[1],
-      "Law Firm / Organisation": row[2],
+      "Law Firm": row[2],
       Email: row[3],
-      Phone: row[4],
-      "African Country/Region of Case": row[5],
-      "Case Type": row[6],
-      "Key Issues": row[7],
-      "Hearing/Deadline Date": row[8],
-      Funding: row[9],
-      Urgency: row[10],
-      "Brief Case Summary": row[11],
-      "Brand name": row[12],
+      "Phone Number": row[4],
+      "Case Profile": row[5],
+      Proceedings: row[6],
+      Funding: row[7],
+      "Deadline / Hearing Date": row[8],
+      Urgency: row[9],
+      "Brief Case Description": row[10],
+      "Brand name": row[11],
     };
 
     try {

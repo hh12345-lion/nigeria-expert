@@ -1,7 +1,7 @@
-export const SITE_URL = "https://www.africaexpertwitness.com";
-export const SITE_NAME = "AfricaExpertWitness";
-export const SITE_EMAIL = "info@africaexpertwitness.com";
-export const LINKEDIN_URL = "https://www.linkedin.com/company/africaexpertwitness";
+export const SITE_URL = "https://www.nigeriaexpert.com";
+export const SITE_NAME = "NigeriaExpert";
+export const SITE_EMAIL = "info@nigeriaexpert.com";
+export const LINKEDIN_URL = "https://www.linkedin.com/company/NigeriaExpertWitness";
 
 export const COLORS = {
   primary: "#0D3B2E",

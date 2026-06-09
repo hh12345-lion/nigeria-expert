@@ -2,7 +2,7 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Thank You | AfricaExpertWitness",
+  title: "Thank You | NigeriaExpert",
   description: "Your instruction request has been received.",
   path: "/thank-you",
   noindex: true,
@@ -50,15 +50,15 @@ export default function ThankYouPage() {
         <div className="mx-auto max-w-2xl px-4 text-center text-[#374151] sm:px-6">
           <h2 className="text-lg font-semibold text-[#0D3B2E]">What happens next?</h2>
           <ul className="mt-4 space-y-3 text-left text-sm leading-relaxed">
-            <li>We review your case details and match you with a qualified Africa expert witness.</li>
+            <li>We review your case details and match you with a qualified Nigeria expert witness.</li>
             <li>You receive a response within one business day with proposed scope and timeline.</li>
-            <li>Legal Aid cases: confirm prior authority before the expert begins work.</li>
+            <li>Legal Aid cases: confirm LAA prior authority before the expert begins work.</li>
           </ul>
           <Link
             href="/how-to-instruct"
             className="mt-6 inline-flex min-h-[44px] items-center font-semibold text-[#C8922A] hover:underline"
           >
-            How to instruct an expert
+            How to instruct a Nigeria expert witness
           </Link>
         </div>
       </section>

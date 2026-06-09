@@ -3,32 +3,56 @@ import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Africa Expert Witness Qualifications UK | Credentials & Vetting Standards",
-  description: "What qualifications should an Africa expert witness hold? Academic credentials, field research, language skills, CPR Part 35, and Legal Aid compliance explained.",
+  title: "Nigeria Expert Witness Qualifications UK | Credentials & Standards",
+  description:
+    "What qualifications should a Nigeria expert witness hold? Academic credentials, field research, language skills, CPIN knowledge, and Immigration Tribunal Practice Direction compliance.",
   path: "/qualifications",
 });
 
 export default function QualificationsPage() {
   const crumbs = [{ label: "Home", href: "/" }, { label: "Qualifications" }];
+
   return (
     <>
       <PageJsonLd breadcrumbs={crumbs} />
-    <PageShell title="Africa Expert Witness Qualifications & Vetting Standards" breadcrumbs={crumbs}>
-      <h2 className="text-xl font-bold text-[#0D3B2E]">Country Conditions Experts</h2>
-      <p className="mt-4 text-[#374151]">PhD or research degree in African Studies, Political Science, International Relations, Anthropology, or Law. Field research in relevant African countries. Language skills including French, Swahili, Arabic, Amharic, Hausa, and Somali. Tribunal acceptance history and OSCOLA citation standard.</p>
-      <h2 className="mt-8 text-xl font-bold text-[#0D3B2E]">African Law Experts</h2>
-      <p className="mt-4 text-[#374151]">Qualified in relevant African jurisdiction(s). Knowledge of OHADA, ECOWAS, and SADC legal frameworks. Experience with BIT obligations. CPR Part 35 compliant.</p>
-      <h2 className="mt-8 text-xl font-bold text-[#0D3B2E]">Investment Arbitration Experts</h2>
-      <p className="mt-4 text-[#374151]">ICSID, UNCITRAL, ICC, and LCIA experience. Sector expertise in mining, energy, and infrastructure. African country and law knowledge.</p>
-      <h2 className="mt-8 text-xl font-bold text-[#0D3B2E]">LGBTQI+ Specialists</h2>
-      <p className="mt-4 text-[#374151]">Human rights advocacy and research background. Country-specific expertise. Training in sexuality and gender identity evidence standards.</p>
-      <h2 className="mt-8 text-xl font-bold text-[#0D3B2E]">CPR Part 35</h2>
-      <p className="mt-4 text-[#374151]">In England and Wales, CPR Part 35 governs expert evidence in civil proceedings. An expert&apos;s primary duty is to the court - not to the instructing solicitor or client. Experts must provide independent, objective analysis and must not act as advocates.</p>
-      <p className="mt-4 text-[#374151]"><em>The Ikarian Reefer</em> [1993] 2 Lloyd&apos;s Rep 68 established the core duties of independence and objectivity that UK tribunals still apply. Reports must state the substance of all material instructions, distinguish fact from opinion, and not omit material facts. Africa country evidence is subject to the same rigorous standards as any UK expert evidence.</p>
-      <p className="mt-4 text-[#374151]">Where parties agree a Single Joint Expert (SJE), one expert is jointly instructed on defined issues while retaining the same overriding duty to the court. SJE appointments are frequently used in contested country conditions and CPIN rebuttal cases.</p>
-      <h2 className="mt-8 text-xl font-bold text-[#0D3B2E]">Legal Aid Compliance</h2>
-      <p className="mt-4 text-[#374151]">Experts on our panel work within LAA prior authority frameworks. Standard country reports from £800 are compatible with typical prior authority thresholds. See our Legal Aid guide for the prior authority process.</p>
-    </PageShell>
+      <PageShell title="Nigeria Expert Witness Qualifications UK" breadcrumbs={crumbs}>
+        <h2 className="text-xl font-bold text-[#0D3B2E]">What Makes a Qualified Nigeria Expert</h2>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          A qualified Nigeria expert witness holds academic credentials (PhD, MA, or equivalent research background) in
+          African Studies, Political Science, International Relations, Anthropology, Law, or a related discipline.
+          Field research experience in Nigeria is essential, not optional.
+        </p>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          Language expertise in Hausa, Igbo, Yoruba, and/or Pidgin demonstrates the ability to assess conditions beyond
+          English-language sources. Current knowledge of country conditions, including familiarity with all relevant
+          Nigeria CPINs and EUAA 2026 guidance, is required. Prior tribunal acceptance demonstrates evidential
+          reliability.
+        </p>
+
+        <h2 className="mt-10 text-xl font-bold text-[#0D3B2E]">
+          Immigration Tribunal Practice Direction: Expert Duties
+        </h2>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          An expert&apos;s paramount duty is to the tribunal: to assist it in reaching a decision by providing an
+          objective, unbiased opinion on matters within their expertise, not to advocate for either the appellant or
+          the Home Office. Expert evidence should be the independent product of the expert, uninfluenced by the
+          pressures of litigation.
+        </p>
+        <p className="mt-4 text-[#374151] leading-relaxed">
+          Reports must address matters within the expert&apos;s expertise, cite verifiable sources, and distinguish
+          fact from opinion. The expert must not express views on the credibility of the appellant or the ultimate
+          legal conclusion on refugee status.
+        </p>
+
+        <h2 className="mt-10 text-xl font-bold text-[#0D3B2E]">Red Flags</h2>
+        <ul className="mt-4 list-disc space-y-2 pl-6 text-[#374151]">
+          <li>Expert without current knowledge of Nigeria</li>
+          <li>Reports that simply reproduce CPIN without independent analysis</li>
+          <li>No field research or in-country experience</li>
+          <li>Cannot distinguish between regional conditions within Nigeria</li>
+          <li>No prior tribunal acceptance</li>
+        </ul>
+      </PageShell>
     </>
   );
 }

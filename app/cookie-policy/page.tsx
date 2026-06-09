@@ -4,9 +4,9 @@ import { createMetadata } from "@/lib/metadata";
 import { CATEGORY_META } from "@/lib/cookies/constants";
 
 export const metadata = createMetadata({
-  title: "Cookie Policy | AfricaExpertWitness",
+  title: "Cookie Policy | NigeriaExpert",
   description:
-    "How AfricaExpertWitness.com uses cookies and similar technologies, your choices under UK GDPR and ePrivacy, and how to manage preferences.",
+    "How NigeriaExpert.com uses cookies and similar technologies, your choices under UK GDPR and ePrivacy, and how to manage preferences.",
   path: "/cookie-policy",
 });
 
@@ -18,7 +18,7 @@ export default function CookiePolicyPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell title="Cookie Policy" subtitle="Last updated: May 2026" breadcrumbs={crumbs}>
         <p className="text-[#374151] leading-relaxed">
-          This Cookie Policy explains how AfricaExpertWitness.com (&quot;we&quot;, &quot;us&quot;) uses
+          This Cookie Policy explains how NigeriaExpert.com (&quot;we&quot;, &quot;us&quot;) uses
           cookies and similar technologies when you visit our website. It should be read alongside
           our Privacy Policy. We comply with the UK GDPR, the Privacy and Electronic Communications
           Regulations (PECR), and apply CCPA-aligned transparency where relevant to California
@@ -87,8 +87,8 @@ export default function CookiePolicyPage() {
         <h2 className="mt-10 text-xl font-bold text-[#0D3B2E]">Contact</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Questions about this policy:{" "}
-          <a href="mailto:info@africaexpertwitness.com" className="text-[#C8922A] hover:underline">
-            info@africaexpertwitness.com
+          <a href="mailto:info@nigeriaexpert.com" className="text-[#C8922A] hover:underline">
+            info@nigeriaexpert.com
           </a>
         </p>
       </PageShell>

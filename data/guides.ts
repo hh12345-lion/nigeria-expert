@@ -1,223 +1,241 @@
-export type GuideSection = { heading: string; content: string[] };
-
 export type Guide = {
   slug: string;
   metaTitle: string;
   metaDescription: string;
   h1: string;
-  /** Service @id fragment on /services - omit for methodology/process guides */
   aboutServiceId?: string;
-  sections: GuideSection[];
+  sections: { heading: string; content: string[] }[];
 };
 
 export const guides: Guide[] = [
   {
-    slug: "somalia-country-guidance-moj",
-    metaTitle: "Somalia Country Guidance MOJ [2014] | Solicitor Guide UK",
+    slug: "nigeria-cpin-guide-solicitors",
+    metaTitle: "Nigeria CPINs 2025-2026: Solicitor's Guide to Country Guidance",
     metaDescription:
-      "Guide to MOJ & Ors Somalia country guidance for UK solicitors. Clan analysis, Mogadishu return, Al-Shabaab, and expert witness role.",
-    h1: "Somalia Country Guidance: MOJ & Ors [2014] - A Guide for UK Solicitors",
+      "Current Home Office CPINs on Nigeria for UK asylum solicitors. How to use CPINs, challenge findings, and instruct expert witnesses beyond the CPIN.",
+    h1: "Nigeria CPINs 2025-2026: A Solicitor's Guide to Current Country Guidance",
+    aboutServiceId: "cpin-challenge",
     sections: [
       {
-        heading: "What is MOJ country guidance?",
+        heading: "Current Nigeria CPINs",
         content: [
-          "MOJ & Ors (Return to Mogadishu) Somalia CG [2014] UKUT 00442 is the leading country guidance on Somali asylum claims in UK law. It established that return to Mogadishu is not automatically unsafe - safety depends on individual circumstances including clan membership, access to diaspora remittances, and capacity to integrate into civil society.",
-          "The decision remains binding on First-tier Tribunals unless departed from. Expert witnesses must address MOJ factors while incorporating material developments since 2014, including Al-Shabaab territorial changes, humanitarian conditions, and IDP camp dynamics.",
+          "The Home Office publishes Country Policy Information Notes (CPINs) on Nigeria covering actors of protection (August 2024), separatist groups South-East including IPOB (April 2026), SOGIESC (June 2025), FGM (updated 2024), trafficking of women (updated 2024), medical treatment (December 2025), and internal relocation.",
+          "The EUAA Country Guidance Nigeria 2026, published March 2026, provides parallel analysis that tribunals may consider alongside Home Office CPINs. Solicitors should cite both sources and identify where they diverge.",
         ],
       },
       {
-        heading: "The MOJ framework for Mogadishu return",
+        heading: "How to Use CPINs in Tribunal Submissions",
         content: [
-          "MOJ identified key factors: clan membership and whether the claimant belongs to a majority or minority clan in Mogadishu; access to financial support from diaspora remittances; ability to secure accommodation and livelihood; and whether the claimant can integrate into civil society without facing persecution.",
-          "The Home Office frequently argues that return to Mogadishu is viable for claimants with diaspora support. Expert witnesses must assess whether remittances are realistically accessible to the specific claimant and whether clan dynamics create risk regardless of financial support.",
+          "CPINs are not binding on tribunals but carry significant weight. Solicitors should identify the relevant CPIN for the appellant's profile, extract the key findings, and address whether the appellant's individual circumstances fall within or outside the general CPIN position.",
+          "Where the CPIN supports the appellant, cite it directly. Where it does not, instruct an expert to provide independent analysis challenging the CPIN's general findings with profile-specific and locality-specific evidence.",
         ],
       },
       {
-        heading: "Clan analysis in Somali cases",
+        heading: "The Expert Role Beyond the CPIN",
         content: [
-          "Clan membership is central to most Somali asylum claims. Minority clans - including occupational groups and minority lineage clans - face specific risks from majority clan violence and Al-Shabaab targeting. Expert witnesses verify clan claims against documented clan structures and geographic distributions.",
-          "Incorrect clan evidence is a common ground for adverse credibility findings. Experts provide independent analysis of whether the claimant's stated clan membership is consistent with documented structures and whether that clan faces real risk in the specific location of proposed return.",
+          "An expert witness does not simply reproduce CPIN content. The expert's role is to provide independent, objective analysis of whether the appellant's specific profile creates a real risk, applying current field research and source citations beyond the CPIN.",
+          "Reports that merely restate CPIN findings without independent analysis are a red flag identified in the Adam Pipe October 2025 guide on expert reports in the immigration tribunal.",
         ],
       },
       {
-        heading: "Al-Shabaab and developments since 2014",
+        heading: "Challenging CPIN Findings",
         content: [
-          "Al-Shabaab continues to control significant territory in south-central Somalia and conducts attacks in Mogadishu. Expert witnesses must address current territorial control, targeting patterns, and the interaction between government forces, AMISOM/ATMIS, and non-state actors.",
-          "Developments since MOJ include humanitarian crisis conditions, famine risk, and the growth of IDP populations. Reports should address whether conditions have materially worsened since 2014 in ways that support departure from or distinguished application of MOJ guidance.",
-        ],
-      },
-      {
-        heading: "The expert witness role",
-        content: [
-          "Somalia experts must combine knowledge of MOJ legal framework with current country conditions research. Reports should explicitly address each MOJ factor, cite authoritative sources, and provide reasoned conclusions on return safety for the specific claimant profile.",
-          "For Upper Tribunal departure applications, experts must identify material changes since MOJ and explain why the guidance no longer reflects current conditions - or why the claimant's circumstances fall outside the CG framework.",
+          "CPINs can be challenged with field research, updated country evidence, NGO reports, and profile-specific analysis. Common challenge areas include actors of protection (August 2024 CPIN overstates protection for LGBTQ+ and IPOB profiles), internal relocation (Lagos/Abuja viability for specific profiles), and SOGIESC (June 2025 CPIN general position vs individual risk).",
+          "Expert reports supporting CPIN challenges must cite sources to OSCOLA standards and address the Immigration Tribunal Practice Direction paragraph 10 requirements for expert evidence.",
         ],
       },
     ],
   },
   {
-    slug: "lgbtqi-africa-asylum-evidence",
-    metaTitle: "LGBTQI+ Asylum from Africa | Expert Evidence Guide UK",
+    slug: "lgbtq-nigeria-asylum-guide",
+    metaTitle: "LGBTQ+ Asylum from Nigeria: Expert Evidence Guide for Solicitors",
     metaDescription:
-      "LGBTQI+ asylum from Africa expert evidence guide. Uganda AHA 2023, Nigerian SSMPA, criminalisation, and HJ (Iran) standard.",
-    h1: "LGBTQI+ Asylum from Africa: Expert Evidence Guide for UK Solicitors",
-    aboutServiceId: "lgbtqi-asylum",
+      "LGBTQ+ asylum from Nigeria expert evidence guide. SSMPA, HJ (Iran) standard, June 2025 SOGIESC CPIN, state protection, and internal relocation.",
+    h1: "LGBTQ+ Asylum from Nigeria: Expert Evidence Guide",
+    aboutServiceId: "lgbtq-asylum",
     sections: [
       {
-        heading: "Criminalisation across Africa",
+        heading: "Legal Framework: SSMPA and Sharia Law",
         content: [
-          "Same-sex conduct is criminalised in over 30 African states. Penalties range from imprisonment to, in Uganda, the death penalty for aggravated homosexuality under the Anti-Homosexuality Act 2023. Nigeria's Same Sex Marriage Prohibition Act 2014 imposes up to 14 years imprisonment with nationwide application.",
-          "Ghana's Human Sexual Rights and Family Values Bill (2024) would significantly expand criminalisation if enacted. Kenya, Tanzania, Cameroon, and Guinea maintain criminalising frameworks with varying enforcement intensity.",
+          "Nigeria's Same Sex Marriage (Prohibition) Act 2013 criminalises same-sex relationships with up to 14 years imprisonment. In 12 northern states, Sharia law applies with the death penalty for same-sex conduct. Expert reports must address both the statutory framework and enforcement practice.",
+          "The June 2025 updated SOGIESC CPIN confirms that state protection is generally unavailable for LGBTQ+ individuals in Nigeria, with risk from both state and non-state actors.",
         ],
       },
       {
-        heading: "The HJ (Iran) standard and expert evidence",
+        heading: "The HJ (Iran) Standard",
         content: [
-          "In HJ (Iran) v Secretary of State for the Home Department [2010] UKSC 31, the Supreme Court held that asylum seekers should not be required to conceal their sexuality to avoid persecution. Expert witnesses do not determine sexuality - they provide country conditions evidence on whether openly LGBTQI+ individuals face persecution in the relevant country.",
-          "Reports must address enforcement practice, not merely the text of criminal laws. De facto persecution in states without formal criminalisation - or with limited enforcement - still requires expert analysis.",
+          "The HJ (Iran) [2010] UKSC 31 standard requires tribunals to accept the claimant's sexuality unless there is good reason to reject it. Expert witnesses do not determine sexuality but provide country conditions evidence on risk, enforcement, and protection.",
+          "Reports should address whether the appellant's profile (visibility, family knowledge, prior incidents) creates a real risk beyond the general CPIN position.",
         ],
       },
       {
-        heading: "Internal relocation and LGBTQI+ claims",
+        heading: "State Protection Analysis",
         content: [
-          "Internal relocation is rarely viable for LGBTQI+ asylum claims from Africa. Where criminalisation applies nationwide - as under Uganda's AHA 2023 or Nigeria's SSMPA - the Home Office cannot reasonably argue that relocation within the country eliminates risk.",
-          "Expert witnesses should address this explicitly, documenting nationwide legal frameworks, community attitudes, and the absence of safe internal relocation options.",
+          "The August 2024 actors of protection CPIN confirms limited state protection for LGBTQ+ individuals. Police actively participate in persecution in many areas. NGO protection is limited and may itself attract attention.",
+          "Expert reports must address both formal protection mechanisms and their practical effectiveness for the specific appellant.",
         ],
       },
       {
-        heading: "Country conditions report content",
+        heading: "Internal Relocation Impossibility",
         content: [
-          "LGBTQI+ expert reports should cover: the legal framework and penalties; enforcement practice by police and courts; community and family-based violence; state complicity or failure to protect; availability of LGBTQI+ NGOs; media and social media exposure risk; and consistency of the claimant's account with documented conditions.",
-          "Country-specific expertise is essential. An expert on Uganda cannot credibly report on Nigeria without dedicated knowledge of that jurisdiction.",
+          "Internal relocation to Lagos or Abuja is not viable for LGBTQ+ Nigerians. The EUAA 2026 country guidance confirms that where persecution is by the state, internal protection is not available because SSMPA enforcement applies nationwide.",
+          "Expert reports should address this directly and cite the EUAA 2026 guidance and June 2025 SOGIESC CPIN.",
         ],
       },
     ],
   },
   {
-    slug: "fgm-expert-evidence-africa",
-    metaTitle: "FGM Expert Evidence in African Asylum Cases | Solicitor Guide",
+    slug: "ipob-biafra-expert-guide",
+    metaTitle: "IPOB & Biafra Asylum Claims: Expert Evidence Guide",
     metaDescription:
-      "FGM expert evidence guide for African asylum cases. Prevalence, daughters at risk, state protection, and report structure.",
-    h1: "FGM Expert Evidence in African Asylum Cases: Solicitor Guide",
-    aboutServiceId: "fgm-gbv",
+      "IPOB and Biafra asylum expert evidence guide. Proscription, arrest risk, UK diaspora activity, April 2026 CPIN, and profile assessment.",
+    h1: "IPOB & Biafra Asylum Claims: Expert Evidence Guide",
+    aboutServiceId: "ipob-biafra-risk",
     sections: [
       {
-        heading: "Prevalence by country",
+        heading: "IPOB Proscription and Legal Status",
         content: [
-          "FGM prevalence varies dramatically by country and ethnic group. Guinea (approximately 95%), Somalia (98%), Mali (89%), Sierra Leone (83%), and Gambia (75%) have the highest documented rates. Nigeria shows significant state-by-state variation - Edo, Imo, and Ekiti states have high prevalence.",
-          "Expert witnesses must provide ethnic and regional analysis, not generic national statistics. A claimant from a low-prevalence ethnic group in a high-prevalence country requires different analysis from one in a high-prevalence community.",
+          "IPOB was proscribed as a terrorist organisation in September 2017. Membership, support, or association with IPOB creates real risk of arrest and detention by Nigerian security forces under the Terrorism Prevention Act.",
+          "The April 2026 updated CPIN on separatist groups in South-East Nigeria confirms this risk and provides the current Home Office position for tribunal submissions.",
         ],
       },
       {
-        heading: "Risk assessment methodology",
+        heading: "Arrest Risk and Enforcement Patterns",
         content: [
-          "FGM claims can succeed on multiple grounds: risk of Type III infibulation or re-infibulation; daughters at risk; medical complications from prior FGM requiring unavailable treatment; and honour-based violence linked to refusal of FGM.",
-          "Experts assess whether FGM has already occurred, whether ongoing risk exists, and whether state protection is adequate - considering laws, enforcement, and community attitudes.",
+          "Expert reports address current enforcement patterns in Imo, Anambra, Abia, Enugu, and Ebonyi states, including DSS operations, army deployments, and airport interceptions.",
+          "Reports distinguish between high-profile members (publicly known leaders) and low-profile supporters, as the April 2026 CPIN recognises different risk levels.",
         ],
       },
       {
-        heading: "Expert report structure",
+        heading: "UK Diaspora Activity",
         content: [
-          "A well-structured FGM expert report includes: executive summary; country and ethnic prevalence data; legal framework and state protection; analysis of the claimant's specific risk factors; internal relocation assessment; and conclusions with source citations.",
-          "Reports should address Fornah (FGM) [2006] UKHL 46 and subsequent tribunal decisions on particular social group and FGM-based persecution.",
+          "The April 2026 CPIN confirms that individuals with no prior IPOB profile in Nigeria have been arrested at airports for expressing IPOB views. Expert reports assess whether the appellant's UK-based demonstrations, online activity, or leadership roles would attract Nigerian authority attention.",
+          "Social media activity, protest attendance, and financial contributions to IPOB-related causes are all relevant to profile assessment.",
+        ],
+      },
+      {
+        heading: "Profile Assessment Methodology",
+        content: [
+          "Expert reports apply a structured methodology: identify the appellant's IPOB connection, assess visibility, analyse UK activity against known interception patterns, and conclude on real risk on return citing the April 2026 CPIN and field research.",
         ],
       },
     ],
   },
   {
-    slug: "west-africa-mining-arbitration",
-    metaTitle: "West Africa Mining Arbitration Expert Witness Guide 2025",
+    slug: "fgm-nigeria-guide",
+    metaTitle: "FGM Asylum Claims from Nigeria: Expert Evidence Guide",
     metaDescription:
-      "West Africa mining arbitration guide. Guinea, Mali, Burkina Faso, Niger ICSID claims, licence revocations, and expert evidence.",
-    h1: "West Africa Mining Arbitration: Expert Witness Guide 2025",
-    aboutServiceId: "investment-arbitration",
+      "FGM Nigeria expert evidence guide. Prevalence, state protection, daughter-at-risk claims, VAPP Act 2015, and expert report structure.",
+    h1: "FGM Asylum Claims from Nigeria: Expert Evidence Guide",
+    aboutServiceId: "fgm-expert-reports",
     sections: [
       {
-        heading: "The 2024–2025 arbitration surge",
+        heading: "FGM Prevalence in Nigeria",
         content: [
-          "West Africa has become the epicentre of African investment treaty arbitration. Military regimes in Guinea, Mali, Burkina Faso, and Niger have revoked or renegotiated mining licences, generating ICSID claims valued in the billions.",
-          "The Axis International v Guinea claim - valued at $28.9 billion - exceeds Guinea's annual GDP. Expert witnesses provide country conditions, regulatory framework, and Guinean law evidence essential to fair and equitable treatment and expropriation analysis.",
+          "Nigeria has one of the highest absolute numbers of FGM cases globally, with significant variation by state and ethnic group. Expert reports must provide locality-specific and community-specific prevalence data, not national averages.",
+          "Common high-prevalence areas include states in the South-South and South-East, but prevalence varies significantly even within regions.",
         ],
       },
       {
-        heading: "BIT framework and governing law",
+        heading: "Legal Framework: VAPP Act 2015",
         content: [
-          "Most West African mining disputes arise under bilateral investment treaties between African states and investor home states (France, UK, US, China, and others). Experts must understand the applicable BIT standards - fair and equitable treatment, full protection and security, and expropriation - and how African domestic law interacts with treaty obligations.",
-          "OHADA may govern certain commercial aspects while BITs govern investor-state obligations. African law experts clarify this interaction.",
+          "The Violence Against Persons (Prohibition) Act 2015 prohibits FGM nationally. However, enforcement is inconsistent and the updated FGM CPIN confirms that state protection is generally inadequate in practising communities.",
+          "Expert reports address both the legal prohibition and practical enforcement, including whether police and courts in the specific state effectively protect against FGM.",
         ],
       },
       {
-        heading: "Expert evidence required",
+        heading: "Daughter-at-Risk Claims",
         content: [
-          "Typical expert team: country conditions expert (regulatory change, political risk, expropriation context); African law expert (governing law, licence validity, court procedures); mining sector expert (technical and operational context); and quantum expert.",
-          "Early instruction during memorial preparation ensures experts can address the specific factual matrix and treaty standards in dispute.",
+          "In daughter-at-risk cases, the expert assesses: prevalence in the specific ethnic group and state, whether the extended family has indicated intent, whether state protection is realistically available, and whether internal relocation would provide sufficient protection.",
+          "Reports should address the mother's own experience of FGM and the family's attitudes toward continuing the practice.",
+        ],
+      },
+      {
+        heading: "Expert Report Structure",
+        content: [
+          "FGM expert reports should follow Immigration Tribunal Practice Direction paragraph 10: expert qualifications, methodology, sources cited, specific conclusions on risk and state protection, and a declaration of independence.",
+          "Reports should cross-reference the updated FGM CPIN and identify where the appellant's circumstances differ from the general CPIN position.",
         ],
       },
     ],
   },
   {
-    slug: "home-office-cpin-africa-rebuttal",
-    metaTitle: "Challenging Home Office CPINs on Africa | Expert Evidence Guide",
+    slug: "trafficking-juju-guide",
+    metaTitle: "Trafficking & Juju Ritual Asylum Claims: Expert Evidence Guide",
     metaDescription:
-      "Guide to challenging Home Office CPINs on African countries. Common weaknesses, rebuttal methodology, and expert instruction.",
-    h1: "Challenging Home Office CPINs on African Countries: Expert Evidence Guide",
-    aboutServiceId: "rebuttal-sje",
+      "Trafficking and juju ritual Nigeria expert evidence guide. Juju mechanism, NRM, trafficking routes, expert role, and state protection.",
+    h1: "Trafficking & Juju Ritual Asylum Claims: Expert Evidence Guide",
+    aboutServiceId: "trafficking-juju-reports",
     sections: [
       {
-        heading: "What CPINs cover",
+        heading: "Understanding Juju in Trafficking Context",
         content: [
-          "Country Policy Information Notes (CPINs) are Home Office documents summarising country conditions for major asylum source countries. They are influential in asylum decision-making but are not binding on tribunals and can be challenged with expert evidence.",
-          "CPINs exist for Nigeria, Somalia, Eritrea, Ethiopia, Sudan, Zimbabwe, and other high-volume countries. They are updated periodically but often lag behind rapidly changing conditions.",
+          "Juju rituals are used by Nigerian trafficking networks, particularly from Edo State, to bind victims through fear of supernatural consequences. Expert witnesses explain the cultural and psychological mechanism without sensationalising the practice.",
+          "Understanding juju is essential for credibility assessment: victims may fear disclosure because of perceived supernatural consequences, not because their account lacks credibility.",
         ],
       },
       {
-        heading: "Common CPIN weaknesses",
+        heading: "The National Referral Mechanism (NRM)",
         content: [
-          "CPINs frequently rely on dated sources, understate LGBTQI+ enforcement following new legislation, fail to address post-conflict developments (Sudan 2023, Tigray ceasefire), and present internal relocation as more viable than country conditions support.",
-          "Expert rebuttal reports identify specific CPIN propositions that are inaccurate, unsupported, or materially incomplete - with source-backed alternatives.",
+          "The NRM in the UK identifies trafficking victims and provides support. Expert reports complement NRM decisions by addressing country conditions on return, including re-trafficking risk and state protection inadequacies.",
+          "Reports should address the specific trafficking route (commonly Edo State to Libya/Italy/UK) and the network structure.",
         ],
       },
       {
-        heading: "Rebuttal methodology",
+        heading: "Trafficking Routes and Networks",
         content: [
-          "Effective rebuttal requires: identifying the specific CPIN propositions in dispute; citing more current or authoritative sources; explaining why the CPIN's conclusion does not follow from its own sources; and providing alternative analysis grounded in field research.",
-          "Rebuttal reports are typically shorter and more focused than full country condition reports - addressing only the contested issues.",
+          "Benin City in Edo State is the primary origin for Nigerian trafficking to Europe. Expert reports address the specific network, debt bondage mechanisms, and the role of juju practitioners in maintaining control.",
+          "Returned victims face retaliation, stigma, and re-trafficking. The updated trafficking CPIN confirms inadequate state protection.",
+        ],
+      },
+      {
+        heading: "Expert Role in Trafficking Cases",
+        content: [
+          "The expert explains juju mechanism, assesses reintegration risk, addresses state protection availability, and provides cultural context for credibility assessment. Reports must comply with Immigration Tribunal Practice Direction paragraph 10.",
         ],
       },
     ],
   },
   {
-    slug: "instructing-africa-experts-legal-aid",
-    metaTitle: "Instructing Africa Expert Witnesses Under Legal Aid | Guide",
+    slug: "instructing-nigeria-expert",
+    metaTitle: "Instructing a Nigeria Expert Witness: Solicitor's Guide",
     metaDescription:
-      "Legal Aid guide for instructing Africa expert witnesses. LAA prior authority, rates, urgent cases, and multi-country reports.",
-    h1: "Instructing Africa Expert Witnesses Under Legal Aid",
+      "How to instruct a Nigeria expert witness. Adam Pipe October 2025 guide, letter of instruction, Legal Aid prior authority, and required documents.",
+    h1: "Instructing a Nigeria Expert Witness: A Solicitor's Guide",
+    aboutServiceId: "country-condition-reports",
     sections: [
       {
-        heading: "Legal Aid funding for expert evidence",
+        heading: "The Adam Pipe October 2025 Guide",
         content: [
-          "Legal Aid Agency (LAA) funding is available for expert evidence in asylum and immigration cases where the claim has merit and the expert evidence is necessary. Prior authority is required for reports exceeding standard fee thresholds.",
-          "AfricaExpertWitness provides rates compatible with LAA prior authority requirements. Standard single-country country condition reports from £800 are within typical prior authority ranges.",
+          "Adam Pipe's Expert Reports in the Immigration Tribunal guide (October 2025, No.8 Chambers) sets out key requirements for expert evidence in immigration proceedings. Reports must be the independent product of the expert, address matters within expertise, cite sources, and comply with Practice Direction requirements.",
+          "Reports that simply reproduce CPIN content without independent analysis fail to meet the standard identified in the guide.",
         ],
       },
       {
-        heading: "Prior authority process",
+        heading: "Letter of Instruction Requirements",
         content: [
-          "Apply for prior authority before instructing the expert. Provide: the expert's CV and qualifications; proposed scope of report; fee estimate; and explanation of why expert evidence is necessary. The LAA assesses whether the cost is proportionate to the issues in the case.",
-          "Multi-issue reports (LGBTQI+, FGM, trafficking combined) and multi-country reports require higher prior authority amounts - typically £1,200–£2,500.",
+          "The letter of instruction should identify the expert's role, list questions to be addressed, provide all relevant case materials, specify the deadline, and confirm funding arrangements. For Nigeria cases, identify the specific asylum profile (LGBTQ+, IPOB, FGM, etc.) and the CPINs relevant to the claim.",
+          "Include the screening record, Asylum Interview Record (AIR), Home Office refusal letter (RFRL), and client witness statement as minimum materials.",
         ],
       },
       {
-        heading: "Urgent instructions",
+        heading: "Legal Aid Prior Authority",
         content: [
-          "Where a hearing is listed within 5–10 days, urgent instruction is possible subject to expert availability. Contact AfricaExpertWitness immediately with the hearing date, funding confirmation, and scope of report required.",
-          "Urgent reports may attract a supplementary fee. Confirm LAA prior authority covers the urgent rate before instruction.",
+          "Most Nigeria expert reports in asylum proceedings are Legal Aid funded. LAA prior authority is required before instruction. Typical LAA-approved rates are £50 to £100 per hour for report preparation, with fixed fee reports also available.",
+          "Apply for prior authority as soon as the need for expert evidence is identified. Include the expert's CV, proposed scope, and estimated cost.",
+        ],
+      },
+      {
+        heading: "Documents to Provide",
+        content: [
+          "Provide: screening record, AIR, RFRL, any previous expert reports, country guidance decisions, CPINs relevant to the claim, client witness statement, and any supporting documentary evidence.",
+          "The more complete the instruction materials, the more focused and cost-effective the expert report.",
         ],
       },
     ],
   },
 ];
 
-export function getGuide(slug: string) {
+export function getGuide(slug: string): Guide | undefined {
   return guides.find((g) => g.slug === slug);
 }
