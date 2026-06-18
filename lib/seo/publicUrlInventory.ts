@@ -21,10 +21,7 @@ export const APP_STATIC_PATHS: PublicUrlEntry[] = [
   { path: "/how-to-instruct", priority: 0.88, changefreq: "monthly" },
   { path: "/qualifications", priority: 0.88, changefreq: "monthly" },
   { path: "/guides", priority: 0.87, changefreq: "monthly" },
-  { path: "/fees", priority: 0.87, changefreq: "monthly" },
-  { path: "/faq", priority: 0.87, changefreq: "monthly" },
   { path: "/glossary", priority: 0.75, changefreq: "monthly" },
-  { path: "/experts", priority: 0.75, changefreq: "monthly" },
   { path: "/cookie-policy", priority: 0.5, changefreq: "yearly" },
 ];
 

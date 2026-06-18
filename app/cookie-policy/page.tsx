@@ -1,6 +1,7 @@
 import { PageShell } from "@/components/layout/PageShell";
 import { PageJsonLd } from "@/components/seo/PageJsonLd";
 import { createMetadata } from "@/lib/metadata";
+import { SITE_EMAIL } from "@/lib/constants";
 import { CATEGORY_META } from "@/lib/cookies/constants";
 
 export const metadata = createMetadata({
@@ -87,8 +88,8 @@ export default function CookiePolicyPage() {
         <h2 className="mt-10 text-xl font-bold text-[#0D3B2E]">Contact</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Questions about this policy:{" "}
-          <a href="mailto:info@nigeriaexpert.com" className="text-[#C8922A] hover:underline">
-            info@nigeriaexpert.com
+          <a href={`mailto:${SITE_EMAIL}`} className="text-[#C8922A] hover:underline">
+            {SITE_EMAIL}
           </a>
         </p>
       </PageShell>

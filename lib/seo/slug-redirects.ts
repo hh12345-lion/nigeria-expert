@@ -16,4 +16,7 @@ export const SEO_SLUG_REDIRECTS: Record<string, string> = {
   "/services/ipob-biafra-risk-assessment": "/services/ipob-biafra-risk",
   "/services/cpin-challenge-reports": "/services/cpin-challenge",
   "/services/expert-oral-evidence": "/services/oral-evidence",
+  "/fees": "/how-to-instruct",
+  "/faq": "/how-to-instruct",
+  "/experts": "/qualifications",
 };

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function CTASection({
   title = "Instruct a Nigeria Expert Witness",
-  description = "Submit your case details for a confidential response within one business day. Legal Aid compatible rates available for all major Nigerian asylum profiles.",
+  description = "Submit your case details for a confidential response within one business day. Legal Aid compatible rates for UK FTT and Upper Tribunal proceedings.",
 }: {
   title?: string;
   description?: string;

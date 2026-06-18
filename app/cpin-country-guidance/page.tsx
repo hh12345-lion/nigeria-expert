@@ -194,14 +194,10 @@ export default function CpinCountryGuidancePage() {
         <p className="mt-4 text-[#374151] leading-relaxed">
           Most Nigeria expert reports in asylum proceedings are Legal Aid funded through the Legal Aid Agency (LAA).
           Prior authority is required before instruction. See our{" "}
-          <Link href="/fees" className="font-semibold text-[#C8922A] hover:underline">
-            fees page
-          </Link>{" "}
-          for typical rates and our{" "}
           <Link href="/how-to-instruct" className="font-semibold text-[#C8922A] hover:underline">
             how to instruct page
           </Link>{" "}
-          for the LAA prior authority process.
+          for the LAA prior authority process and typical UK Legal Aid rates.
         </p>
 
         <div className="mt-10 rounded-[8px] border border-[#D1E3D8] bg-[#F7F9F7] p-6">

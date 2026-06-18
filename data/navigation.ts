@@ -22,11 +22,8 @@ export const resourcesNavLinks = [
   { label: "CPIN & Country Guidance", href: "/cpin-country-guidance" },
   { label: "Solicitor Guides", href: "/guides" },
   { label: "How to Instruct", href: "/how-to-instruct" },
-  { label: "Fees", href: "/fees" },
-  { label: "FAQ", href: "/faq" },
   { label: "Qualifications", href: "/qualifications" },
   { label: "Glossary", href: "/glossary" },
-  { label: "Our Experts", href: "/experts" },
 ] as const;
 
 export const guidesNavLinks = guides.map((g) => ({

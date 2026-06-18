@@ -3,6 +3,7 @@ import { CTASection } from "@/components/ui/CTASection";
 import { CardGrid } from "@/components/ui/CardGrid";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { homepageGraph, websiteSchema } from "@/lib/schema";
+import { SITE_SCOPE } from "@/lib/constants";
 import { asylumProfiles } from "@/data/asylum-profiles";
 import { services } from "@/data/services";
 import { caseTypes } from "@/data/case-types";
@@ -26,8 +27,8 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 max-w-2xl text-base text-white/80 sm:text-lg">
             NigeriaExpert connects UK immigration solicitors, law firms, and Legal Aid practitioners with qualified
-            Nigeria country expert witnesses for asylum appeals, LGBTQ+ claims, IPOB/Biafra, Boko Haram, FGM,
-            trafficking, and state protection analysis.
+            Nigeria country expert witnesses for First-tier Tribunal and Upper Tribunal asylum appeals in England,
+            Wales, Scotland, and Northern Ireland.
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <Link
@@ -52,8 +53,11 @@ export default function HomePage() {
           <p className="mt-4 max-w-3xl text-[#374151] leading-relaxed">
             Nigeria is one of the highest-volume asylum claim nationalities in the UK. Home Office refusals often rely
             on generic CPIN positions that do not reflect the appellant&apos;s specific profile. Independent expert
-            evidence is essential for LGBTQ+ persecution under SSMPA, IPOB separatist claims, Boko Haram risk,
-            FGM, trafficking with juju rituals, and political persecution.
+            evidence for UK tribunals is essential for LGBTQ+ persecution under SSMPA, IPOB separatist claims, Boko
+            Haram risk, FGM, trafficking with juju rituals, and political persecution.
+          </p>
+          <p className="mt-4 max-w-3xl text-sm text-[#374151] leading-relaxed">
+            {SITE_SCOPE}
           </p>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[

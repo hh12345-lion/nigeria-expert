@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | NigeriaExpert",
   },
   description:
-    "Find a qualified Nigeria expert witness in the UK. Country condition reports for asylum appeals, LGBTQ+, IPOB/Biafra, Boko Haram, FGM, trafficking, and state protection analysis. Legal Aid compatible.",
+    "UK-only Nigeria expert witness service for immigration solicitors and Legal Aid practitioners. Country condition reports for FTT and Upper Tribunal asylum appeals: LGBTQ+, IPOB/Biafra, Boko Haram, FGM, trafficking, and state protection.",
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
     other: process.env.BING_SITE_VERIFICATION
@@ -36,7 +36,6 @@ export const metadata: Metadata = {
   alternates: {
     languages: {
       "en-GB": SITE_URL,
-      "en-US": SITE_URL,
       "x-default": SITE_URL,
     },
   },

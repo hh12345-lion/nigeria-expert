@@ -1,11 +1,12 @@
 import { PageShell } from "@/components/layout/PageShell";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { createMetadata } from "@/lib/metadata";
+import { SITE_SCOPE } from "@/lib/constants";
 
 export const metadata = createMetadata({
   title: "Instruct a Nigeria Expert Witness | NigeriaExpert UK",
   description:
-    "Submit your case details to instruct a qualified Nigeria expert witness. Legal Aid compatible. Response within 1 business day.",
+    "Submit your case details to instruct a qualified Nigeria expert witness for UK immigration tribunals. Legal Aid compatible. Response within 1 business day.",
   path: "/contact",
   noindex: true,
 });
@@ -14,7 +15,7 @@ export default function ContactPage() {
   return (
     <PageShell
       title="Instruct a Nigeria Expert Witness"
-      subtitle="Confidential case submission. Response within one business day."
+      subtitle="Confidential case submission for UK immigration solicitors and Legal Aid practitioners. Response within one business day."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
     >
       <div className="grid min-w-0 gap-10 lg:grid-cols-3 lg:gap-12">
@@ -23,6 +24,7 @@ export default function ContactPage() {
         </div>
         <aside className="h-fit rounded-[8px] border border-[#D1E3D8] bg-[#F7F9F7] p-5 sm:p-6">
           <h2 className="font-bold text-[#0D3B2E]">Why instruct through NigeriaExpert</h2>
+          <p className="mt-2 text-sm text-[#374151]">{SITE_SCOPE}</p>
           <ul className="mt-4 space-y-4 text-sm text-[#374151]">
             <li>All major Nigerian asylum profiles covered</li>
             <li>Legal Aid rates available</li>

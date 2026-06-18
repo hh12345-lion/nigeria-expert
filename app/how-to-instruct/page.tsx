@@ -76,12 +76,9 @@ export default function HowToInstructPage() {
 
         <h2 className="mt-12 text-xl font-bold text-[#0D3B2E]">Legal Aid</h2>
         <p className="mt-4 text-[#374151] leading-relaxed">
-          Most Nigeria expert reports in asylum proceedings are Legal Aid funded. LAA prior authority is required before
-          instruction. See our{" "}
-          <Link href="/fees" className="font-semibold text-[#C8922A] hover:underline">
-            fees page
-          </Link>{" "}
-          for typical LAA rates and the{" "}
+          Most Nigeria expert reports in UK asylum proceedings are Legal Aid funded. LAA prior authority is required before
+          instruction. Typical LAA-approved rates are £50 to £100 per hour for report preparation, with fixed-fee reports
+          from £800 for standard country condition reports. See the{" "}
           <Link href="/guides/instructing-nigeria-expert" className="font-semibold text-[#C8922A] hover:underline">
             instructing guide
           </Link>{" "}
@@ -90,10 +87,8 @@ export default function HowToInstructPage() {
 
         <RelatedLinks
           links={[
-            { label: "Fees & Legal Aid rates", href: "/fees" },
             { label: "Instructing guide", href: "/guides/instructing-nigeria-expert" },
             { label: "Qualifications", href: "/qualifications" },
-            { label: "FAQ", href: "/faq" },
             { label: "Instruct an expert", href: "/contact" },
           ]}
         />

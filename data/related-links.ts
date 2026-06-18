@@ -107,7 +107,6 @@ export function getGuideRelatedLinks(slug: string): RelatedLink[] {
       { label: "IPOB & Biafra Profile", href: "/asylum-profiles/ipob-biafra" },
       { label: "FGM & GBV Profile", href: "/asylum-profiles/fgm-gbv" },
       { label: "Trafficking & Juju Profile", href: "/asylum-profiles/trafficking-juju" },
-      { label: "Legal Aid Fees", href: "/fees" },
       { label: "Qualifications", href: "/qualifications" },
       { label: "CPIN & Country Guidance", href: "/cpin-country-guidance" },
     ],

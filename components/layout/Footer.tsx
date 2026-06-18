@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CookieSettingsButton } from "@/components/cookies";
-import { SITE_EMAIL } from "@/lib/constants";
+import { SITE_EMAIL, SITE_SCOPE } from "@/lib/constants";
 import { asylumProfiles } from "@/data/asylum-profiles";
 import { services } from "@/data/services";
 
@@ -44,10 +44,7 @@ export function Footer() {
               <li><Link href="/cpin-country-guidance" className="hover:text-white">CPIN & Country Guidance</Link></li>
               <li><Link href="/guides" className="hover:text-white">Solicitor Guides</Link></li>
               <li><Link href="/how-to-instruct" className="hover:text-white">How to Instruct</Link></li>
-              <li><Link href="/fees" className="hover:text-white">Fees</Link></li>
-              <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
               <li><Link href="/qualifications" className="hover:text-white">Qualifications</Link></li>
-              <li><Link href="/experts" className="hover:text-white">Our Experts</Link></li>
               <li><Link href="/glossary" className="hover:text-white">Glossary</Link></li>
               <li><Link href="/what-is-a-nigeria-expert-witness" className="hover:text-white">What is a Nigeria Expert Witness?</Link></li>
             </ul>
@@ -65,7 +62,7 @@ export function Footer() {
           </div>
         </div>
         <p className="mt-10 border-t border-white/20 pt-6 text-center text-xs text-white/60">
-          NigeriaExpert.com connects UK solicitors with qualified Nigeria expert witnesses. We are not a law firm and do not provide legal advice.
+          {SITE_SCOPE} We are not a law firm and do not provide legal advice. This service is not available outside the United Kingdom.
         </p>
         <p className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center text-xs text-white/50">
           <Link href="/privacy" className="inline-flex min-h-[44px] items-center hover:text-white">

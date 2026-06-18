@@ -19,14 +19,16 @@ export default function WhatIsPage() {
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
         title="What Is a Nigeria Expert Witness?"
-        subtitle="The role, duties, and value of independent Nigeria country evidence in UK immigration tribunals."
+        subtitle="The role, duties, and value of independent Nigeria country evidence in UK First-tier Tribunal and Upper Tribunal proceedings."
         breadcrumbs={crumbs}
       >
         <p className="text-[#374151] leading-relaxed">
           A Nigeria expert witness is an independent specialist who provides country condition reports and, where
-          directed, oral evidence for UK immigration tribunals on matters relating to Nigeria. Unlike witnesses of
-          fact, the expert&apos;s role is to assist the tribunal with objective analysis of country conditions,
-          state protection, internal relocation, and profile-specific risk.
+          directed, oral evidence for UK immigration tribunals on matters relating to Nigeria. NigeriaExpert instructs
+          experts for UK proceedings only: First-tier Tribunal (Immigration and Asylum Chamber) and Upper Tribunal cases
+          in England, Wales, Scotland, and Northern Ireland. Unlike witnesses of fact, the expert&apos;s role is to
+          assist the tribunal with objective analysis of country conditions, state protection, internal relocation, and
+          profile-specific risk.
         </p>
         <p className="mt-4 text-[#374151] leading-relaxed">
           Nigeria is one of the highest-volume asylum claim nationalities in the UK. Expert evidence is essential
