@@ -1,29 +1,32 @@
 import Link from "next/link";
 
 export function CTASection({
-  title = "Instruct a Nigeria Expert Witness",
-  description = "Submit your case details for a confidential response within one business day. Legal Aid compatible rates for UK FTT and Upper Tribunal proceedings.",
+  title = "Instruct a Nigeria expert",
+  description = "Send a short brief. We reply within one business day with availability, timeline, and Legal Aid rates where relevant.",
 }: {
   title?: string;
   description?: string;
 }) {
   return (
-    <section className="bg-[#C8922A] py-12 sm:py-14 md:py-16">
-      <div className="mx-auto min-w-0 max-w-6xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">{title}</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-sm text-white/90 sm:text-base">{description}</p>
-        <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center sm:gap-4">
+    <section className="border-y border-indigo/15 bg-indigo text-chalk">
+      <div className="mx-auto flex min-w-0 max-w-6xl flex-col gap-6 px-4 py-10 sm:flex-row sm:items-end sm:justify-between sm:px-6 sm:py-12 lg:px-8">
+        <div className="max-w-xl">
+          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-palm">Next step</p>
+          <h2 className="font-display mt-2 text-2xl font-medium tracking-tight sm:text-3xl">{title}</h2>
+          <p className="mt-3 text-sm leading-relaxed text-chalk/70 sm:text-base">{description}</p>
+        </div>
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <Link
             href="/contact"
-            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#0D3B2E] px-6 py-3 font-semibold text-white transition hover:bg-[#0a2f24] sm:w-auto sm:min-w-[200px] sm:px-8"
+            className="inline-flex min-h-[44px] items-center justify-center bg-palm px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-indigo-deep transition hover:bg-palm-soft"
           >
-            Instruct an Expert
+            Send brief
           </Link>
           <Link
             href="/how-to-instruct"
-            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] border-2 border-white px-6 py-3 font-semibold text-white transition hover:bg-white/10 sm:w-auto sm:min-w-[200px] sm:px-8"
+            className="inline-flex min-h-[44px] items-center justify-center border border-chalk/30 px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-chalk transition hover:border-palm hover:text-palm"
           >
-            How to Instruct
+            How to instruct
           </Link>
         </div>
       </div>

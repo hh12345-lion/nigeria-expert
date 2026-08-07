@@ -9,22 +9,44 @@ export function GlossarySearch({ terms }: { terms: GlossaryTerm[] }) {
   const filtered = useMemo(() => {
     const query = q.toLowerCase().trim();
     if (!query) return terms;
-    return terms.filter((t) => t.term.toLowerCase().includes(query) || t.definition.toLowerCase().includes(query));
+    return terms.filter(
+      (t) => t.term.toLowerCase().includes(query) || t.definition.toLowerCase().includes(query),
+    );
   }, [q, terms]);
 
   return (
     <>
-      <label htmlFor="glossary-search" className="sr-only">Search glossary</label>
-      <input id="glossary-search" type="search" placeholder="Search terms…" value={q} onChange={(e) => setQ(e.target.value)}
-        className="mb-8 w-full max-w-md rounded-[4px] border border-[#D1E3D8] px-4 py-3 min-h-[44px] focus:border-[#0D3B2E] focus:outline-none focus:ring-1 focus:ring-[#0D3B2E]" />
-      <dl className="space-y-6">
-        {filtered.map((t) => (
-          <div key={t.term} id={glossaryAnchorId(t.term)} className="scroll-mt-24 rounded-[8px] border border-[#D1E3D8] bg-white p-5">
-            <dt className="font-semibold text-[#0D3B2E]">{t.term}</dt>
-            <dd className="mt-2 text-[#374151] leading-relaxed">
-              {t.definition}
-              {t.link && <> <Link href={t.link} className="text-[#C8922A] hover:underline">Learn more →</Link></>}
-            </dd>
+      <label htmlFor="glossary-search" className="sr-only">
+        Search glossary
+      </label>
+      <input
+        id="glossary-search"
+        type="search"
+        placeholder="Search terms…"
+        value={q}
+        onChange={(e) => setQ(e.target.value)}
+        className="mb-8 w-full max-w-md border-0 border-b border-border bg-transparent px-0 py-3 min-h-[44px] text-ink placeholder:text-rule focus:border-palm focus:outline-none focus:ring-0"
+      />
+      <dl className="divide-y divide-border border-y border-border">
+        {filtered.map((t, index) => (
+          <div key={t.term} id={glossaryAnchorId(t.term)} className="scroll-mt-28 grid gap-2 py-5 sm:grid-cols-[3rem_1fr] sm:gap-5">
+            <span className="font-mono text-xs text-rule sm:pt-1" aria-hidden>
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <div>
+              <dt className="font-display text-lg text-ink">{t.term}</dt>
+              <dd className="mt-2 text-mute leading-relaxed">
+                {t.definition}
+                {t.link && (
+                  <>
+                    {" "}
+                    <Link href={t.link} className="font-medium text-palm hover:underline">
+                      Learn more →
+                    </Link>
+                  </>
+                )}
+              </dd>
+            </div>
           </div>
         ))}
       </dl>

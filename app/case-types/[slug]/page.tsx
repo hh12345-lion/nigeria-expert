@@ -33,20 +33,20 @@ export default async function CaseTypePage({ params }: { params: Promise<{ slug:
       <PageJsonLd breadcrumbs={crumbs} faqs={ct.faqs} />
       <PageShell title={ct.h1} breadcrumbs={crumbs}>
         {ct.content.map((p, i) => (
-          <p key={i} className="mb-4 text-[#374151] leading-relaxed">
+          <p key={i} className="mb-4 text-[#4D5768] leading-relaxed">
             {p}
           </p>
         ))}
 
         <FAQSection faqs={ct.faqs} />
 
-        <h3 className="mt-8 font-semibold text-[#0D3B2E]">Related asylum profiles</h3>
+        <h3 className="mt-8 font-semibold text-[#1C2D5A]">Related asylum profiles</h3>
         <ul className="mt-2 space-y-1">
           {ct.relatedProfiles.map((s) => {
             const profile = getAsylumProfile(s);
             return (
               <li key={s}>
-                <Link href={`/asylum-profiles/${s}`} className="text-[#C8922A] hover:underline">
+                <Link href={`/asylum-profiles/${s}`} className="text-[#D96A1F] hover:underline">
                   {profile?.title ?? s}
                 </Link>
               </li>
@@ -54,13 +54,13 @@ export default async function CaseTypePage({ params }: { params: Promise<{ slug:
           })}
         </ul>
 
-        <h3 className="mt-6 font-semibold text-[#0D3B2E]">Related services</h3>
+        <h3 className="mt-6 font-semibold text-[#1C2D5A]">Related services</h3>
         <ul className="mt-2 space-y-1">
           {ct.relatedServices.map((id) => {
             const service = getService(id);
             return (
               <li key={id}>
-                <Link href={`/services/${id}`} className="text-[#C8922A] hover:underline">
+                <Link href={`/services/${id}`} className="text-[#D96A1F] hover:underline">
                   {service?.title ?? id}
                 </Link>
               </li>

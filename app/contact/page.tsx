@@ -1,12 +1,12 @@
 import { PageShell } from "@/components/layout/PageShell";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { createMetadata } from "@/lib/metadata";
-import { SITE_SCOPE } from "@/lib/constants";
+import { SITE_EMAIL } from "@/lib/constants";
 
 export const metadata = createMetadata({
   title: "Instruct a Nigeria Expert Witness | NigeriaExpert UK",
   description:
-    "Submit your case details to instruct a qualified Nigeria expert witness for UK immigration tribunals. Legal Aid compatible. Response within 1 business day.",
+    "Submit a short case brief to instruct a Nigeria expert witness for UK immigration tribunals. Legal Aid compatible. Response within 1 business day.",
   path: "/contact",
   noindex: true,
 });
@@ -14,22 +14,26 @@ export const metadata = createMetadata({
 export default function ContactPage() {
   return (
     <PageShell
-      title="Instruct a Nigeria Expert Witness"
-      subtitle="Confidential case submission for UK immigration solicitors and Legal Aid practitioners. Response within one business day."
+      title="Send a brief"
+      subtitle="Five fields. We reply within one business day with availability and next steps."
       breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
     >
-      <div className="grid min-w-0 gap-10 lg:grid-cols-3 lg:gap-12">
-        <div className="min-w-0 lg:col-span-2">
+      <div className="grid min-w-0 gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.7fr)] lg:gap-16">
+        <div className="min-w-0 border-t border-border pt-2">
           <ContactForm />
         </div>
-        <aside className="h-fit rounded-[8px] border border-[#D1E3D8] bg-[#F7F9F7] p-5 sm:p-6">
-          <h2 className="font-bold text-[#0D3B2E]">Why instruct through NigeriaExpert</h2>
-          <p className="mt-2 text-sm text-[#374151]">{SITE_SCOPE}</p>
-          <ul className="mt-4 space-y-4 text-sm text-[#374151]">
-            <li>All major Nigerian asylum profiles covered</li>
-            <li>Legal Aid rates available</li>
-            <li>Immigration Tribunal Practice Direction compliant</li>
-            <li>Response within 1 business day</li>
+        <aside className="h-fit border-l-2 border-palm pl-5 sm:pl-6">
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-palm">Before you write</p>
+          <ul className="mt-4 space-y-4 text-sm leading-relaxed text-mute">
+            <li>Name the asylum profile and tribunal stage if known.</li>
+            <li>Flag Legal Aid / prior authority early.</li>
+            <li>Note the hearing date—tight deadlines are common.</li>
+            <li>
+              Prefer email?{" "}
+              <a href={`mailto:${SITE_EMAIL}`} className="font-medium text-indigo hover:text-palm">
+                {SITE_EMAIL}
+              </a>
+            </li>
           </ul>
         </aside>
       </div>

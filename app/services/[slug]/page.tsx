@@ -38,7 +38,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <PageJsonLd breadcrumbs={crumbs} faqs={service.faqs} />
       <PageShell title={service.title} subtitle={service.description} breadcrumbs={crumbs}>
         {service.content.map((p, i) => (
-          <p key={i} className="mb-4 text-[#374151] leading-relaxed">
+          <p key={i} className="mb-4 text-[#4D5768] leading-relaxed">
             {p}
           </p>
         ))}
@@ -47,18 +47,18 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <ResponsiveTableWrap>
             <table className="w-full min-w-[500px] text-left text-sm">
               <thead>
-                <tr className="border-b border-[#D1E3D8] bg-[#F7F9F7]">
-                  <th className="p-3 font-semibold text-[#0D3B2E]">Phase</th>
-                  <th className="p-3 font-semibold text-[#0D3B2E]">What We Do</th>
-                  <th className="p-3 font-semibold text-[#0D3B2E]">Deliverable</th>
+                <tr className="border-b border-[#CFD5E0] bg-[#E4E8EF]">
+                  <th className="p-3 font-semibold text-[#1C2D5A]">Phase</th>
+                  <th className="p-3 font-semibold text-[#1C2D5A]">What We Do</th>
+                  <th className="p-3 font-semibold text-[#1C2D5A]">Deliverable</th>
                 </tr>
               </thead>
               <tbody>
                 {service.methodology.map((row) => (
-                  <tr key={row.phase} className="border-b border-[#D1E3D8]">
+                  <tr key={row.phase} className="border-b border-[#CFD5E0]">
                     <td className="p-3 font-medium">{row.phase}</td>
-                    <td className="p-3 text-[#374151]">{row.whatWeDo}</td>
-                    <td className="p-3 text-[#374151]">{row.deliverable}</td>
+                    <td className="p-3 text-[#4D5768]">{row.whatWeDo}</td>
+                    <td className="p-3 text-[#4D5768]">{row.deliverable}</td>
                   </tr>
                 ))}
               </tbody>
@@ -68,7 +68,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
         <Link
           href={service.relatedHref}
-          className="mt-6 inline-block text-sm font-medium text-[#C8922A] hover:underline"
+          className="mt-6 inline-block text-sm font-medium text-[#D96A1F] hover:underline"
         >
           Related guidance and profiles
         </Link>
@@ -77,7 +77,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
         <Link
           href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white hover:bg-[#b07f22]"
+          className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#D96A1F] px-6 py-3 font-semibold text-white hover:bg-[#C45E1A]"
         >
           Instruct an Expert
         </Link>

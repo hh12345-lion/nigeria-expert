@@ -30,7 +30,7 @@ export default function ServicesPage() {
         subtitle="CPR Part 35 and Immigration Tribunal Practice Direction compliant reports for all major Nigerian asylum profiles."
         breadcrumbs={crumbs}
       >
-        <p className="mb-8 text-[#374151] leading-relaxed">
+        <p className="mb-8 text-[#4D5768] leading-relaxed">
           NigeriaExpert provides eight specialist expert witness services for UK immigration solicitors, law firms, and
           Legal Aid practitioners. All reports are prepared by qualified Nigeria country experts with current CPIN
           knowledge and field research experience.
@@ -42,13 +42,13 @@ export default function ServicesPage() {
             href: `/services/${s.id}`,
           }))}
         />
-        <p className="mt-8 text-[#374151]">
+        <p className="mt-8 text-[#4D5768]">
           Questions about instructing an expert? See{" "}
-          <Link href="/how-to-instruct" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/how-to-instruct" className="font-semibold text-[#D96A1F] hover:underline">
             how to instruct
           </Link>{" "}
           or{" "}
-          <Link href="/contact" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/contact" className="font-semibold text-[#D96A1F] hover:underline">
             contact us
           </Link>
           .

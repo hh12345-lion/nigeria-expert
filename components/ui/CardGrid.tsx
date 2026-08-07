@@ -2,13 +2,25 @@ import Link from "next/link";
 
 export function CardGrid({ items }: { items: { title: string; description: string; href: string }[] }) {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
-      {items.map((item) => (
-        <Link key={item.href} href={item.href}
-          className="group rounded-[8px] border border-[#D1E3D8] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_16px_rgba(0,0,0,0.06)] transition hover:border-[#0D3B2E] min-h-[44px]">
-          <h3 className="font-semibold text-[#0D3B2E] group-hover:text-[#C8922A]">{item.title}</h3>
-          <p className="mt-2 text-sm text-[#374151] leading-relaxed">{item.description}</p>
-          <span className="mt-4 inline-block text-sm font-medium text-[#C8922A]">Learn more →</span>
+    <div className="divide-y divide-border border-y border-border">
+      {items.map((item, index) => (
+        <Link
+          key={item.href}
+          href={item.href}
+          className="group grid min-h-[44px] grid-cols-[2.5rem_1fr] gap-3 py-5 transition hover:bg-white/60 sm:grid-cols-[3rem_1fr_auto] sm:gap-5 sm:py-6"
+        >
+          <span className="font-mono text-xs tabular-nums tracking-wider text-rule pt-1">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+          <span className="min-w-0">
+            <span className="font-display block text-lg text-ink transition group-hover:text-indigo sm:text-xl">
+              {item.title}
+            </span>
+            <span className="mt-1.5 block text-sm leading-relaxed text-mute">{item.description}</span>
+          </span>
+          <span className="hidden items-center font-mono text-[10px] uppercase tracking-[0.16em] text-palm transition group-hover:translate-x-1 sm:flex">
+            Open →
+          </span>
         </Link>
       ))}
     </div>

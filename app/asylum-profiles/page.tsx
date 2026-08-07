@@ -23,7 +23,7 @@ export default function AsylumProfilesPage() {
         subtitle="Dedicated expert witness evidence for each major Nigerian asylum profile in UK immigration tribunals."
         breadcrumbs={crumbs}
       >
-        <p className="mb-8 text-[#374151] leading-relaxed">
+        <p className="mb-8 text-[#4D5768] leading-relaxed">
           Nigeria is one of the highest-volume asylum claim nationalities in the UK. Each profile below links to a
           dedicated page with CPIN references, country guidance analysis, and profile-specific expert evidence
           guidance for solicitors and Legal Aid practitioners.
@@ -35,9 +35,9 @@ export default function AsylumProfilesPage() {
             href: `/asylum-profiles/${p.slug}`,
           }))}
         />
-        <p className="mt-8 text-[#374151]">
+        <p className="mt-8 text-[#4D5768]">
           Need guidance on current CPINs? See our{" "}
-          <Link href="/cpin-country-guidance" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/cpin-country-guidance" className="font-semibold text-[#D96A1F] hover:underline">
             Nigeria CPIN & Country Guidance pillar page
           </Link>
           .

@@ -23,7 +23,7 @@ export default function GuidesPage() {
         subtitle="Practical guides for UK immigration solicitors instructing Nigeria country expert witnesses."
         breadcrumbs={crumbs}
       >
-        <p className="mb-8 text-[#374151] leading-relaxed">
+        <p className="mb-8 text-[#4D5768] leading-relaxed">
           These guides cover current Nigeria CPINs, profile-specific expert evidence requirements, and the instruction
           process for Legal Aid and privately funded cases. All guides align with Immigration Tribunal Practice
           Direction paragraph 10 and the Adam Pipe October 2025 guide.
@@ -35,9 +35,9 @@ export default function GuidesPage() {
             href: `/guides/${g.slug}`,
           }))}
         />
-        <p className="mt-8 text-[#374151]">
+        <p className="mt-8 text-[#4D5768]">
           For a comprehensive CPIN overview, see our{" "}
-          <Link href="/cpin-country-guidance" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/cpin-country-guidance" className="font-semibold text-[#D96A1F] hover:underline">
             Nigeria CPIN & Country Guidance pillar page
           </Link>
           .

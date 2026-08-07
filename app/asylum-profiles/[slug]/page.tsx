@@ -42,20 +42,20 @@ export default async function AsylumProfilePage({ params }: { params: Promise<{ 
       <PageJsonLd breadcrumbs={crumbs} faqs={profile.faqs} />
       <PageShell title={profile.h1} breadcrumbs={crumbs}>
         {profile.content.map((p, i) => (
-          <p key={i} className="mb-4 text-[#374151] leading-relaxed">
+          <p key={i} className="mb-4 text-[#4D5768] leading-relaxed">
             {p}
           </p>
         ))}
 
         <ProfileGeoContent blocks={getProfileGeoContent(slug)} />
 
-        <h2 className="mt-8 text-xl font-bold text-[#0D3B2E]">Related Case Types</h2>
+        <h2 className="mt-8 text-xl font-bold text-[#1C2D5A]">Related Case Types</h2>
         <ul className="mt-4 space-y-2">
           {profile.relatedCaseTypes.map((s) => {
             const ct = getCaseType(s);
             return (
               <li key={s}>
-                <Link href={`/case-types/${s}`} className="text-[#C8922A] hover:underline">
+                <Link href={`/case-types/${s}`} className="text-[#D96A1F] hover:underline">
                   {ct?.title ?? s}
                 </Link>
               </li>

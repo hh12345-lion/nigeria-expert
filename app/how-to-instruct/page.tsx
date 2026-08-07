@@ -60,26 +60,24 @@ export default function HowToInstructPage() {
         subtitle="Seven steps for UK immigration solicitors and Legal Aid practitioners."
         breadcrumbs={crumbs}
       >
-        <div className="space-y-6">
+        <ol className="divide-y divide-border border-y border-border">
           {steps.map((s) => (
-            <div key={s.n} className="flex gap-4 rounded-[8px] border border-[#D1E3D8] bg-white p-6">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0D3B2E] font-bold text-white">
-                {s.n}
-              </span>
+            <li key={s.n} className="grid gap-3 py-6 sm:grid-cols-[3rem_1fr] sm:gap-5">
+              <span className="font-mono text-xs text-palm">{String(s.n).padStart(2, "0")}</span>
               <div>
-                <h2 className="font-bold text-[#0D3B2E]">{s.title}</h2>
-                <p className="mt-2 text-[#374151]">{s.body}</p>
+                <h2 className="font-display text-lg text-ink sm:text-xl">{s.title}</h2>
+                <p className="mt-2 text-sm leading-relaxed text-mute sm:text-base">{s.body}</p>
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ol>
 
-        <h2 className="mt-12 text-xl font-bold text-[#0D3B2E]">Legal Aid</h2>
-        <p className="mt-4 text-[#374151] leading-relaxed">
+        <h2 className="font-display mt-12 text-2xl text-ink">Legal Aid</h2>
+        <p className="mt-4 text-mute leading-relaxed">
           Most Nigeria expert reports in UK asylum proceedings are Legal Aid funded. LAA prior authority is required before
           instruction. Typical LAA-approved rates are £50 to £100 per hour for report preparation, with fixed-fee reports
           from £800 for standard country condition reports. See the{" "}
-          <Link href="/guides/instructing-nigeria-expert" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/guides/instructing-nigeria-expert" className="font-semibold text-palm hover:underline">
             instructing guide
           </Link>{" "}
           aligned with the Adam Pipe October 2025 requirements.
@@ -94,9 +92,9 @@ export default function HowToInstructPage() {
         />
         <Link
           href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white"
+          className="mt-8 inline-flex min-h-[44px] items-center bg-palm px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-indigo-deep transition hover:bg-palm-soft"
         >
-          Instruct an Expert
+          Send brief
         </Link>
       </PageShell>
     </>

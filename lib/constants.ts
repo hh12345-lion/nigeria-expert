@@ -7,11 +7,13 @@ export const SITE_SCOPE =
 export const LINKEDIN_URL = "https://www.linkedin.com/company/NigeriaExpertWitness";
 
 export const COLORS = {
-  primary: "#0D3B2E",
-  accent: "#C8922A",
-  background: "#FFFFFF",
-  sectionAlt: "#F7F9F7",
-  border: "#D1E3D8",
-  heading: "#0D3B2E",
-  body: "#374151",
+  primary: "#1C2D5A",
+  accent: "#D96A1F",
+  background: "#F4F6FA",
+  sectionAlt: "#E4E8EF",
+  border: "#CFD5E0",
+  heading: "#10151C",
+  body: "#4D5768",
+  indigoDeep: "#0C1428",
+  palmSoft: "#E8893F",
 } as const;

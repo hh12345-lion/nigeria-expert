@@ -3,12 +3,18 @@ import type { FAQ } from "@/lib/schema";
 export function FAQSection({ faqs, title = "Frequently Asked Questions" }: { faqs: FAQ[]; title?: string }) {
   return (
     <section className="py-12">
-      <h2 className="mb-8 text-2xl font-bold text-[#0D3B2E]">{title}</h2>
-      <div className="space-y-6">
-        {faqs.map((faq) => (
-          <div key={faq.question} className="rounded-[8px] border border-[#D1E3D8] bg-white p-6 shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_16px_rgba(0,0,0,0.06)]">
-            <h3 className="text-lg font-semibold text-[#0D3B2E]">{faq.question}</h3>
-            <p className="mt-3 text-[#374151] leading-relaxed">{faq.answer}</p>
+      <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-palm">Answers</p>
+      <h2 className="font-display mt-2 text-2xl font-medium text-ink sm:text-3xl">{title}</h2>
+      <div className="mt-8 divide-y divide-border border-y border-border">
+        {faqs.map((faq, index) => (
+          <div key={faq.question} className="grid gap-3 py-6 sm:grid-cols-[3rem_1fr] sm:gap-5">
+            <span className="font-mono text-xs tabular-nums text-rule">
+              {String(index + 1).padStart(2, "0")}
+            </span>
+            <div>
+              <h3 className="font-display text-lg text-ink">{faq.question}</h3>
+              <p className="mt-3 text-mute leading-relaxed">{faq.answer}</p>
+            </div>
           </div>
         ))}
       </div>

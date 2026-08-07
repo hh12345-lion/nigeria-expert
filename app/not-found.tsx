@@ -2,45 +2,46 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <section className="bg-[#0D3B2E] py-14 text-center md:py-20">
+    <section className="bg-indigo-deep py-16 text-chalk md:py-24">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
-        <p className="text-7xl font-bold text-[#C8922A] sm:text-8xl" aria-hidden="true">
+        <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-palm">Missing page</p>
+        <p className="font-display mt-3 text-7xl font-medium text-palm sm:text-8xl" aria-hidden>
           404
         </p>
-        <h1 className="mt-4 text-3xl font-bold text-white sm:text-4xl">Page Not Found</h1>
-        <p className="mt-4 text-lg text-white/80">
-          This page does not exist or may have moved.
+        <h1 className="mt-2 font-display text-3xl font-medium sm:text-4xl">This route is not in the index</h1>
+        <p className="mt-4 max-w-lg text-chalk/70">
+          The page may have moved. Use the links below or send a brief if you need an expert.
         </p>
 
-        <div className="mt-10 flex w-full max-w-md flex-col items-stretch gap-3 sm:mx-auto sm:max-w-none sm:flex-row sm:items-center sm:justify-center sm:gap-4">
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
           <Link
             href="/"
-            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] bg-[#C8922A] px-6 py-3 font-semibold text-white transition hover:bg-[#b07f22] sm:w-auto sm:min-w-[200px] sm:px-8"
+            className="inline-flex min-h-[44px] items-center justify-center bg-palm px-6 text-xs font-semibold uppercase tracking-[0.14em] text-indigo-deep transition hover:bg-palm-soft"
           >
-            Return to Homepage
+            Home
           </Link>
           <Link
             href="/contact"
-            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-[4px] border-2 border-white px-6 py-3 font-semibold text-white transition hover:bg-white/10 sm:w-auto sm:min-w-[200px] sm:px-8"
+            className="inline-flex min-h-[44px] items-center justify-center border border-chalk/30 px-6 text-xs font-semibold uppercase tracking-[0.14em] text-chalk transition hover:border-palm hover:text-palm"
           >
-            Instruct an Expert
+            Send brief
           </Link>
         </div>
 
         <nav
-          className="mt-12 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-white/60"
+          className="mt-12 flex flex-wrap gap-x-6 gap-y-2 border-t border-white/10 pt-8 font-mono text-[11px] uppercase tracking-[0.14em] text-chalk/55"
           aria-label="Quick links"
         >
-          <Link href="/asylum-profiles" className="inline-flex min-h-[44px] items-center hover:text-white">
-            Asylum Profiles
+          <Link href="/asylum-profiles" className="inline-flex min-h-[44px] items-center hover:text-palm">
+            Asylum profiles
           </Link>
-          <Link href="/case-types" className="inline-flex min-h-[44px] items-center hover:text-white">
-            Case Types
+          <Link href="/case-types" className="inline-flex min-h-[44px] items-center hover:text-palm">
+            Case types
           </Link>
-          <Link href="/cpin-country-guidance" className="inline-flex min-h-[44px] items-center hover:text-white">
-            CPIN Guidance
+          <Link href="/cpin-country-guidance" className="inline-flex min-h-[44px] items-center hover:text-palm">
+            CPIN guidance
           </Link>
-          <Link href="/contact" className="inline-flex min-h-[44px] items-center hover:text-white">
+          <Link href="/contact" className="inline-flex min-h-[44px] items-center hover:text-palm">
             Contact
           </Link>
         </nav>

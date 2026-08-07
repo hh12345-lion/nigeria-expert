@@ -23,7 +23,7 @@ export default function CaseTypesPage() {
         subtitle="Expert witness evidence for all major UK immigration tribunal proceedings involving Nigerian nationals."
         breadcrumbs={crumbs}
       >
-        <p className="mb-8 text-[#374151] leading-relaxed">
+        <p className="mb-8 text-[#4D5768] leading-relaxed">
           NigeriaExpert provides qualified country expert witnesses for First-tier Tribunal appeals, Upper Tribunal
           proceedings, LGBTQ+ and FGM claims, trafficking and NRM cases, IPOB/Biafra asylum, deportation and removal,
           and fresh claims with updated CPIN evidence.
@@ -35,9 +35,9 @@ export default function CaseTypesPage() {
             href: `/case-types/${c.slug}`,
           }))}
         />
-        <p className="mt-8 text-[#374151]">
+        <p className="mt-8 text-[#4D5768]">
           See also our{" "}
-          <Link href="/asylum-profiles" className="font-semibold text-[#C8922A] hover:underline">
+          <Link href="/asylum-profiles" className="font-semibold text-[#D96A1F] hover:underline">
             asylum profiles hub
           </Link>{" "}
           for profile-specific expert evidence pages.
