@@ -5,9 +5,9 @@ import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "How to Instruct a Nigeria Expert Witness UK | Step-by-Step Guide",
+  title: "How to Request a Nigeria Expert Report UK | Step-by-Step Guide",
   description:
-    "Step-by-step guide for UK solicitors on instructing a Nigeria expert witness for asylum appeals, Legal Aid cases, and immigration tribunal proceedings.",
+    "Step-by-step guide for UK solicitors on requesting a Nigeria country expert report for asylum appeals, Legal Aid cases, and immigration tribunal proceedings.",
   path: "/how-to-instruct",
 });
 
@@ -50,20 +50,20 @@ const steps = [
 ];
 
 export default function HowToInstructPage() {
-  const crumbs = [{ label: "Home", href: "/" }, { label: "How to Instruct" }];
+  const crumbs = [{ label: "Home", href: "/" }, { label: "How it works" }];
 
   return (
     <>
       <PageJsonLd breadcrumbs={crumbs} />
       <PageShell
-        title="How to Instruct a Nigeria Expert Witness"
+        title="How to request a Nigeria expert report"
         subtitle="Seven steps for UK immigration solicitors and Legal Aid practitioners."
         breadcrumbs={crumbs}
       >
         <ol className="divide-y divide-border border-y border-border">
           {steps.map((s) => (
             <li key={s.n} className="grid gap-3 py-6 sm:grid-cols-[3rem_1fr] sm:gap-5">
-              <span className="font-mono text-xs text-palm">{String(s.n).padStart(2, "0")}</span>
+              <span className="text-sm text-clay">{String(s.n).padStart(2, "0")}</span>
               <div>
                 <h2 className="font-display text-lg text-ink sm:text-xl">{s.title}</h2>
                 <p className="mt-2 text-sm leading-relaxed text-mute sm:text-base">{s.body}</p>
@@ -77,24 +77,24 @@ export default function HowToInstructPage() {
           Most Nigeria expert reports in UK asylum proceedings are Legal Aid funded. LAA prior authority is required before
           instruction. Typical LAA-approved rates are £50 to £100 per hour for report preparation, with fixed-fee reports
           from £800 for standard country condition reports. See the{" "}
-          <Link href="/guides/instructing-nigeria-expert" className="font-semibold text-palm hover:underline">
-            instructing guide
+          <Link href="/guides/instructing-nigeria-expert" className="font-semibold text-hibiscus hover:underline">
+            solicitor guide
           </Link>{" "}
           aligned with the Adam Pipe October 2025 requirements.
         </p>
 
         <RelatedLinks
           links={[
-            { label: "Instructing guide", href: "/guides/instructing-nigeria-expert" },
+            { label: "Solicitor guide", href: "/guides/instructing-nigeria-expert" },
             { label: "Qualifications", href: "/qualifications" },
-            { label: "Instruct an expert", href: "/contact" },
+            { label: "Request a report", href: "/contact" },
           ]}
         />
         <Link
-          href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center bg-palm px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-indigo-deep transition hover:bg-palm-soft"
+          href="/#enquire"
+          className="mt-8 inline-flex min-h-[44px] items-center bg-hibiscus px-6 py-3 text-sm font-medium text-paper transition hover:bg-hibiscus-soft"
         >
-          Send brief
+          Request a report
         </Link>
       </PageShell>
     </>

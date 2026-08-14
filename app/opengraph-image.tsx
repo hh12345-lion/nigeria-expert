@@ -14,30 +14,26 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "flex-end",
-          backgroundColor: "#0C1428",
+          backgroundColor: "#FFF8F1",
           padding: 72,
-          backgroundImage:
-            "repeating-linear-gradient(-18deg, transparent, transparent 18px, rgba(255,255,255,0.04) 18px, rgba(255,255,255,0.04) 19px)",
+          borderLeft: "16px solid #C1124D",
         }}
       >
         <div
           style={{
             fontSize: 22,
-            fontWeight: 600,
-            color: "#D96A1F",
-            letterSpacing: "0.28em",
-            textTransform: "uppercase",
-            marginBottom: 20,
+            color: "#A34A24",
+            marginBottom: 16,
           }}
         >
-          UK Tribunals · Country Evidence
+          UK Tribunals · Country evidence
         </div>
         <div
           style={{
-            fontSize: 84,
-            fontWeight: 500,
-            color: "#F4F6FA",
-            letterSpacing: "-0.03em",
+            fontSize: 72,
+            fontWeight: 700,
+            color: "#1A1210",
+            letterSpacing: "-0.04em",
             lineHeight: 1,
           }}
         >
@@ -45,14 +41,14 @@ export default function OpenGraphImage() {
         </div>
         <p
           style={{
-            marginTop: 28,
+            marginTop: 24,
             fontSize: 28,
-            color: "rgba(244,246,250,0.7)",
-            maxWidth: 720,
+            color: "#5C534C",
+            maxWidth: 760,
             lineHeight: 1.35,
           }}
         >
-          Nigeria country expert witnesses for asylum &amp; immigration appeals
+          Nigeria country expert reports for asylum &amp; immigration appeals
         </p>
       </div>
     ),

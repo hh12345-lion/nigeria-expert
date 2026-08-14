@@ -62,15 +62,15 @@ export function CookiePreferencesModal() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="cookie-prefs-title"
-        className="relative z-10 flex max-h-[90vh] w-full max-w-lg flex-col overflow-hidden rounded-t-[8px] border border-[#CFD5E0] bg-white shadow-[0_16px_48px_rgba(0,0,0,0.2)] sm:rounded-[8px] animate-[fadeIn_0.25s_ease-out]"
+        className="relative z-10 flex max-h-[90vh] w-full max-w-lg flex-col overflow-hidden rounded-t-[8px] border border-border bg-white shadow-[0_16px_48px_rgba(0,0,0,0.2)] sm:rounded-[8px] animate-[fadeIn_0.25s_ease-out]"
       >
-        <div className="border-b border-[#CFD5E0] bg-[#1C2D5A] px-5 py-4 sm:px-6">
+        <div className="border-b border-border bg-ink px-5 py-4 sm:px-6">
           <h2 id="cookie-prefs-title" className="text-lg font-bold text-white">
             Customize cookie preferences
           </h2>
           <p className="mt-1 text-sm text-white/75">
             Manage how we use cookies.{" "}
-            <Link href="/cookie-policy" className="text-[#D96A1F] hover:underline" onClick={closePreferences}>
+            <Link href="/cookie-policy" className="text-hibiscus hover:underline" onClick={closePreferences}>
               Cookie Policy
             </Link>
           </p>
@@ -84,12 +84,12 @@ export function CookiePreferencesModal() {
               return (
                 <li
                   key={key}
-                  className="rounded-[8px] border border-[#CFD5E0] p-4"
+                  className="rounded-[8px] border border-border p-4"
                 >
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <p className="font-semibold text-[#1C2D5A]">{meta.label}</p>
-                      <p className="mt-1 text-sm text-[#4D5768]">{meta.description}</p>
+                      <p className="font-semibold text-ink">{meta.label}</p>
+                      <p className="mt-1 text-sm text-mute">{meta.description}</p>
                     </div>
                     <label className="relative inline-flex shrink-0 cursor-pointer items-center">
                       <input
@@ -101,7 +101,7 @@ export function CookiePreferencesModal() {
                         aria-label={`${meta.label} cookies`}
                       />
                       <span
-                        className={`h-7 w-12 rounded-full transition ${meta.required ? "bg-[#1C2D5A]/40" : "bg-[#CFD5E0] peer-focus-visible:ring-2 peer-focus-visible:ring-[#D96A1F] peer-checked:bg-[#1C2D5A]"}`}
+                        className={`h-7 w-12 rounded-full transition ${meta.required ? "bg-ink/40" : "bg-stone peer-focus-visible:ring-2 peer-focus-visible:ring-hibiscus peer-checked:bg-ink"}`}
                         aria-hidden
                       />
                       <span className="pointer-events-none absolute left-0.5 top-0.5 h-6 w-6 rounded-full bg-white shadow transition peer-checked:translate-x-5" />
@@ -113,33 +113,33 @@ export function CookiePreferencesModal() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-2 border-t border-[#CFD5E0] bg-[#E4E8EF] p-4 sm:flex-row sm:flex-wrap sm:justify-end">
+        <div className="flex flex-col gap-2 border-t border-border bg-stone p-4 sm:flex-row sm:flex-wrap sm:justify-end">
           <button
             type="button"
             ref={closeBtnRef}
             onClick={closePreferences}
-            className="min-h-[44px] rounded-[4px] border border-[#CFD5E0] px-4 py-2 text-sm font-medium text-[#4D5768] hover:bg-white"
+            className="min-h-[44px] rounded-[4px] border border-border px-4 py-2 text-sm font-medium text-mute hover:bg-white"
           >
             Cancel
           </button>
           <button
             type="button"
             onClick={rejectNonEssential}
-            className="min-h-[44px] rounded-[4px] border border-[#1C2D5A] px-4 py-2 text-sm font-semibold text-[#1C2D5A] hover:bg-white"
+            className="min-h-[44px] rounded-[4px] border border-ink px-4 py-2 text-sm font-semibold text-ink hover:bg-white"
           >
             Reject Non-Essential
           </button>
           <button
             type="button"
             onClick={() => savePreferences(draft)}
-            className="min-h-[44px] rounded-[4px] bg-[#1C2D5A] px-4 py-2 text-sm font-semibold text-white hover:bg-[#152447]"
+            className="min-h-[44px] rounded-[4px] bg-ink px-4 py-2 text-sm font-semibold text-white hover:bg-ink"
           >
             Save preferences
           </button>
           <button
             type="button"
             onClick={acceptAll}
-            className="min-h-[44px] rounded-[4px] bg-[#D96A1F] px-4 py-2 text-sm font-semibold text-white hover:bg-[#C45E1A]"
+            className="min-h-[44px] rounded-[4px] bg-hibiscus px-4 py-2 text-sm font-semibold text-white hover:bg-hibiscus-soft"
           >
             Accept All
           </button>

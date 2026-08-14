@@ -11,11 +11,11 @@ export function ProfileGeoContent({ blocks }: { blocks: ProfileGeoBlock[] }) {
           return (
             <ResponsiveTableWrap key={block.caption}>
               <table className="w-full min-w-[600px] border-collapse text-sm">
-                <caption className="mb-3 text-left text-base font-semibold text-[#1C2D5A]">{block.caption}</caption>
+                <caption className="mb-3 text-left text-base font-semibold text-ink">{block.caption}</caption>
                 <thead>
-                  <tr className="border-b border-[#CFD5E0] bg-[#E4E8EF]">
+                  <tr className="border-b border-border bg-stone">
                     {block.headers.map((h) => (
-                      <th key={h} className="px-4 py-3 text-left font-semibold text-[#1C2D5A]">
+                      <th key={h} className="px-4 py-3 text-left font-semibold text-ink">
                         {h}
                       </th>
                     ))}
@@ -23,9 +23,9 @@ export function ProfileGeoContent({ blocks }: { blocks: ProfileGeoBlock[] }) {
                 </thead>
                 <tbody>
                   {block.rows.map((row, i) => (
-                    <tr key={i} className="border-b border-[#CFD5E0]">
+                    <tr key={i} className="border-b border-border">
                       {row.map((cell, j) => (
-                        <td key={j} className="px-4 py-3 text-[#4D5768]">
+                        <td key={j} className="px-4 py-3 text-mute">
                           {cell}
                         </td>
                       ))}
@@ -39,8 +39,8 @@ export function ProfileGeoContent({ blocks }: { blocks: ProfileGeoBlock[] }) {
         if (block.type === "list") {
           return (
             <div key={block.title}>
-              <h2 className="text-xl font-bold text-[#1C2D5A]">{block.title}</h2>
-              <ol className="mt-4 list-decimal space-y-2 pl-6 text-[#4D5768]">
+              <h2 className="text-xl font-bold text-ink">{block.title}</h2>
+              <ol className="mt-4 list-decimal space-y-2 pl-6 text-mute">
                 {block.items.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
@@ -50,8 +50,8 @@ export function ProfileGeoContent({ blocks }: { blocks: ProfileGeoBlock[] }) {
         }
         return (
           <div key={block.title}>
-            <h2 className="text-xl font-bold text-[#1C2D5A]">{block.title}</h2>
-            <ol className="mt-4 list-decimal space-y-2 pl-6 text-[#4D5768]">
+            <h2 className="text-xl font-bold text-ink">{block.title}</h2>
+            <ol className="mt-4 list-decimal space-y-2 pl-6 text-mute">
               {block.steps.map((step) => (
                 <li key={step}>{step}</li>
               ))}

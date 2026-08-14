@@ -32,10 +32,10 @@ Set in `.env.local` (never commit this file):
 | `GOOGLE_SERVICE_ACCOUNT_EMAIL` | Service account email |
 | `GOOGLE_PRIVATE_KEY` | RSA private key (keep `\n` escapes in quotes) |
 | `GOOGLE_SHEET_ID` | Spreadsheet ID from the URL |
-| `GOOGLE_SHEET_TAB_NAME` | Tab name (e.g. `Sheet26`) |
+| `GOOGLE_SHEET_TAB_NAME` | Optional. If omitted, the first tab is used. All forms write to that single tab. |
 | `Lead_notification_url` | Optional n8n/webhook URL |
 
-Share the spreadsheet with the service account email as **Editor**.
+Share the spreadsheet with the service account email as **Editor**. Do not create extra tabs — every form appends a row to the same sheet.
 
 ## SEO files
 

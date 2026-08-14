@@ -1,25 +1,30 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-ink: #10151c;
-  --color-indigo: #1c2d5a;
-  --color-indigo-deep: #0c1428;
-  --color-palm: #d96a1f;
-  --color-palm-soft: #e8893f;
-  --color-haze: #e4e8ef;
-  --color-haze-deep: #cfd5e0;
-  --color-rule: #8f9aab;
-  --color-mute: #4d5768;
-  --color-chalk: #f4f6fa;
-  --color-primary: #1c2d5a;
-  --color-accent: #d96a1f;
-  --color-section-alt: #e4e8ef;
-  --color-border: #cfd5e0;
-  --color-body: #4d5768;
-  --font-sans: var(--font-manrope);
-  --font-display: var(--font-fraunces);
-  --radius-card: 2px;
-  --radius-sm: 2px;
+  --color-ink: #1a1210;
+  --color-hibiscus: #c1124d;
+  --color-hibiscus-soft: #d42a62;
+  --color-clay: #a34a24;
+  --color-paper: #fff8f1;
+  --color-stone: #ede4d8;
+  --color-mute: #5c534c;
+  --color-rule: #c9bbae;
+  --color-primary: #1a1210;
+  --color-accent: #c1124d;
+  --color-section-alt: #ede4d8;
+  --color-border: #c9bbae;
+  --color-body: #5c534c;
+  --color-indigo: #1a1210;
+  --color-indigo-deep: #1a1210;
+  --color-palm: #c1124d;
+  --color-palm-soft: #d42a62;
+  --color-chalk: #fff8f1;
+  --color-haze: #ede4d8;
+  --color-haze-deep: #d9cfc3;
+  --font-sans: var(--font-source-serif);
+  --font-display: var(--font-syne);
+  --radius-card: 0px;
+  --radius-sm: 0px;
   --shadow-card: none;
   --breakpoint-xs: 375px;
 }
@@ -29,20 +34,16 @@ html {
 }
 
 body {
-  background-color: #f4f6fa;
-  background-image:
-    radial-gradient(ellipse 90% 55% at 0% -5%, rgba(28, 45, 90, 0.07), transparent 55%),
-    radial-gradient(ellipse 70% 40% at 100% 0%, rgba(217, 106, 31, 0.05), transparent 50%),
-    linear-gradient(180deg, #f4f6fa 0%, #e8ecf3 100%);
-  color: #4d5768;
-  font-family: var(--font-manrope), system-ui, sans-serif;
+  background: #fff8f1;
+  color: #5c534c;
+  font-family: var(--font-source-serif), Georgia, serif;
   overflow-x: hidden;
   min-width: 320px;
 }
 
 ::selection {
-  background: rgba(28, 45, 90, 0.18);
-  color: #10151c;
+  background: rgba(193, 18, 77, 0.16);
+  color: #1a1210;
 }
 
 main,
@@ -51,34 +52,7 @@ section {
 }
 
 .font-display {
-  font-family: var(--font-fraunces), Georgia, serif;
-}
-
-/* Adire-inspired diagonal rule texture */
-.adire-wash {
-  background-image:
-    repeating-linear-gradient(
-      -18deg,
-      transparent,
-      transparent 11px,
-      rgba(28, 45, 90, 0.035) 11px,
-      rgba(28, 45, 90, 0.035) 12px
-    );
-}
-
-.docket-rule {
-  border-top: 1px solid #cfd5e0;
-}
-
-@keyframes riseIn {
-  from {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-family: var(--font-syne), system-ui, sans-serif;
 }
 
 @keyframes fadeIn {
@@ -98,37 +72,6 @@ section {
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes docketReveal {
-  from {
-    opacity: 0;
-    transform: translateY(-6px) scaleY(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scaleY(1);
-  }
-}
-
-.animate-rise {
-  animation: riseIn 0.7s ease-out both;
-}
-
-.animate-rise-delay {
-  animation: riseIn 0.7s ease-out 0.15s both;
-}
-
-.animate-rise-delay-2 {
-  animation: riseIn 0.7s ease-out 0.3s both;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animate-rise,
-  .animate-rise-delay,
-  .animate-rise-delay-2 {
-    animation: none;
   }
 }
 

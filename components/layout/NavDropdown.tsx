@@ -16,7 +16,7 @@ export function NavDropdown({ label, href, items, scrollable, code }: NavDropdow
     <div className="group relative">
       <Link
         href={href}
-        className="inline-flex min-h-[44px] items-center gap-1.5 px-2 py-2 text-[13px] font-medium tracking-wide text-chalk/80 transition hover:text-palm"
+        className="inline-flex min-h-[44px] items-center gap-1.5 px-2 py-2 text-[13px] font-medium tracking-wide text-chalk/80 transition hover:text-hibiscus"
       >
         <span>{label}</span>
         <span
@@ -34,7 +34,7 @@ export function NavDropdown({ label, href, items, scrollable, code }: NavDropdow
           <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
             <p className="font-display text-sm text-chalk">{label}</p>
             {code ? (
-              <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-palm">{code}</span>
+              <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-hibiscus">{code}</span>
             ) : null}
           </div>
           <ul className={scrollable ? "max-h-[min(70vh,20rem)] overflow-y-auto" : ""}>
@@ -42,7 +42,7 @@ export function NavDropdown({ label, href, items, scrollable, code }: NavDropdow
               <li key={item.href} className="border-b border-white/5 last:border-b-0">
                 <Link
                   href={item.href}
-                  className="grid grid-cols-[2.25rem_1fr] items-start gap-2 px-4 py-3 text-sm text-chalk/85 transition hover:bg-white/5 hover:text-palm"
+                  className="grid grid-cols-[2.25rem_1fr] items-start gap-2 px-4 py-3 text-sm text-chalk/85 transition hover:bg-white/5 hover:text-hibiscus"
                 >
                   <span className="font-mono text-[10px] tabular-nums tracking-wider text-rule">
                     {String(index + 1).padStart(2, "0")}

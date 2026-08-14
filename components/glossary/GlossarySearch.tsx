@@ -25,7 +25,7 @@ export function GlossarySearch({ terms }: { terms: GlossaryTerm[] }) {
         placeholder="Search terms…"
         value={q}
         onChange={(e) => setQ(e.target.value)}
-        className="mb-8 w-full max-w-md border-0 border-b border-border bg-transparent px-0 py-3 min-h-[44px] text-ink placeholder:text-rule focus:border-palm focus:outline-none focus:ring-0"
+        className="mb-8 w-full max-w-md border-0 border-b border-border bg-transparent px-0 py-3 min-h-[44px] text-ink placeholder:text-rule focus:border-hibiscus focus:outline-none focus:ring-0"
       />
       <dl className="divide-y divide-border border-y border-border">
         {filtered.map((t, index) => (
@@ -40,7 +40,7 @@ export function GlossarySearch({ terms }: { terms: GlossaryTerm[] }) {
                 {t.link && (
                   <>
                     {" "}
-                    <Link href={t.link} className="font-medium text-palm hover:underline">
+                    <Link href={t.link} className="font-medium text-hibiscus hover:underline">
                       Learn more →
                     </Link>
                   </>

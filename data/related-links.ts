@@ -1,8 +1,8 @@
 export type RelatedLink = { label: string; href: string };
 
 const INSTRUCTION_LINKS: RelatedLink[] = [
-  { label: "How to Instruct a Nigeria Expert Witness", href: "/how-to-instruct" },
-  { label: "Instruct an Expert", href: "/contact" },
+  { label: "How to request a Nigeria expert report", href: "/how-to-instruct" },
+  { label: "Request a report", href: "/contact" },
 ];
 
 /** Appendix D: Profile Minimum Links Matrix + Rule A (how-to-instruct, contact) */
@@ -118,9 +118,9 @@ export function getGuideRelatedLinks(slug: string): RelatedLink[] {
 export function getCaseTypeRelatedLinks(_slug: string): RelatedLink[] {
   return [
     { label: "CPIN & Country Guidance", href: "/cpin-country-guidance" },
-    { label: "How to Instruct", href: "/how-to-instruct" },
+    { label: "How it works", href: "/how-to-instruct" },
     { label: "Qualifications", href: "/qualifications" },
-    { label: "Instruct an Expert", href: "/contact" },
+    { label: "Request a report", href: "/contact" },
   ];
 }
 
@@ -138,7 +138,7 @@ export function getCpinRelatedLinks(): RelatedLink[] {
     { label: "Political Persecution", href: "/asylum-profiles/political-persecution" },
     { label: "All Solicitor Guides", href: "/guides" },
     { label: "Nigeria CPIN Guide", href: "/guides/nigeria-cpin-guide-solicitors" },
-    { label: "How to Instruct", href: "/how-to-instruct" },
-    { label: "Instruct an Expert", href: "/contact" },
+    { label: "How it works", href: "/how-to-instruct" },
+    { label: "Request a report", href: "/contact" },
   ];
 }

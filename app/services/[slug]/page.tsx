@@ -38,7 +38,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <PageJsonLd breadcrumbs={crumbs} faqs={service.faqs} />
       <PageShell title={service.title} subtitle={service.description} breadcrumbs={crumbs}>
         {service.content.map((p, i) => (
-          <p key={i} className="mb-4 text-[#4D5768] leading-relaxed">
+          <p key={i} className="mb-4 text-mute leading-relaxed">
             {p}
           </p>
         ))}
@@ -47,18 +47,18 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <ResponsiveTableWrap>
             <table className="w-full min-w-[500px] text-left text-sm">
               <thead>
-                <tr className="border-b border-[#CFD5E0] bg-[#E4E8EF]">
-                  <th className="p-3 font-semibold text-[#1C2D5A]">Phase</th>
-                  <th className="p-3 font-semibold text-[#1C2D5A]">What We Do</th>
-                  <th className="p-3 font-semibold text-[#1C2D5A]">Deliverable</th>
+                <tr className="border-b border-border bg-stone">
+                  <th className="p-3 font-semibold text-ink">Phase</th>
+                  <th className="p-3 font-semibold text-ink">What We Do</th>
+                  <th className="p-3 font-semibold text-ink">Deliverable</th>
                 </tr>
               </thead>
               <tbody>
                 {service.methodology.map((row) => (
-                  <tr key={row.phase} className="border-b border-[#CFD5E0]">
+                  <tr key={row.phase} className="border-b border-border">
                     <td className="p-3 font-medium">{row.phase}</td>
-                    <td className="p-3 text-[#4D5768]">{row.whatWeDo}</td>
-                    <td className="p-3 text-[#4D5768]">{row.deliverable}</td>
+                    <td className="p-3 text-mute">{row.whatWeDo}</td>
+                    <td className="p-3 text-mute">{row.deliverable}</td>
                   </tr>
                 ))}
               </tbody>
@@ -68,7 +68,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
         <Link
           href={service.relatedHref}
-          className="mt-6 inline-block text-sm font-medium text-[#D96A1F] hover:underline"
+          className="mt-6 inline-block text-sm font-medium text-hibiscus hover:underline"
         >
           Related guidance and profiles
         </Link>
@@ -76,10 +76,10 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         <FAQSection faqs={service.faqs} title="Frequently asked questions" />
 
         <Link
-          href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#D96A1F] px-6 py-3 font-semibold text-white hover:bg-[#C45E1A]"
+          href="/#enquire"
+          className="mt-8 inline-flex min-h-[44px] items-center bg-hibiscus px-6 py-3 text-sm font-medium text-paper transition hover:bg-hibiscus-soft"
         >
-          Instruct an Expert
+          Request a report
         </Link>
       </PageShell>
     </>

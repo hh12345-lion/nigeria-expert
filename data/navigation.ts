@@ -21,7 +21,7 @@ export const caseTypesNavLinks = caseTypes.map((c) => ({
 export const resourcesNavLinks = [
   { label: "CPIN & Country Guidance", href: "/cpin-country-guidance" },
   { label: "Solicitor Guides", href: "/guides" },
-  { label: "How to Instruct", href: "/how-to-instruct" },
+  { label: "How it works", href: "/how-to-instruct" },
   { label: "Qualifications", href: "/qualifications" },
   { label: "Glossary", href: "/glossary" },
 ] as const;

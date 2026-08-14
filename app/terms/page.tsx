@@ -12,13 +12,13 @@ export const metadata = createMetadata({
 export default function TermsPage() {
   return (
     <PageShell title="Terms of Use" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Terms" }]}>
-      <p className="text-[#4D5768] leading-relaxed">
+      <p className="text-mute leading-relaxed">
         NigeriaExpert.com is a UK-only expert witness matching service for immigration solicitors in England, Wales,
         Scotland, and Northern Ireland. We are not a law firm and do not provide legal advice. Expert witnesses
         instructed through our service operate independently and owe their primary duty to the tribunal under
         Immigration Tribunal Practice Direction paragraph 10.
       </p>
-      <p className="mt-4 text-[#4D5768] leading-relaxed">
+      <p className="mt-4 text-mute leading-relaxed">
         Fees quoted are indicative and confirmed on instruction. Cancellation terms are agreed between the instructing
         solicitor and the expert at the point of engagement.
       </p>

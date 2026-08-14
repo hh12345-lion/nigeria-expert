@@ -40,9 +40,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <PageShell title={guide.h1} breadcrumbs={crumbs}>
         {guide.sections.map((s) => (
           <section key={s.heading} className="mb-10">
-            <h2 className="text-xl font-bold text-[#1C2D5A]">{s.heading}</h2>
+            <h2 className="text-xl font-bold text-ink">{s.heading}</h2>
             {s.content.map((p, i) => (
-              <p key={i} className="mt-4 text-[#4D5768] leading-relaxed">
+              <p key={i} className="mt-4 text-mute leading-relaxed">
                 {p}
               </p>
             ))}
@@ -50,10 +50,10 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         ))}
         <RelatedLinks links={getGuideRelatedLinks(slug)} />
         <Link
-          href="/contact"
-          className="mt-8 inline-flex min-h-[44px] items-center rounded-[4px] bg-[#D96A1F] px-6 py-3 font-semibold text-white"
+          href="/#enquire"
+          className="mt-8 inline-flex min-h-[44px] items-center bg-hibiscus px-6 py-3 text-sm font-medium text-paper transition hover:bg-hibiscus-soft"
         >
-          Instruct an Expert
+          Request a report
         </Link>
       </PageShell>
     </>
