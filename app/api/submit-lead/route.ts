@@ -1,6 +1,15 @@
 import { NextResponse } from "next/server";
 import { appendRow } from "@/lib/google-sheets";
 
+
+function getSiteDomain(): string {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL || "https://nigeriaexpert.com";
+  try {
+    return new URL(raw).hostname.replace(/^www\./, "");
+  } catch {
+    return "nigeriaexpert.com";
+  }
+}
 const BRAND_NAME = "Nigeria Expert";
 
 type LeadBody = {
@@ -102,6 +111,7 @@ export async function POST(request: Request) {
       Urgency: row[9],
       "Brief Case Description": row[10],
       "Brand name": row[11],
+    domain: getSiteDomain(),
     };
 
     try {
