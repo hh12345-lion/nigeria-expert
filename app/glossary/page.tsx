@@ -5,9 +5,9 @@ import { createMetadata } from "@/lib/metadata";
 import { glossaryTerms } from "@/data/glossary";
 
 export const metadata = createMetadata({
-  title: "Nigeria Expert Witness Glossary | Key Terms for UK Legal Proceedings",
+  title: "Nigeria Expert Witness Glossary",
   description:
-    "Definitions of key Nigeria expert witness and asylum law terms: CPIN, SSMPA, IPOB, FGM, juju, state protection, internal relocation, and more.",
+    "Definitions of Nigeria expert witness and asylum law terms for UK solicitors: CPIN, SSMPA, IPOB, FGM, juju, state protection, and internal relocation.",
   path: "/glossary",
 });
 
@@ -20,7 +20,7 @@ export default function GlossaryPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} faqs={faqItems} />
+      <PageJsonLd breadcrumbs={crumbs} faqs={faqItems} path="/glossary" />
       <PageShell
         title="Nigeria Expert Witness & Asylum Law Glossary"
         subtitle="30 definition-first terms for UK immigration practitioners."

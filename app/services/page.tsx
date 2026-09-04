@@ -19,7 +19,7 @@ export default function ServicesPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} />
+      <PageJsonLd breadcrumbs={crumbs} path="/services" />
       <JsonLd
         data={servicesPageGraph(
           services.map((s) => ({ id: s.id, name: s.title, description: s.description }))

@@ -3,11 +3,19 @@ import Link from "next/link";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { homepageGraph, websiteSchema } from "@/lib/schema";
+import { createMetadata } from "@/lib/metadata";
 import { SITE_SCOPE } from "@/lib/constants";
 import { asylumProfiles } from "@/data/asylum-profiles";
 import { services } from "@/data/services";
 
 const featured = asylumProfiles.slice(0, 6);
+
+export const metadata = createMetadata({
+  title: "Nigeria Expert Witness UK | Tribunal Country Reports",
+  description:
+    "UK-only Nigeria expert witness service for immigration solicitors. Country condition reports for FTT and Upper Tribunal: LGBTQ+, IPOB, FGM, Boko Haram, and trafficking.",
+  path: "/",
+});
 
 export default function HomePage() {
   return (
@@ -46,7 +54,6 @@ export default function HomePage() {
               src="/images/laterite-hibiscus.jpg"
               alt=""
               fill
-              priority
               className="object-cover object-center"
               sizes="(min-width: 1024px) 42vw, 100vw"
             />

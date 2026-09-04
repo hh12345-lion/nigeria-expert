@@ -4,11 +4,12 @@ import { createMetadata } from "@/lib/metadata";
 import { SITE_EMAIL } from "@/lib/constants";
 
 export const metadata = createMetadata({
-  title: "Request a Nigeria Expert Report | NigeriaExpert UK",
+  title: "Request a Nigeria Expert Report",
   description:
     "Request a Nigeria country expert report for UK immigration tribunals. Legal Aid compatible. Response within 1 business day.",
   path: "/contact",
   noindex: true,
+  follow: false,
 });
 
 export default function ContactPage() {

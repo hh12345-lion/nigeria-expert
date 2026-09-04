@@ -14,7 +14,7 @@ export default function QualificationsPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} />
+      <PageJsonLd breadcrumbs={crumbs} path="/qualifications" />
       <PageShell title="Nigeria Expert Witness Qualifications UK" breadcrumbs={crumbs}>
         <h2 className="text-xl font-bold text-ink">What Makes a Qualified Nigeria Expert</h2>
         <p className="mt-4 text-mute leading-relaxed">

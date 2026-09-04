@@ -29,7 +29,13 @@ export const APP_STATIC_PATHS: PublicUrlEntry[] = [
 export const NON_INDEXABLE_PATHS = ["/contact", "/thank-you", "/privacy", "/terms"] as const;
 
 /** Paths disallowed in robots.txt */
-export const ROBOTS_DISALLOW_PATHS = ["/thank-you", "/api/"] as const;
+export const ROBOTS_DISALLOW_PATHS = [
+  "/thank-you",
+  "/contact",
+  "/privacy",
+  "/terms",
+  "/api/",
+] as const;
 
 function dynamicEntries(): PublicUrlEntry[] {
   return [

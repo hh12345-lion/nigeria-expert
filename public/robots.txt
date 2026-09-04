@@ -2,6 +2,9 @@
 User-agent: *
 Allow: /
 Disallow: /thank-you
+Disallow: /contact
+Disallow: /privacy
+Disallow: /terms
 Disallow: /api/
 
 Sitemap: https://www.nigeriaexpert.com/sitemap.xml

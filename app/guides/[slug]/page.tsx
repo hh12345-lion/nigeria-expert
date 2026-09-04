@@ -30,6 +30,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <>
       <PageJsonLd
         breadcrumbs={crumbs}
+        path={path}
         extra={articleSchema({
           headline: guide.h1,
           description: guide.metaDescription,

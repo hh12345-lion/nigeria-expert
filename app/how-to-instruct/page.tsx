@@ -54,7 +54,7 @@ export default function HowToInstructPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} />
+      <PageJsonLd breadcrumbs={crumbs} path="/how-to-instruct" />
       <PageShell
         title="How to request a Nigeria expert report"
         subtitle="Seven steps for UK immigration solicitors and Legal Aid practitioners."

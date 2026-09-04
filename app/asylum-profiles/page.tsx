@@ -17,7 +17,7 @@ export default function AsylumProfilesPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} />
+      <PageJsonLd breadcrumbs={crumbs} path="/asylum-profiles" />
       <PageShell
         title="Nigerian Asylum Profiles"
         subtitle="Dedicated expert witness evidence for each major Nigerian asylum profile in UK immigration tribunals."

@@ -17,7 +17,7 @@ export default function CaseTypesPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} />
+      <PageJsonLd breadcrumbs={crumbs} path="/case-types" />
       <PageShell
         title="Nigeria Asylum Case Types"
         subtitle="Expert witness evidence for all major UK immigration tribunal proceedings involving Nigerian nationals."

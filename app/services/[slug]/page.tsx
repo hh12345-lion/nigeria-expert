@@ -35,7 +35,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} faqs={service.faqs} />
+      <PageJsonLd breadcrumbs={crumbs} faqs={service.faqs} path={`/services/${slug}`} />
       <PageShell title={service.title} subtitle={service.description} breadcrumbs={crumbs}>
         {service.content.map((p, i) => (
           <p key={i} className="mb-4 text-mute leading-relaxed">

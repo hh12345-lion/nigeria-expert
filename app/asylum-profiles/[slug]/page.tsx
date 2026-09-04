@@ -39,7 +39,7 @@ export default async function AsylumProfilePage({ params }: { params: Promise<{ 
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} faqs={profile.faqs} />
+      <PageJsonLd breadcrumbs={crumbs} faqs={profile.faqs} path={`/asylum-profiles/${slug}`} />
       <PageShell title={profile.h1} breadcrumbs={crumbs}>
         {profile.content.map((p, i) => (
           <p key={i} className="mb-4 text-mute leading-relaxed">

@@ -17,7 +17,7 @@ export default function GuidesPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} />
+      <PageJsonLd breadcrumbs={crumbs} path="/guides" />
       <PageShell
         title="Solicitor Guides: Nigeria Expert Evidence"
         subtitle="Practical guides for UK immigration solicitors instructing Nigeria country expert witnesses."

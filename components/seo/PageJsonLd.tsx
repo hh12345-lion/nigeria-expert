@@ -13,14 +13,17 @@ export function PageJsonLd({
   breadcrumbs,
   faqs,
   extra,
+  path,
 }: {
   breadcrumbs?: Crumb[];
   faqs?: FAQ[];
   extra?: object | object[];
+  /** Current page path for breadcrumb `item` on the last crumb (e.g. `/guides/foo`) */
+  path?: string;
 }) {
   const schemas: object[] = [organizationSchema()];
   if (breadcrumbs && breadcrumbs.length > 0) {
-    schemas.push(breadcrumbSchema(breadcrumbs));
+    schemas.push(breadcrumbSchema(breadcrumbs, path));
   }
   if (faqs && faqs.length > 0) {
     schemas.push(faqSchema(faqs));

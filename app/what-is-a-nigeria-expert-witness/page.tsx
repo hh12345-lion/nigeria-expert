@@ -16,7 +16,7 @@ export default function WhatIsPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} />
+      <PageJsonLd breadcrumbs={crumbs} path="/what-is-a-nigeria-expert-witness" />
       <PageShell
         title="What Is a Nigeria Expert Witness?"
         subtitle="The role, duties, and value of independent Nigeria country evidence in UK First-tier Tribunal and Upper Tribunal proceedings."

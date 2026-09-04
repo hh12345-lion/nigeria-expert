@@ -3,11 +3,12 @@ import { createMetadata } from "@/lib/metadata";
 import { SITE_EMAIL } from "@/lib/constants";
 
 export const metadata = createMetadata({
-  title: "Privacy Policy | NigeriaExpert",
-  description: "Privacy policy for NigeriaExpert.com",
+  title: "Privacy Policy",
+  description:
+    "How NigeriaExpert collects, uses, and protects personal data for UK immigration solicitors requesting Nigeria country expert reports. GDPR and UK data protection.",
   path: "/privacy",
   noindex: true,
-  follow: true,
+  follow: false,
 });
 
 export default function PrivacyPage() {

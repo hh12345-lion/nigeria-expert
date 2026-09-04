@@ -5,9 +5,9 @@ import { SITE_EMAIL } from "@/lib/constants";
 import { CATEGORY_META } from "@/lib/cookies/constants";
 
 export const metadata = createMetadata({
-  title: "Cookie Policy | NigeriaExpert",
+  title: "Cookie Policy",
   description:
-    "How NigeriaExpert.com uses cookies and similar technologies, your choices under UK GDPR and ePrivacy, and how to manage preferences.",
+    "How NigeriaExpert uses cookies and similar technologies, your choices under UK GDPR and ePrivacy, and how to manage preferences.",
   path: "/cookie-policy",
 });
 
@@ -16,7 +16,7 @@ export default function CookiePolicyPage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} />
+      <PageJsonLd breadcrumbs={crumbs} path="/cookie-policy" />
       <PageShell title="Cookie Policy" subtitle="Last updated: May 2026" breadcrumbs={crumbs}>
         <p className="text-mute leading-relaxed">
           This Cookie Policy explains how NigeriaExpert.com (&quot;we&quot;, &quot;us&quot;) uses

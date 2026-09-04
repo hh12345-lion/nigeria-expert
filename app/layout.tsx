@@ -28,11 +28,11 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Nigeria Expert Witness UK | Country Reports for Asylum & Immigration Tribunals",
-    template: "%s | NigeriaExpert",
+    default: "Nigeria Expert Witness UK | Tribunal Country Reports",
+    template: "%s",
   },
   description:
-    "UK-only Nigeria expert witness service for immigration solicitors and Legal Aid practitioners. Country condition reports for FTT and Upper Tribunal asylum appeals: LGBTQ+, IPOB/Biafra, Boko Haram, FGM, trafficking, and state protection.",
+    "UK-only Nigeria expert witness service for immigration solicitors and Legal Aid practitioners. Country condition reports for FTT and Upper Tribunal asylum appeals.",
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
     other: process.env.BING_SITE_VERIFICATION
@@ -40,10 +40,21 @@ export const metadata: Metadata = {
       : undefined,
   },
   alternates: {
+    canonical: SITE_URL,
     languages: {
       "en-GB": SITE_URL,
       "x-default": SITE_URL,
     },
+  },
+  openGraph: {
+    siteName: "NigeriaExpert",
+    locale: "en_GB",
+    type: "website",
+    images: [`${SITE_URL}/opengraph-image`],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [`${SITE_URL}/opengraph-image`],
   },
 };
 

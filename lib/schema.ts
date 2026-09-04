@@ -16,17 +16,23 @@ export function faqSchema(faqs: FAQ[]) {
 }
 
 export function breadcrumbSchema(
-  items: ({ name?: string; label?: string; href?: string })[]
+  items: ({ name?: string; label?: string; href?: string })[],
+  currentPath?: string
 ) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: item.name ?? item.label ?? "",
-      ...(item.href ? { item: `${SITE_URL}${item.href}` } : {}),
-    })),
+    itemListElement: items.map((item, i) => {
+      const isLast = i === items.length - 1;
+      const href = item.href ?? (isLast && currentPath ? currentPath : undefined);
+      const name = item.name ?? item.label ?? "";
+      return {
+        "@type": "ListItem",
+        position: i + 1,
+        name,
+        ...(href ? { item: `${SITE_URL}${href}` } : {}),
+      };
+    }),
   };
 }
 
@@ -91,8 +97,15 @@ export function websiteSchema() {
     publisher: { "@id": `${SITE_URL}/#organization` },
     potentialAction: {
       "@type": "SearchAction",
-      target: `${SITE_URL}/glossary?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_URL}/glossary?q={search_term_string}`,
+      },
+      "query-input": {
+        "@type": "PropertyValueSpecification",
+        valueRequired: true,
+        valueName: "search_term_string",
+      },
     },
   };
 }

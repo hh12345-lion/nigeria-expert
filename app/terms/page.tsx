@@ -2,11 +2,12 @@ import { PageShell } from "@/components/layout/PageShell";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata({
-  title: "Terms of Use | NigeriaExpert",
-  description: "Terms of use for NigeriaExpert.com",
+  title: "Terms of Use",
+  description:
+    "Terms of use for NigeriaExpert.com: scope of the expert witness referral service, solicitor responsibilities, and limitations for UK immigration tribunal work.",
   path: "/terms",
   noindex: true,
-  follow: true,
+  follow: false,
 });
 
 export default function TermsPage() {

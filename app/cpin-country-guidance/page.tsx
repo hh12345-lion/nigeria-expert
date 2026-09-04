@@ -41,7 +41,7 @@ export default function CpinCountryGuidancePage() {
 
   return (
     <>
-      <PageJsonLd breadcrumbs={crumbs} faqs={cpinFaqs} />
+      <PageJsonLd breadcrumbs={crumbs} faqs={cpinFaqs} path="/cpin-country-guidance" />
       <JsonLd
         data={articleSchema({
           headline: "Nigeria CPIN & Country Guidance 2025-2026: A Guide for UK Asylum Solicitors",
